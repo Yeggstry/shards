@@ -64,6 +64,7 @@
         data.sort((a, b) => a.name.localeCompare(b.name))
         console.log(data)
         var layer_lookup = {}
+        var seen_links = {}
         for (var d of data) {
             var layer = L.featureGroup().addTo(map)
             var resLinks = 0
@@ -97,6 +98,12 @@
                     link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs))
                     link.moveTimeMs = new Date(parseInt(link.moveTimeMs))
                     polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${link.distance.toFixed(0)}m`)
+                    if (seen_links[dest_ll + origin_ll]) {
+                        var other_polyline = seen_links[dest_ll + origin_ll]
+                        console.log("Duplicate link", other_polyline)
+                        polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content)
+                    }
+                    seen_links[origin_ll + dest_ll] = polyline
                 } else {
                     fizzles++
                     var spawn = f.history[f.history.length - 1]
