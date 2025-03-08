@@ -8,6 +8,7 @@
     <title>Ingress Shards</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
@@ -32,12 +33,14 @@
         #controls span {
             font-weight: bold;
         }
+        .github-fork-ribbon:before { background-color: #333; }
     </style>
 </head>
 
 <body>
     <div id="map"></div>
     <div id="controls"></div>
+    <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
     <script type="module">
         const map = L.map('map').setView([51.505, -0.09], 13);
         var baseMaps = {
@@ -54,10 +57,11 @@
             "NEUTRAL": "#FF6600", 
             "RESISTANCE": "#0088FF",
             "ENLIGHTENED": "#03DC03",
-            "MACHINA": "#FF0028"
+            "MACHINA": "#FF0028",
+            "NOT_SPECIFIED": "#FF6600"
         }
         L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
-        var resp = await fetch("shard-jump-times-2025.03.08.23.54.55.json")
+        var resp = await fetch("shard-jump-times-2025.03.09.08.41.46.json")
         var data = await resp.json()
         data = data.artifact
         data = data.filter(d => d.fragment)
@@ -105,6 +109,7 @@
                     }
                     seen_links[origin_ll + dest_ll] = polyline
                 } else {
+                    console.log(f)
                     fizzles++
                     var spawn = f.history[f.history.length - 1]
                     var spawnPortal = spawn.destinationPortalInfo
