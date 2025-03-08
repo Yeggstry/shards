@@ -68,6 +68,7 @@
             var layer = L.featureGroup().addTo(map)
             var resLinks = 0
             var enlLinks = 0
+            var fizzles = 0
             for (var f of d.fragment) {
                 var link = f.history.filter(h => h.reason == "link")[0]
                 if (link) {
@@ -90,11 +91,14 @@
                         } else {
                             enlLinks++
                         }
+                    } else {
+                        fizzles++
                     }
                     link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs))
                     link.moveTimeMs = new Date(parseInt(link.moveTimeMs))
                     polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${link.distance.toFixed(0)}m`)
                 } else {
+                    fizzles++
                     var spawn = f.history[f.history.length - 1]
                     var spawnPortal = spawn.destinationPortalInfo
                     spawn.moveTimeMs = new Date(parseInt(spawn.moveTimeMs))
@@ -105,7 +109,7 @@
                 map.fitBounds(layer.getBounds())
             }
             layer_lookup[d.name] = layer
-            $("#controls").append(`<button id=${d.name}>${d.name}</button> <span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>` + "<br>")
+            $("#controls").append(`<button id=${d.name}>${d.name}</button> <span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>` + "<br>")
         }
         $("button").click(function() {
             var layer = layer_lookup[this.id]
