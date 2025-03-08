@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base target="_top">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingress Shards</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        #controls {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            background-color: white;
+            z-index: 9999;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #controls span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="controls"></div>
+    <script type="module">
+        const map = L.map('map').setView([51.505, -0.09], 13);
+        var baseMaps = {
+            "OSM": L.tileLayer.provider("OpenStreetMap.Mapnik"),
+            "CartoDB Positron": L.tileLayer.provider('CartoDB.Positron'),
+            "CartoDB Dark Matter": L.tileLayer.provider("CartoDB.DarkMatter").addTo(map),
+            "ESRI WorldImagery": L.tileLayer.provider("Esri.WorldImagery"),
+            "Google Hybrid": L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
+                maxZoom: 20,
+                subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+            })
+        }
+        var colors = {
+            "NEUTRAL": "#FF6600", 
+            "RESISTANCE": "#0088FF",
+            "ENLIGHTENED": "#03DC03",
+            "MACHINA": "#FF0028"
+        }
+        L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
+        var resp = await fetch("shard-jump-times-2025.03.08.23.36.34.json")
+        var data = await resp.json()
+        data = data.artifact
+        data = data.filter(d => d.fragment)
+        data.sort((a, b) => a.name.localeCompare(b.name))
+        console.log(data)
+        var layer_lookup = {}
+        for (var d of data) {
+            var layer = L.featureGroup().addTo(map)
+            var resLinks = 0
+            var enlLinks = 0
+            for (var f of d.fragment) {
+                var link = f.history.filter(h => h.reason == "link")[0]
+                if (link) {
+                    var origin = link.originPortalInfo;
+                    var color = colors[link.linkCreatorTeam]
+                    var origin_ll = L.latLng(origin.latE6 / 1e6, origin.lngE6 / 1e6)
+                    L.circleMarker(origin_ll, {color: color}).bindTooltip(origin.title).addTo(layer)
+                    var dest = link.destinationPortalInfo;
+                    var dest_ll = L.latLng(dest.latE6 / 1e6, dest.lngE6 / 1e6)
+                    L.circleMarker(dest_ll, {color: color}).bindTooltip(dest.title).addTo(layer)
+                    var latlngs = [
+                        origin_ll,
+                        dest_ll
+                    ];
+                    var polyline = L.polyline(latlngs, { color: color, dashArray:  ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
+                    link.distance = origin_ll.distanceTo(dest_ll)
+                    if (link.distance > 249.5) {
+                        if (link.linkCreatorTeam == "RESISTANCE") {
+                            resLinks++
+                        } else {
+                            enlLinks++
+                        }
+                    }
+                    link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs))
+                    link.moveTimeMs = new Date(parseInt(link.moveTimeMs))
+                    polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${link.distance.toFixed(0)}m`)
+                } else {
+                    var spawn = f.history[f.history.length - 1]
+                    var spawnPortal = spawn.destinationPortalInfo
+                    spawn.moveTimeMs = new Date(parseInt(spawn.moveTimeMs))
+                    L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], {color: colors[spawn.destinationCapturerTeam]}).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${spawn.moveTimeMs}<br>No jump`).addTo(layer)
+                }
+            }
+            if (d.name == "ALPHA") {
+                map.fitBounds(layer.getBounds())
+            }
+            layer_lookup[d.name] = layer
+            $("#controls").append(`<button id=${d.name}>${d.name}</button> <span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>` + "<br>")
+        }
+        $("button").click(function() {
+            var layer = layer_lookup[this.id]
+            map.fitBounds(layer.getBounds())
+        })
+    </script>
+</body>
+
+</html>
