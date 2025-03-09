@@ -69,7 +69,7 @@
         }
         L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
 
-        var layer_lookup = {}
+        window.layer_lookup = {}
         function plot_json(name, json) {
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
@@ -124,9 +124,6 @@
                         L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], { color: colors[spawn.destinationCapturerTeam] }).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${spawn.moveTimeMs}<br>No jump`).addTo(layer)
                     }
                 }
-                if (d.name == "ALPHA") {
-                    map.fitBounds(layer.getBounds())
-                }
                 var unique_id = name + "_" + d.name
                 layer_lookup[unique_id] = layer
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
@@ -151,6 +148,7 @@
             plot_json(safe_name, json)
         }
         $("#_alpha_2025_apac").show()
+        map.fitBounds(layer_lookup._alpha_2025_apac_ALPHA.getBounds())
         $("#series").change(function () {
             $(".series").hide()
             $(`#${this.value}`).show()
