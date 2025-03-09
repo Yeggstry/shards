@@ -49,7 +49,9 @@
     <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub"
         title="Fork me on GitHub">Fork me on GitHub</a>
     <script type="module">
-        const map = L.map('map').setView([51.505, -0.09], 13);
+        const map = L.map('map', {
+            worldCopyJump: true,
+        })
         var baseMaps = {
             "OSM": L.tileLayer.provider("OpenStreetMap.Mapnik"),
             "CartoDB Positron": L.tileLayer.provider('CartoDB.Positron'),
