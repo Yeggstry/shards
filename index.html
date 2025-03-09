@@ -109,11 +109,11 @@
                         }
                         link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs))
                         link.moveTimeMs = new Date(parseInt(link.moveTimeMs))
-                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`)
+                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, {sticky: true})
                         if (seen_links[dest_ll + origin_ll]) {
                             var other_polyline = seen_links[dest_ll + origin_ll]
                             //console.log("Duplicate link", other_polyline)
-                            polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content)
+                            polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content, {sticky: true})
                         }
                         seen_links[origin_ll + dest_ll] = polyline
                     } else {
