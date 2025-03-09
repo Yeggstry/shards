@@ -8,7 +8,8 @@
     <title>Ingress Shards</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
@@ -21,6 +22,7 @@
             width: 100%;
             margin: 0;
         }
+
         #controls {
             position: absolute;
             right: 10px;
@@ -30,17 +32,22 @@
             padding: 10px;
             border-radius: 10px;
         }
+
         #controls span {
             font-weight: bold;
         }
-        .github-fork-ribbon:before { background-color: #333; }
+
+        .github-fork-ribbon:before {
+            background-color: #333;
+        }
     </style>
 </head>
 
 <body>
     <div id="map"></div>
-    <div id="controls"></div>
-    <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <div id="controls"><select id="series"></select></div>
+    <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub"
+        title="Fork me on GitHub">Fork me on GitHub</a>
     <script type="module">
         const map = L.map('map').setView([51.505, -0.09], 13);
         var baseMaps = {
@@ -54,78 +61,103 @@
             })
         }
         var colors = {
-            "NEUTRAL": "#FF6600", 
+            "NEUTRAL": "#FF6600",
             "RESISTANCE": "#0088FF",
             "ENLIGHTENED": "#03DC03",
             "MACHINA": "#FF0028",
             "NOT_SPECIFIED": "#FF6600"
         }
         L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
-        var resp = await fetch("shard-jump-times-2025.03.09.08.41.46.json")
-        var data = await resp.json()
-        data = data.artifact
-        data = data.filter(d => d.fragment)
-        data.sort((a, b) => a.name.localeCompare(b.name))
-        console.log(data)
-        var layer_lookup = {}
-        var seen_links = {}
-        for (var d of data) {
-            var layer = L.featureGroup().addTo(map)
-            var resLinks = 0
-            var enlLinks = 0
-            var fizzles = 0
-            for (var f of d.fragment) {
-                var link = f.history.filter(h => h.reason == "link")[0]
-                if (link) {
-                    var origin = link.originPortalInfo;
-                    var color = colors[link.linkCreatorTeam]
-                    var origin_ll = L.latLng(origin.latE6 / 1e6, origin.lngE6 / 1e6)
-                    L.circleMarker(origin_ll, {color: color}).bindTooltip(origin.title).addTo(layer)
-                    var dest = link.destinationPortalInfo;
-                    var dest_ll = L.latLng(dest.latE6 / 1e6, dest.lngE6 / 1e6)
-                    L.circleMarker(dest_ll, {color: color}).bindTooltip(dest.title).addTo(layer)
-                    var latlngs = [
-                        origin_ll,
-                        dest_ll
-                    ];
-                    var polyline = L.polyline(latlngs, { color: color, dashArray:  ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
-                    link.distance = origin_ll.distanceTo(dest_ll)
-                    if (link.distance > 249.5) {
-                        if (link.linkCreatorTeam == "RESISTANCE") {
-                            resLinks++
+
+        function plot_json(name, json) {
+            var html = `<div id="${name}" class="series" style="display:none">`
+            var data = json.artifact
+            data = data.filter(d => d.fragment)
+            data.sort((a, b) => a.name.localeCompare(b.name))
+            console.log(data)
+            var layer_lookup = {}
+            var seen_links = {}
+            for (var d of data) {
+                var layer = L.featureGroup().addTo(map)
+                var resLinks = 0
+                var enlLinks = 0
+                var fizzles = 0
+                for (var f of d.fragment) {
+                    var link = f.history.filter(h => h.reason == "link")[0]
+                    if (link) {
+                        var origin = link.originPortalInfo;
+                        var color = colors[link.linkCreatorTeam]
+                        var origin_ll = L.latLng(origin.latE6 / 1e6, origin.lngE6 / 1e6)
+                        L.circleMarker(origin_ll, { color: color }).bindTooltip(origin.title).addTo(layer)
+                        var dest = link.destinationPortalInfo;
+                        var dest_ll = L.latLng(dest.latE6 / 1e6, dest.lngE6 / 1e6)
+                        L.circleMarker(dest_ll, { color: color }).bindTooltip(dest.title).addTo(layer)
+                        var latlngs = [
+                            origin_ll,
+                            dest_ll
+                        ];
+                        var polyline = L.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
+                        link.distance = origin_ll.distanceTo(dest_ll)
+                        if (link.distance > 249.5) {
+                            if (link.linkCreatorTeam == "RESISTANCE") {
+                                resLinks++
+                            } else {
+                                enlLinks++
+                            }
                         } else {
-                            enlLinks++
+                            fizzles++
                         }
+                        link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs))
+                        link.moveTimeMs = new Date(parseInt(link.moveTimeMs))
+                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`)
+                        if (seen_links[dest_ll + origin_ll]) {
+                            var other_polyline = seen_links[dest_ll + origin_ll]
+                            //console.log("Duplicate link", other_polyline)
+                            polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content)
+                        }
+                        seen_links[origin_ll + dest_ll] = polyline
                     } else {
                         fizzles++
+                        var spawn = f.history[f.history.length - 1]
+                        var spawnPortal = spawn.destinationPortalInfo
+                        spawn.moveTimeMs = new Date(parseInt(spawn.moveTimeMs))
+                        L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], { color: colors[spawn.destinationCapturerTeam] }).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${spawn.moveTimeMs}<br>No jump`).addTo(layer)
                     }
-                    link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs))
-                    link.moveTimeMs = new Date(parseInt(link.moveTimeMs))
-                    polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${link.distance.toFixed(0)}m`)
-                    if (seen_links[dest_ll + origin_ll]) {
-                        var other_polyline = seen_links[dest_ll + origin_ll]
-                        console.log("Duplicate link", other_polyline)
-                        polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content)
-                    }
-                    seen_links[origin_ll + dest_ll] = polyline
-                } else {
-                    console.log(f)
-                    fizzles++
-                    var spawn = f.history[f.history.length - 1]
-                    var spawnPortal = spawn.destinationPortalInfo
-                    spawn.moveTimeMs = new Date(parseInt(spawn.moveTimeMs))
-                    L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], {color: colors[spawn.destinationCapturerTeam]}).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${spawn.moveTimeMs}<br>No jump`).addTo(layer)
                 }
+                if (d.name == "ALPHA") {
+                    map.fitBounds(layer.getBounds())
+                }
+                var unique_id = name + "_" + d.name
+                layer_lookup[unique_id] = layer
+                var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
+                html += `<button id="${unique_id}">${d.name}</button> ${scores}<br>`
             }
-            if (d.name == "ALPHA") {
+            html += "</div></div>"
+            $("#controls").append(html)
+            $("button").click(function () {
+                var layer = layer_lookup[this.id]
                 map.fitBounds(layer.getBounds())
-            }
-            layer_lookup[d.name] = layer
-            $("#controls").append(`<button id=${d.name}>${d.name}</button> <span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>` + "<br>")
+            })
         }
-        $("button").click(function() {
-            var layer = layer_lookup[this.id]
-            map.fitBounds(layer.getBounds())
+
+        var json_files = {
+            "Shared Memories 2024": "shard-jump-times-2024.09.01.18.10.48.json",
+            "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
+            "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json"
+        }
+
+        for (var name in json_files) {
+            var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
+            var selected = name == "+Alpha 2025 APAC" ? "selected" : ""
+            $("#series").append(`<option value="${safe_name}" selected=${selected}>${name}</option>`)
+            var resp = await fetch(json_files[name])
+            var json = await resp.json()
+            plot_json(safe_name, json)
+        }
+        $("#_alpha_2025_apac").show()
+        $("#series").change(function () {
+            $(".series").hide()
+            $(`#${this.value}`).show()
         })
     </script>
 </body>
