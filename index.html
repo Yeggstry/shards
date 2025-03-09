@@ -69,13 +69,13 @@
         }
         L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
 
+        var layer_lookup = {}
         function plot_json(name, json) {
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
             data = data.filter(d => d.fragment)
             data.sort((a, b) => a.name.localeCompare(b.name))
             console.log(data)
-            var layer_lookup = {}
             var seen_links = {}
             for (var d of data) {
                 var layer = L.featureGroup().addTo(map)
@@ -134,10 +134,6 @@
             }
             html += "</div></div>"
             $("#controls").append(html)
-            $("button").click(function () {
-                var layer = layer_lookup[this.id]
-                map.fitBounds(layer.getBounds())
-            })
         }
 
         var json_files = {
@@ -158,6 +154,10 @@
         $("#series").change(function () {
             $(".series").hide()
             $(`#${this.value}`).show()
+        })
+        $("button").click(function () {
+            var layer = layer_lookup[this.id]
+            map.fitBounds(layer.getBounds())
         })
     </script>
 </body>
