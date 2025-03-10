@@ -86,7 +86,8 @@
                 var redLinks = 0
                 var enlLinks = 0
                 var fizzles = 0
-                var tz = tzlookup(d.fragment[0].history.slice(-1).destinationPortalInfo.latE6 / 1e6, d.fragment[0].history.slice(-1).destinationPortalInfo.lngE6 / 1e6)
+                var samplePortal = d.fragment[0].history.slice(-1)[0].destinationPortalInfo
+                var tz = tzlookup(samplePortal.latE6 / 1e6, samplePortal.lngE6 / 1e6)
                 console.log(d.name, tz)
                 for (var f of d.fragment) {
                     var link = f.history.filter(h => h.reason == "link")[0]
