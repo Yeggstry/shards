@@ -70,10 +70,12 @@
             "MACHINA": "#FF0028",
             "NOT_SPECIFIED": "#FF6600"
         }
-        L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
+        var layerControl = L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
 
         window.layer_lookup = {}
         function plot_json(name, json) {
+            var seriesLayer = L.featureGroup().addTo(map)
+            layerControl.addOverlay(seriesLayer, name);
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
             data = data.filter(d => d.fragment)
@@ -81,7 +83,7 @@
             console.log(data)
             var seen_links = {}
             for (var d of data) {
-                var layer = L.featureGroup().addTo(map)
+                var layer = L.featureGroup().addTo(seriesLayer)
                 var resLinks = 0
                 var redLinks = 0
                 var enlLinks = 0
