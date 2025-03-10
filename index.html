@@ -45,7 +45,7 @@
 
 <body>
     <div id="map"></div>
-    <div id="controls"><select id="series"></select></div>
+    <div id="controls"><select id="series"><option value="custom">Custom</option></select><br><input id="custom" type="file" accept="application/json" style="display:none" /></div>
     <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub"
         title="Fork me on GitHub">Fork me on GitHub</a>
     <script type="module">
@@ -164,6 +164,22 @@
         $("button").click(function () {
             var layer = layer_lookup[this.id]
             map.fitBounds(layer.getBounds())
+        })
+        $("#custom").change(function () {
+            var file = this.files[0]
+            var reader = new FileReader()
+            reader.onload = function (e) {
+                var json = JSON.parse(e.target.result)
+                var name = file.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
+                plot_json(name, json)
+                $("#series").append(`<option value="${name}">${file.name}</option>`)
+                $("#series").val(name).change()
+                $("button").click(function () {
+                    var layer = layer_lookup[this.id]
+                    map.fitBounds(layer.getBounds())
+                })
+            }
+            reader.readAsText(file)
         })
     </script>
 </body>
