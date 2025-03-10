@@ -115,8 +115,8 @@
                         } else {
                             fizzles++
                         }
-                        link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(undefined, { timeZone: tz })
-                        link.moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(undefined, { timeZone: tz })
+                        link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: tz })
+                        link.moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, { timeZone: tz })
                         polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, {sticky: true})
                         polyline.bindPopup(polyline._tooltip._content)
                         if (seen_links[dest_ll + origin_ll]) {
