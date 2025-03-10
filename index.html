@@ -167,7 +167,11 @@
         $("button").click(function () {
             var layer = layer_lookup[this.id]
             map.fitBounds(layer.getBounds())
+            location.hash = this.id
         })
+        if (location.hash) {
+            $(location.hash).click()
+        }
         $("#custom").change(function () {
             var file = this.files[0]
             var reader = new FileReader()
