@@ -82,6 +82,7 @@
             for (var d of data) {
                 var layer = L.featureGroup().addTo(map)
                 var resLinks = 0
+                var redLinks = 0
                 var enlLinks = 0
                 var fizzles = 0
                 for (var f of d.fragment) {
@@ -103,6 +104,8 @@
                         if (link.distance > 249.5) {
                             if (link.linkCreatorTeam == "RESISTANCE") {
                                 resLinks++
+                            } else if (link.linkCreatorTeam == "MACHINA") {
+                                redLinks++
                             } else {
                                 enlLinks++
                             }
@@ -130,7 +133,7 @@
                 }
                 var unique_id = name + "_" + d.name
                 layer_lookup[unique_id] = layer
-                var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
+                var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
                 html += `<button id="${unique_id}">${d.name}</button> ${scores}<br>`
             }
             html += "</div></div>"
