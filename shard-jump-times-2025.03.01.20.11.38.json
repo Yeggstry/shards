@@ -1161,7 +1161,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Stockholm, Sweden",
+      "timezone": "Europe/Stockholm"
     },
     {
       "id": "shard-tango",
@@ -2272,7 +2274,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Copenhagen, Denmark",
+      "timezone": "Europe/Copenhagen"
     },
     {
       "id": "shard-whiskey",
@@ -3438,7 +3442,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Augsburg, Germany",
+      "timezone": "Europe/Berlin"
     },
     {
       "id": "shard-papa",
@@ -4506,7 +4512,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Wrocław, Poland",
+      "timezone": "Europe/Warsaw"
     },
     {
       "id": "shard-foxtrot",
@@ -5684,7 +5692,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Seville, Spain",
+      "timezone": "Europe/Madrid"
     },
     {
       "id": "shard-bravo",
@@ -6807,7 +6817,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Tallinn, Estonia",
+      "timezone": "Europe/Tallinn"
     },
     {
       "id": "shard-india",
@@ -7894,7 +7906,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Belfast, United Kingdom",
+      "timezone": "Europe/London"
     },
     {
       "id": "abaddon1",
@@ -9103,7 +9117,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "İzmir, Türkiye",
+      "timezone": "Europe/Istanbul"
     },
     {
       "id": "shard-uniform",
@@ -10192,7 +10208,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Nantes, France",
+      "timezone": "Europe/Paris"
     }
   ]
 }

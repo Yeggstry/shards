@@ -1226,7 +1226,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Sioux Falls, SD, USA",
+      "timezone": "America/Chicago"
     },
     {
       "id": "shard-victor",
@@ -2403,7 +2405,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "La Paz, Bolivia",
+      "timezone": "America/La_Paz"
     },
     {
       "id": "abaddon2",
@@ -3669,7 +3673,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Merida, YU, Mexico",
+      "timezone": "America/Merida"
     },
     {
       "id": "abaddon1",
@@ -4920,7 +4926,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "San Antonio, TX, USA",
+      "timezone": "America/Chicago"
     },
     {
       "id": "shard-tango",
@@ -6046,7 +6054,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Eugene, OR, USA",
+      "timezone": "America/Los_Angeles"
     },
     {
       "id": "shard-lima",
@@ -7247,7 +7257,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Boise, ID, USA",
+      "timezone": "America/Boise"
     },
     {
       "id": "shard-romeo",
@@ -8485,7 +8497,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Burlington, VT, USA",
+      "timezone": "America/New_York"
     },
     {
       "id": "shard-kilo",
@@ -9750,7 +9764,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Orem, UT, USA",
+      "timezone": "America/Denver"
     },
     {
       "id": "shard-echo",
@@ -10950,7 +10966,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Guayaquil, Ecuador",
+      "timezone": "America/Guayaquil"
     },
     {
       "id": "shard-oscar",
@@ -12024,7 +12042,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "San Salvador, El Salvador",
+      "timezone": "America/El_Salvador"
     },
     {
       "id": "shard-alpha",
@@ -13258,7 +13278,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Belo Horizonte, MG, Brazil",
+      "timezone": "America/Sao_Paulo"
     },
     {
       "id": "shard-bravo",
@@ -14423,7 +14445,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Belém, PA, Brazil",
+      "timezone": "America/Belem"
     },
     {
       "id": "shard-india",
@@ -15621,7 +15645,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Winnipeg, MB, Canada",
+      "timezone": "America/Winnipeg"
     },
     {
       "id": "shard-uniform",

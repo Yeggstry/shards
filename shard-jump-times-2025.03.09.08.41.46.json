@@ -1203,7 +1203,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Kagoshima, Japan",
+      "timezone": "Asia/Tokyo"
     },
     {
       "id": "shard-juliet",
@@ -2430,7 +2432,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Petaling Jaya, Malaysia",
+      "timezone": "Asia/Kuala_Lumpur"
     },
     {
       "id": "shard-whiskey",
@@ -3667,7 +3671,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Almaty, Kazakhstan",
+      "timezone": "Asia/Almaty"
     },
     {
       "id": "shard-golf",
@@ -4816,7 +4822,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Donggang, Taiwan",
+      "timezone": "Asia/Taipei"
     },
     {
       "id": "shard-tango",
@@ -6041,7 +6049,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Daegu, South Korea",
+      "timezone": "Asia/Seoul"
     },
     {
       "id": "shard-kilo",
@@ -7268,7 +7278,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Bangkok, Thailand",
+      "timezone": "Asia/Bangkok"
     },
     {
       "id": "shard-romeo",
@@ -8510,7 +8522,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Zhubei, Taiwan",
+      "timezone": "Asia/Taipei"
     },
     {
       "id": "targetenl",
@@ -9648,7 +9662,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Galle, Sri Lanka",
+      "timezone": "Asia/Colombo"
     },
     {
       "id": "abaddon2",
@@ -10825,7 +10841,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Canberra, Australia",
+      "timezone": "Australia/Sydney"
     },
     {
       "id": "shard-foxtrot",
@@ -12083,7 +12101,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Baguio, Philippines",
+      "timezone": "Asia/Manila"
     },
     {
       "id": "shard-india",
@@ -13262,7 +13282,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Ho Chi Minh City, Vietnam",
+      "timezone": "Asia/Ho_Chi_Minh"
     },
     {
       "id": "shard-quebec",
@@ -14399,7 +14421,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Auckland, New Zealand",
+      "timezone": "Pacific/Auckland"
     },
     {
       "id": "abaddon1",
@@ -15509,7 +15533,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "South Jakarta, Indonesia",
+      "timezone": "Asia/Jakarta"
     },
     {
       "id": "shard-papa",

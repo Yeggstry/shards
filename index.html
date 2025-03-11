@@ -14,7 +14,6 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/@photostructure/tz-lookup@11.1.0/tz.js"></script>
     <style>
         html,
         body,
@@ -46,7 +45,10 @@
 
 <body>
     <div id="map"></div>
-    <div id="controls"><select id="series"><option value="custom">Custom</option></select><br><input id="custom" class="series" type="file" accept="application/json" style="display:none" /></div>
+    <div id="controls"><select id="series">
+            <option value="custom">Custom</option>
+        </select><br><input id="custom" class="series" type="file" accept="application/json" style="display:none" />
+    </div>
     <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub"
         title="Fork me on GitHub">Fork me on GitHub</a>
     <script type="module">
@@ -88,9 +90,6 @@
                 var redLinks = 0
                 var enlLinks = 0
                 var fizzles = 0
-                var samplePortal = d.fragment[0].history.slice(-1)[0].destinationPortalInfo
-                var tz = tzlookup(samplePortal.latE6 / 1e6, samplePortal.lngE6 / 1e6)
-                console.log(d.name, tz)
                 for (var f of d.fragment) {
                     var link = f.history.filter(h => h.reason == "link")[0]
                     if (link) {
@@ -118,14 +117,14 @@
                         } else {
                             fizzles++
                         }
-                        link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: tz })
-                        link.moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, { timeZone: tz })
-                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, {sticky: true})
+                        link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
+                        link.moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
+                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, { sticky: true })
                         polyline.bindPopup(polyline._tooltip._content)
                         if (seen_links[dest_ll + origin_ll]) {
                             var other_polyline = seen_links[dest_ll + origin_ll]
                             //console.log("Duplicate link", other_polyline)
-                            polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content, {sticky: true})
+                            polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content, { sticky: true })
                             polyline.bindPopup(polyline._tooltip._content)
                         }
                         seen_links[origin_ll + dest_ll] = polyline
@@ -140,7 +139,7 @@
                 var unique_id = name + "_" + d.name
                 layer_lookup[unique_id] = layer
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
-                html += `<button id="${unique_id}">${d.name}</button> ${scores}<br>`
+                html += `<button id="${unique_id}">${d.city}</button> ${scores}<br>`
             }
             html += "</div></div>"
             $("#controls").append(html)
@@ -148,7 +147,7 @@
 
         var json_files = {
             "Shared Memories 2024 APAC": "shard-jump-times-2024.09.01.18.10.48.json",
-            "Shared Memories 2024 AMER": "shard-jump-times-2024.11.17.09.14.04.json",
+            "Erased Memories 2024 AMER": "shard-jump-times-2024.11.17.09.14.04.json",
             "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
             "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json"
         }
@@ -172,9 +171,9 @@
             map.fitBounds(layer.getBounds())
             location.hash = this.id
         })
-        String.prototype.rsplit = function(sep, maxsplit) {
+        String.prototype.rsplit = function (sep, maxsplit) {
             var split = this.split(sep);
-            return maxsplit ? [ split.slice(0, -maxsplit).join(sep) ].concat(split.slice(-maxsplit)) : split;
+            return maxsplit ? [split.slice(0, -maxsplit).join(sep)].concat(split.slice(-maxsplit)) : split;
         }
         if (location.hash) {
             $(location.hash).click()
