@@ -14,6 +14,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://igor-vladyka.github.io/leaflet.motion/dist/leaflet.motion.min.js"></script>
     <style>
         html,
         body,
@@ -52,7 +53,7 @@
     <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub"
         title="Fork me on GitHub">Fork me on GitHub</a>
     <script type="module">
-        const map = L.map('map', {
+        window.map = L.map('map', {
             worldCopyJump: true,
         })
         var baseMaps = {
@@ -73,6 +74,13 @@
             "NOT_SPECIFIED": "#FF6600"
         }
         var layerControl = L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
+
+        var shardIcon = L.icon({
+            iconUrl: '//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/helios_shard.png',
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+        });
+
 
         window.layer_lookup = {}
         function plot_json(name, json) {
@@ -104,7 +112,11 @@
                             origin_ll,
                             dest_ll
                         ];
-                        var polyline = L.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
+                        //var polyline = L.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
+                        var polyline = L.motion.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }, { showMarker: true, removeOnEnd: false, icon: shardIcon }).addTo(layer);
+                        polyline.on("mouseover", function (e) {
+                            this.motionStart()
+                        })
                         link.distance = origin_ll.distanceTo(dest_ll)
                         if (link.distance > 249.5) {
                             if (link.linkCreatorTeam == "RESISTANCE") {
