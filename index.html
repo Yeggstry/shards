@@ -155,7 +155,7 @@
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
                 html += `<button id="${unique_id}">${d.city || d.name}</button> ${scores}<br>`
             }
-            html += "</div></div>"
+            html += "</div>"
             $("#controls").append(html)
         }
 
