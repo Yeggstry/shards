@@ -14,7 +14,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://igor-vladyka.github.io/leaflet.motion/dist/leaflet.motion.min.js"></script>
+    <script src="https://neon-ninja.github.io/leaflet.motion/dist/leaflet.motion.min.js"></script>
     <style>
         html,
         body,
@@ -112,8 +112,8 @@
                             origin_ll,
                             dest_ll
                         ];
-                        var polyline = L.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
-                        polyline.animated_shards = [L.motion.polyline(latlngs, { color: "transparent", interactive: false }, { auto: true, duration: 500 }, { showMarker: true, removeOnEnd: false, icon: shardIcon, interactive: false }).addTo(layer)]
+                        var polyline = L.motion.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }).addTo(layer);
+                        polyline.animated_shards = [L.motion.polyline(latlngs, { color: "transparent", interactive: false }, { auto: true, duration: 1000 }, { showMarker: true, removeOnEnd: false, icon: shardIcon, interactive: false }).addTo(layer)]
                         polyline.on("mouseover", function (e) {
                             this.animated_shards.forEach(s => s.motionStart())
                         })
