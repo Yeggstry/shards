@@ -89,6 +89,7 @@
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
             data = data.filter(d => d.fragment)
+            if (!data.length) html += "JSON is empty"
             data.sort((a, b) => a.name.localeCompare(b.name))
             console.log(data)
             var seen_links = {}
