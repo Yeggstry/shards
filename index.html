@@ -112,10 +112,10 @@
                             origin_ll,
                             dest_ll
                         ];
-                        //var polyline = L.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
-                        var polyline = L.motion.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }, { showMarker: true, removeOnEnd: false, icon: shardIcon }).addTo(layer);
+                        var polyline = L.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }).addTo(layer);
+                        polyline.animated_shards = [L.motion.polyline(latlngs, { color: "transparent", interactive: false }, { auto: true, duration: 500 }, { showMarker: true, removeOnEnd: false, icon: shardIcon, interactive: false }).addTo(layer)]
                         polyline.on("mouseover", function (e) {
-                            this.motionStart()
+                            this.animated_shards.forEach(s => s.motionStart())
                         })
                         link.distance = origin_ll.distanceTo(dest_ll)
                         if (link.distance > 249.5) {
@@ -138,6 +138,7 @@
                             //console.log("Duplicate link", other_polyline)
                             polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content, { sticky: true })
                             polyline.bindPopup(polyline._tooltip._content)
+                            polyline.animated_shards.push(other_polyline.animated_shards[0])
                         }
                         seen_links[origin_ll + dest_ll] = polyline
                     } else {
