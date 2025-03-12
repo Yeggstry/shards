@@ -180,11 +180,18 @@
             $(".series").hide()
             $(`#${this.value}`).show()
         })
-        $("button").click(function () {
+        function buttonHandler() {
             var layer = layer_lookup[this.id]
             map.fitBounds(layer.getBounds())
             location.hash = this.id
-        })
+            console.log(layer)
+            layer.eachLayer(function (l) {
+                if (l instanceof L.Polyline) {
+                    if (l.animated_shards) l.animated_shards.forEach(s => s.motionStart())
+                }
+            })
+        }
+        $("button").click(buttonHandler)
         String.prototype.rsplit = function (sep, maxsplit) {
             var split = this.split(sep);
             return maxsplit ? [split.slice(0, -maxsplit).join(sep)].concat(split.slice(-maxsplit)) : split;
@@ -202,10 +209,7 @@
                 plot_json(name, json)
                 $("#series").append(`<option value="${name}">${file.name}</option>`)
                 $("#series").val(name).change()
-                $("button").click(function () {
-                    var layer = layer_lookup[this.id]
-                    map.fitBounds(layer.getBounds())
-                })
+                $("button").click(buttonHandler)
             }
             reader.readAsText(file)
         })
