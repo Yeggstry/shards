@@ -96,6 +96,7 @@
             var seen_links = {}
             for (var d of data) {
                 var layer = L.featureGroup().addTo(seriesLayer)
+                layer.data = d;
                 var resLinks = 0
                 var redLinks = 0
                 var enlLinks = 0
@@ -131,9 +132,9 @@
                         } else {
                             fizzles++
                         }
-                        link.linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
-                        link.moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
-                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${link.linkCreationTimeMs}<br>Jump time: ${link.moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, { sticky: true })
+                        var linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
+                        var moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
+                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${linkCreationTimeMs}<br>Jump time: ${moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, { sticky: true })
                         polyline.bindPopup(polyline._tooltip._content)
                         if (seen_links[dest_ll + origin_ll]) {
                             var other_polyline = seen_links[dest_ll + origin_ll]
@@ -147,8 +148,8 @@
                         fizzles++
                         var spawn = f.history[f.history.length - 1]
                         var spawnPortal = spawn.destinationPortalInfo
-                        spawn.moveTimeMs = new Date(parseInt(spawn.moveTimeMs))
-                        L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], { color: colors[spawn.destinationCapturerTeam] }).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${spawn.moveTimeMs}<br>No jump`).addTo(layer)
+                        var moveTimeMs = new Date(parseInt(spawn.moveTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
+                        L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], { color: colors[spawn.destinationCapturerTeam] }).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${moveTimeMs}<br>No jump`).addTo(layer)
                     }
                 }
                 var unique_id = name + "_" + d.name
@@ -191,6 +192,8 @@
                     if (l.animated_shards) l.animated_shards.forEach(s => s.motionStart())
                 }
             })
+            var d = layer.data;
+            console.log(d.fragment.map(f => f.history.map(h => new Date(parseInt(h.moveTimeMs)))))
         }
         $("button").click(buttonHandler)
         String.prototype.rsplit = function (sep, maxsplit) {
