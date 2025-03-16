@@ -13,47 +13,35 @@
       "name": "HOTEL",
       "fragment": [
         {
-          "id": "shard-hotel_23",
-          "currentPortalInfo": {
-            "title": "Croquis estación Fernandez de Córdoba",
-            "description": "Letrero Informativo",
-            "latE6": 8996343,
-            "lngE6": -79519543,
-            "team": "RESISTANCE"
-          },
+          "id": "shard-hotel_22",
           "history": [
             {
-              "moveTimeMs": "1742078106196",
-              "reason": "link",
+              "moveTimeMs": "1742092503738",
+              "reason": "despawn",
               "originPortalInfo": {
-                "title": "Rhino Via Porras",
-                "latE6": 8992620,
-                "lngE6": -79518897,
-                "team": "RESISTANCE"
+                "title": "Diablico Barbero",
+                "description": "Mural pintoresco de un diabólico sucio como barbero.",
+                "latE6": 9016033,
+                "lngE6": -79515588,
+                "team": "ENLIGHTENED"
               },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Croquis estación Fernandez de Córdoba",
-                "description": "Letrero Informativo",
-                "latE6": 8996343,
-                "lngE6": -79519543,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742074918643",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+              "originCapturerTeam": "NOT_SPECIFIED"
             },
             {
-              "moveTimeMs": "1742077224348",
+              "moveTimeMs": "1742078105452",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1742077218333",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Rhino Via Porras",
-                "latE6": 8992620,
-                "lngE6": -79518897,
-                "team": "RESISTANCE"
+                "title": "Diablico Barbero",
+                "description": "Mural pintoresco de un diabólico sucio como barbero.",
+                "latE6": 9016033,
+                "lngE6": -79515588,
+                "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "RESISTANCE"
+              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -152,13 +140,17 @@
         },
         {
           "id": "shard-hotel_25",
-          "currentPortalInfo": {
-            "title": "Fuente Elevada",
-            "latE6": 8988857,
-            "lngE6": -79527587,
-            "team": "NEUTRAL"
-          },
           "history": [
+            {
+              "moveTimeMs": "1742092505018",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Fuente Elevada",
+                "latE6": 8988857,
+                "lngE6": -79527587,
+                "team": "NEUTRAL"
+              }
+            },
             {
               "moveTimeMs": "1742078106384",
               "reason": "no move"
@@ -257,53 +249,6 @@
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
-          "id": "shard-hotel_21",
-          "currentPortalInfo": {
-            "title": "Sueños de libertad",
-            "description": "Monumento \"Sueños de Libertad\", obra de los artistas de Cartago, Luis Carlos Jaramillo y Beatríz Bolívar, ubicado en la Calle 16 con Avenida del Rio. Está construida a base de bronce, varilla y cemento.",
-            "latE6": 4755207,
-            "lngE6": -75916819,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078105321",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Lego - Multiplaza",
-                "description": "Tienda de Lego en Multiplaza.",
-                "latE6": 8985639,
-                "lngE6": -79510394,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Sueños de libertad",
-                "description": "Monumento \"Sueños de Libertad\", obra de los artistas de Cartago, Luis Carlos Jaramillo y Beatríz Bolívar, ubicado en la Calle 16 con Avenida del Rio. Está construida a base de bronce, varilla y cemento.",
-                "latE6": 4755207,
-                "lngE6": -75916819,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1742071201939",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077213338",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Lego - Multiplaza",
-                "description": "Tienda de Lego en Multiplaza.",
-                "latE6": 8985639,
-                "lngE6": -79510394,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
             }
           ]
         },
@@ -514,89 +459,30 @@
           ]
         },
         {
-          "id": "shard-hotel_20",
-          "currentPortalInfo": {
-            "title": "El Mundo De Los Niños",
-            "latE6": 8994999,
-            "lngE6": -79507117,
-            "team": "NEUTRAL"
-          },
+          "id": "shard-hotel_24",
           "history": [
             {
-              "moveTimeMs": "1742078104556",
-              "reason": "link",
+              "moveTimeMs": "1742092504572",
+              "reason": "despawn",
               "originPortalInfo": {
-                "title": "Masayoshi Ohira Bust",
-                "description": "Japanese Prime Minister Monument",
-                "latE6": 8998481,
-                "lngE6": -79507624,
+                "title": "Fuente Del Banco General",
+                "latE6": 8979823,
+                "lngE6": -79524396,
                 "team": "RESISTANCE"
               },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "El Mundo De Los Niños",
-                "latE6": 8994999,
-                "lngE6": -79507117,
-                "team": "NEUTRAL"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742075975692",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+              "originCapturerTeam": "RESISTANCE"
             },
             {
-              "moveTimeMs": "1742077200362",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Masayoshi Ohira Bust",
-                "description": "Japanese Prime Minister Monument",
-                "latE6": 8998481,
-                "lngE6": -79507624,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ]
-        },
-        {
-          "id": "shard-hotel_19",
-          "currentPortalInfo": {
-            "title": "El Mundo De Los Niños",
-            "latE6": 8994999,
-            "lngE6": -79507117,
-            "team": "NEUTRAL"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078103738",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Old Iron Tree",
-                "description": "Escultura de hierro con forma de pino",
-                "latE6": 8998070,
-                "lngE6": -79507283,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "El Mundo De Los Niños",
-                "latE6": 8994999,
-                "lngE6": -79507117,
-                "team": "NEUTRAL"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742076172128",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+              "moveTimeMs": "1742078106308",
+              "reason": "no move"
             },
             {
-              "moveTimeMs": "1742077216433",
+              "moveTimeMs": "1742077211381",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Old Iron Tree",
-                "description": "Escultura de hierro con forma de pino",
-                "latE6": 8998070,
-                "lngE6": -79507283,
+                "title": "Fuente Del Banco General",
+                "latE6": 8979823,
+                "lngE6": -79524396,
                 "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "RESISTANCE"
@@ -789,6 +675,55 @@
           ]
         },
         {
+          "id": "shard-hotel_20",
+          "history": [
+            {
+              "moveTimeMs": "1742092502867",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "El Mundo De Los Niños",
+                "latE6": 8994999,
+                "lngE6": -79507117,
+                "team": "NEUTRAL"
+              }
+            },
+            {
+              "moveTimeMs": "1742078104556",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Masayoshi Ohira Bust",
+                "description": "Japanese Prime Minister Monument",
+                "latE6": 8998481,
+                "lngE6": -79507624,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "El Mundo De Los Niños",
+                "latE6": 8994999,
+                "lngE6": -79507117,
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742075975692",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077200362",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Masayoshi Ohira Bust",
+                "description": "Japanese Prime Minister Monument",
+                "latE6": 8998481,
+                "lngE6": -79507624,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
           "id": "shard-hotel_03",
           "history": [
             {
@@ -871,54 +806,151 @@
           ]
         },
         {
-          "id": "shard-hotel_22",
-          "currentPortalInfo": {
-            "title": "Diablico Barbero",
-            "description": "Mural pintoresco de un diabólico sucio como barbero.",
-            "latE6": 9016033,
-            "lngE6": -79515588,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-hotel_21",
           "history": [
             {
-              "moveTimeMs": "1742078105452",
-              "reason": "no move"
+              "moveTimeMs": "1742092503295",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Sueños de libertad",
+                "description": "Monumento \"Sueños de Libertad\", obra de los artistas de Cartago, Luis Carlos Jaramillo y Beatríz Bolívar, ubicado en la Calle 16 con Avenida del Rio. Está construida a base de bronce, varilla y cemento.",
+                "latE6": 4755207,
+                "lngE6": -75916819,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
             },
             {
-              "moveTimeMs": "1742077218333",
+              "moveTimeMs": "1742078105321",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Lego - Multiplaza",
+                "description": "Tienda de Lego en Multiplaza.",
+                "latE6": 8985639,
+                "lngE6": -79510394,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Sueños de libertad",
+                "description": "Monumento \"Sueños de Libertad\", obra de los artistas de Cartago, Luis Carlos Jaramillo y Beatríz Bolívar, ubicado en la Calle 16 con Avenida del Rio. Está construida a base de bronce, varilla y cemento.",
+                "latE6": 4755207,
+                "lngE6": -75916819,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1742071201939",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077213338",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Diablico Barbero",
-                "description": "Mural pintoresco de un diabólico sucio como barbero.",
-                "latE6": 9016033,
-                "lngE6": -79515588,
-                "team": "ENLIGHTENED"
+                "title": "Lego - Multiplaza",
+                "description": "Tienda de Lego en Multiplaza.",
+                "latE6": 8985639,
+                "lngE6": -79510394,
+                "team": "RESISTANCE"
               },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
+              "destinationCapturerTeam": "RESISTANCE"
             }
           ]
         },
         {
-          "id": "shard-hotel_24",
-          "currentPortalInfo": {
-            "title": "Fuente Del Banco General",
-            "latE6": 8979823,
-            "lngE6": -79524396,
-            "team": "RESISTANCE"
-          },
+          "id": "shard-hotel_19",
           "history": [
             {
-              "moveTimeMs": "1742078106308",
-              "reason": "no move"
+              "moveTimeMs": "1742092502374",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "El Mundo De Los Niños",
+                "latE6": 8994999,
+                "lngE6": -79507117,
+                "team": "NEUTRAL"
+              }
             },
             {
-              "moveTimeMs": "1742077211381",
+              "moveTimeMs": "1742078103738",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Old Iron Tree",
+                "description": "Escultura de hierro con forma de pino",
+                "latE6": 8998070,
+                "lngE6": -79507283,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "El Mundo De Los Niños",
+                "latE6": 8994999,
+                "lngE6": -79507117,
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742076172128",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077216433",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Fuente Del Banco General",
-                "latE6": 8979823,
-                "lngE6": -79524396,
+                "title": "Old Iron Tree",
+                "description": "Escultura de hierro con forma de pino",
+                "latE6": 8998070,
+                "lngE6": -79507283,
                 "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "shard-hotel_23",
+          "history": [
+            {
+              "moveTimeMs": "1742092504170",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Croquis estación Fernandez de Córdoba",
+                "description": "Letrero Informativo",
+                "latE6": 8996343,
+                "lngE6": -79519543,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742078106196",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Rhino Via Porras",
+                "latE6": 8992620,
+                "lngE6": -79518897,
+                "team": "NEUTRAL"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Croquis estación Fernandez de Córdoba",
+                "description": "Letrero Informativo",
+                "latE6": 8996343,
+                "lngE6": -79519543,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742074918643",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077224348",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Rhino Via Porras",
+                "latE6": 8992620,
+                "lngE6": -79518897,
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -1130,7 +1162,7 @@
                 "description": "Mural",
                 "latE6": -34608971,
                 "lngE6": -58434711,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -1149,7 +1181,7 @@
                 "description": "Mural",
                 "latE6": -34608971,
                 "lngE6": -58434711,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742068234586",
@@ -1967,7 +1999,7 @@
                 "description": "Estación Angel Gallardo, Línea B.",
                 "latE6": -34602016,
                 "lngE6": -58431503,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -1990,7 +2022,7 @@
                 "description": "Estación Angel Gallardo, Línea B.",
                 "latE6": -34602016,
                 "lngE6": -58431503,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -2252,7 +2284,7 @@
                 "description": "Mural artístico de cerámica",
                 "latE6": -34602196,
                 "lngE6": -58431500,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -2275,7 +2307,7 @@
                 "description": "Mural artístico de cerámica",
                 "latE6": -34602196,
                 "lngE6": -58431500,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -2310,49 +2342,52 @@
       "name": "JULIET",
       "fragment": [
         {
-          "id": "shard-juliet_21",
-          "currentPortalInfo": {
-            "title": "Informational Kiosk: OKCCC",
-            "description": "Directory of events at the Oklahoma City Convention Center.",
-            "latE6": 35460131,
-            "lngE6": -97515783,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-juliet_20",
           "history": [
             {
-              "moveTimeMs": "1742078102656",
+              "moveTimeMs": "1742092500948",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Bricktown Canal Plaza Picnic Area",
+                "description": "Outdoor dining area at the west end of the Bricktown Canal trail in Oklahoma City.",
+                "latE6": 35464624,
+                "lngE6": -97512073,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742078101803",
               "reason": "link",
               "originPortalInfo": {
-                "title": "Scissortail Park Digital Kiosk",
-                "description": "Digital screen that will be able to cycle multiple message boards, advertising local events",
-                "latE6": 35462038,
-                "lngE6": -97517749,
-                "team": "ENLIGHTENED"
+                "title": "Motor Car Sales Company Plaque",
+                "latE6": 35476513,
+                "lngE6": -97514304,
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "Informational Kiosk: OKCCC",
-                "description": "Directory of events at the Oklahoma City Convention Center.",
-                "latE6": 35460131,
-                "lngE6": -97515783,
+                "title": "Bricktown Canal Plaza Picnic Area",
+                "description": "Outdoor dining area at the west end of the Bricktown Canal trail in Oklahoma City.",
+                "latE6": 35464624,
+                "lngE6": -97512073,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077940002",
+              "linkCreationTimeMs": "1742077986723",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742077215293",
+              "moveTimeMs": "1742077202298",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Scissortail Park Digital Kiosk",
-                "description": "Digital screen that will be able to cycle multiple message boards, advertising local events",
-                "latE6": 35462038,
-                "lngE6": -97517749,
-                "team": "ENLIGHTENED"
+                "title": "Motor Car Sales Company Plaque",
+                "latE6": 35476513,
+                "lngE6": -97514304,
+                "team": "NEUTRAL"
               },
-              "destinationCapturerTeam": "ENLIGHTENED"
+              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -2367,7 +2402,7 @@
                 "description": "Soccer field inside the Together Square.",
                 "latE6": 35466226,
                 "lngE6": -97520007,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -2386,7 +2421,7 @@
                 "description": "Soccer field inside the Together Square.",
                 "latE6": 35466226,
                 "lngE6": -97520007,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742076736192",
@@ -2477,7 +2512,7 @@
                 "description": "Soccer field inside the Together Square.",
                 "latE6": 35466226,
                 "lngE6": -97520007,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -2500,7 +2535,7 @@
                 "description": "Soccer field inside the Together Square.",
                 "latE6": 35466226,
                 "lngE6": -97520007,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -2559,45 +2594,204 @@
           ]
         },
         {
-          "id": "shard-juliet_20",
-          "currentPortalInfo": {
-            "title": "Bricktown Canal Plaza Picnic Area",
-            "description": "Outdoor dining area at the west end of the Bricktown Canal trail in Oklahoma City.",
-            "latE6": 35464624,
-            "lngE6": -97512073,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-juliet_23",
           "history": [
             {
-              "moveTimeMs": "1742078101803",
+              "moveTimeMs": "1742092502234",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Ken Boyer Bail Bonds Advertisement Car",
+                "latE6": 35464413,
+                "lngE6": -97521297,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1742078104413",
               "reason": "link",
               "originPortalInfo": {
-                "title": "Motor Car Sales Company Plaque",
-                "latE6": 35476513,
-                "lngE6": -97514304,
-                "team": "NEUTRAL"
+                "title": "Historic Warner Brothers Pictures Building",
+                "description": "On historic film row in Oklahoma City, the Warner Brothers Pictures building was used in the early 20th century to store and screen films distributed by paramount before being sent to regional movie theaters. Today the building has returned to use as a t-shirt company, but the Warner Brothers Plaque remains.",
+                "latE6": 35466601,
+                "lngE6": -97524451,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Ken Boyer Bail Bonds Advertisement Car",
+                "latE6": 35464413,
+                "lngE6": -97521297,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1742078071528",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077204403",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Historic Warner Brothers Pictures Building",
+                "description": "On historic film row in Oklahoma City, the Warner Brothers Pictures building was used in the early 20th century to store and screen films distributed by paramount before being sent to regional movie theaters. Today the building has returned to use as a t-shirt company, but the Warner Brothers Plaque remains.",
+                "latE6": 35466601,
+                "lngE6": -97524451,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "shard-juliet_22",
+          "history": [
+            {
+              "moveTimeMs": "1742092501814",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Bocce Ball Mural",
+                "latE6": 35477513,
+                "lngE6": -97519455,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1742078103533",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "\"Come as you are\" Mural",
+                "description": "A mural located at Elemental Coffee near downtown Oklahoma City.",
+                "latE6": 35475924,
+                "lngE6": -97519416,
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "Bricktown Canal Plaza Picnic Area",
-                "description": "Outdoor dining area at the west end of the Bricktown Canal trail in Oklahoma City.",
-                "latE6": 35464624,
-                "lngE6": -97512073,
+                "title": "Bocce Ball Mural",
+                "latE6": 35477513,
+                "lngE6": -97519455,
                 "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077986723",
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1742077903912",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742077202298",
+              "moveTimeMs": "1742077222316",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Motor Car Sales Company Plaque",
-                "latE6": 35476513,
-                "lngE6": -97514304,
-                "team": "NEUTRAL"
+                "title": "\"Come as you are\" Mural",
+                "description": "A mural located at Elemental Coffee near downtown Oklahoma City.",
+                "latE6": 35475924,
+                "lngE6": -97519416,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "shard-juliet_25",
+          "history": [
+            {
+              "moveTimeMs": "1742092503140",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Trolley Stop Record Shop",
+                "description": "Vintage vinyl. 78s 45s & Albums",
+                "latE6": 35487463,
+                "lngE6": -97531441,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742078106129",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Stone Tile the Dragon",
+                "description": "Stone marker.",
+                "latE6": 35498971,
+                "lngE6": -97534141,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Trolley Stop Record Shop",
+                "description": "Vintage vinyl. 78s 45s & Albums",
+                "latE6": 35487463,
+                "lngE6": -97531441,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742077160954",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077206304",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Stone Tile the Dragon",
+                "description": "Stone marker.",
+                "latE6": 35498971,
+                "lngE6": -97534141,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "shard-juliet_19",
+          "history": [
+            {
+              "moveTimeMs": "1742092500507",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Bison Sunset",
+                "description": "Bison Sunset by Barry Cook is a copper relief depicting a running herd of bison",
+                "latE6": 35614093,
+                "lngE6": -97509544,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742078100935",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Elliot Mirror Pylon",
+                "description": "Reflective sculpture next the Elliot and Assoc. Architecture office made from mirror acrylic and polished stainless steel",
+                "latE6": 35472671,
+                "lngE6": -97511381,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Bison Sunset",
+                "description": "Bison Sunset by Barry Cook is a copper relief depicting a running herd of bison",
+                "latE6": 35614093,
+                "lngE6": -97509544,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742078044650",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077212464",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Elliot Mirror Pylon",
+                "description": "Reflective sculpture next the Elliot and Assoc. Architecture office made from mirror acrylic and polished stainless steel",
+                "latE6": 35472671,
+                "lngE6": -97511381,
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -2637,46 +2831,51 @@
           ]
         },
         {
-          "id": "shard-juliet_25",
-          "currentPortalInfo": {
-            "title": "Trolley Stop Record Shop",
-            "description": "Vintage vinyl. 78s 45s & Albums",
-            "latE6": 35487463,
-            "lngE6": -97531441,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-juliet_24",
           "history": [
             {
-              "moveTimeMs": "1742078106129",
+              "moveTimeMs": "1742092502672",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Jack Fowler Art",
+                "description": "Art studio for local artist in the Paseo Arts District of Oklahoma City.",
+                "latE6": 35500988,
+                "lngE6": -97520829,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742078105308",
               "reason": "link",
               "originPortalInfo": {
-                "title": "Stone Tile the Dragon",
-                "description": "Stone marker.",
-                "latE6": 35498971,
-                "lngE6": -97534141,
+                "title": "The Weather Bureau Building",
+                "description": "National Register of Historic Places site honoring its place in meteorology history. The Berry Building as it is now known, was originally constructed by Epworth University to be a weather observatory. It would later become the HQ of the US Weather Bureau.",
+                "latE6": 35488883,
+                "lngE6": -97531510,
                 "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
-                "title": "Trolley Stop Record Shop",
-                "description": "Vintage vinyl. 78s 45s & Albums",
-                "latE6": 35487463,
-                "lngE6": -97531441,
+                "title": "Jack Fowler Art",
+                "description": "Art studio for local artist in the Paseo Arts District of Oklahoma City.",
+                "latE6": 35500988,
+                "lngE6": -97520829,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077160954",
+              "linkCreationTimeMs": "1742077776865",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742077206304",
+              "moveTimeMs": "1742077219438",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Stone Tile the Dragon",
-                "description": "Stone marker.",
-                "latE6": 35498971,
-                "lngE6": -97534141,
+                "title": "The Weather Bureau Building",
+                "description": "National Register of Historic Places site honoring its place in meteorology history. The Berry Building as it is now known, was originally constructed by Epworth University to be a weather observatory. It would later become the HQ of the US Weather Bureau.",
+                "latE6": 35488883,
+                "lngE6": -97531510,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
@@ -2750,44 +2949,51 @@
           ]
         },
         {
-          "id": "shard-juliet_23",
-          "currentPortalInfo": {
-            "title": "Ken Boyer Bail Bonds Advertisement Car",
-            "latE6": 35464413,
-            "lngE6": -97521297,
-            "team": "RESISTANCE"
-          },
+          "id": "shard-juliet_21",
           "history": [
             {
-              "moveTimeMs": "1742078104413",
-              "reason": "link",
+              "moveTimeMs": "1742092501382",
+              "reason": "despawn",
               "originPortalInfo": {
-                "title": "Historic Warner Brothers Pictures Building",
-                "description": "On historic film row in Oklahoma City, the Warner Brothers Pictures building was used in the early 20th century to store and screen films distributed by paramount before being sent to regional movie theaters. Today the building has returned to use as a t-shirt company, but the Warner Brothers Plaque remains.",
-                "latE6": 35466601,
-                "lngE6": -97524451,
+                "title": "Informational Kiosk: OKCCC",
+                "description": "Directory of events at the Oklahoma City Convention Center.",
+                "latE6": 35460131,
+                "lngE6": -97515783,
                 "team": "ENLIGHTENED"
               },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Ken Boyer Bail Bonds Advertisement Car",
-                "latE6": 35464413,
-                "lngE6": -97521297,
-                "team": "RESISTANCE"
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742078102656",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Scissortail Park Digital Kiosk",
+                "description": "Digital screen that will be able to cycle multiple message boards, advertising local events",
+                "latE6": 35462038,
+                "lngE6": -97517749,
+                "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1742078071528",
-              "linkCreatorTeam": "RESISTANCE",
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Informational Kiosk: OKCCC",
+                "description": "Directory of events at the Oklahoma City Convention Center.",
+                "latE6": 35460131,
+                "lngE6": -97515783,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742077940002",
+              "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742077204403",
+              "moveTimeMs": "1742077215293",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Historic Warner Brothers Pictures Building",
-                "description": "On historic film row in Oklahoma City, the Warner Brothers Pictures building was used in the early 20th century to store and screen films distributed by paramount before being sent to regional movie theaters. Today the building has returned to use as a t-shirt company, but the Warner Brothers Plaque remains.",
-                "latE6": 35466601,
-                "lngE6": -97524451,
+                "title": "Scissortail Park Digital Kiosk",
+                "description": "Digital screen that will be able to cycle multiple message boards, advertising local events",
+                "latE6": 35462038,
+                "lngE6": -97517749,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
@@ -2805,7 +3011,7 @@
                 "description": "Soccer field inside the Together Square.",
                 "latE6": 35466226,
                 "lngE6": -97520007,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -2816,7 +3022,7 @@
                 "title": "Classen Spire",
                 "latE6": 35473726,
                 "lngE6": -97528906,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -2824,7 +3030,7 @@
                 "description": "Soccer field inside the Together Square.",
                 "latE6": 35466226,
                 "lngE6": -97520007,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742076254479",
@@ -2838,7 +3044,7 @@
                 "title": "Classen Spire",
                 "latE6": 35473726,
                 "lngE6": -97528906,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               }
             }
           ]
@@ -2853,7 +3059,7 @@
                 "title": "Campbell Art Park",
                 "latE6": 35482208,
                 "lngE6": -97513756,
-                "team": "NEUTRAL"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -2868,7 +3074,7 @@
                 "title": "Campbell Art Park",
                 "latE6": 35482208,
                 "lngE6": -97513756,
-                "team": "NEUTRAL"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -2923,53 +3129,6 @@
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
-            }
-          ]
-        },
-        {
-          "id": "shard-juliet_19",
-          "currentPortalInfo": {
-            "title": "Bison Sunset",
-            "description": "Bison Sunset by Barry Cook is a copper relief depicting a running herd of bison",
-            "latE6": 35614093,
-            "lngE6": -97509544,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078100935",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Elliot Mirror Pylon",
-                "description": "Reflective sculpture next the Elliot and Assoc. Architecture office made from mirror acrylic and polished stainless steel",
-                "latE6": 35472671,
-                "lngE6": -97511381,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Bison Sunset",
-                "description": "Bison Sunset by Barry Cook is a copper relief depicting a running herd of bison",
-                "latE6": 35614093,
-                "lngE6": -97509544,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742078044650",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077212464",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Elliot Mirror Pylon",
-                "description": "Reflective sculpture next the Elliot and Assoc. Architecture office made from mirror acrylic and polished stainless steel",
-                "latE6": 35472671,
-                "lngE6": -97511381,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -3077,7 +3236,7 @@
                 "description": "Chinese restaurant in Oklahoma City's Asian District.",
                 "latE6": 35497086,
                 "lngE6": -97534029,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -3099,7 +3258,7 @@
                 "description": "Chinese restaurant in Oklahoma City's Asian District.",
                 "latE6": 35497086,
                 "lngE6": -97534029,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               }
             }
           ]
@@ -3114,7 +3273,7 @@
                 "title": "Campbell Art Park",
                 "latE6": 35482208,
                 "lngE6": -97513756,
-                "team": "NEUTRAL"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -3133,7 +3292,7 @@
                 "title": "Campbell Art Park",
                 "latE6": 35482208,
                 "lngE6": -97513756,
-                "team": "NEUTRAL"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742075233319",
@@ -3330,98 +3489,6 @@
                 "description": "Mural",
                 "latE6": 35494220,
                 "lngE6": -97532123,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED"
-            }
-          ]
-        },
-        {
-          "id": "shard-juliet_24",
-          "currentPortalInfo": {
-            "title": "Jack Fowler Art",
-            "description": "Art studio for local artist in the Paseo Arts District of Oklahoma City.",
-            "latE6": 35500988,
-            "lngE6": -97520829,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078105308",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "The Weather Bureau Building",
-                "description": "National Register of Historic Places site honoring its place in meteorology history. The Berry Building as it is now known, was originally constructed by Epworth University to be a weather observatory. It would later become the HQ of the US Weather Bureau.",
-                "latE6": 35488883,
-                "lngE6": -97531510,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "Jack Fowler Art",
-                "description": "Art studio for local artist in the Paseo Arts District of Oklahoma City.",
-                "latE6": 35500988,
-                "lngE6": -97520829,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077776865",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077219438",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "The Weather Bureau Building",
-                "description": "National Register of Historic Places site honoring its place in meteorology history. The Berry Building as it is now known, was originally constructed by Epworth University to be a weather observatory. It would later become the HQ of the US Weather Bureau.",
-                "latE6": 35488883,
-                "lngE6": -97531510,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED"
-            }
-          ]
-        },
-        {
-          "id": "shard-juliet_22",
-          "currentPortalInfo": {
-            "title": "Bocce Ball Mural",
-            "latE6": 35477513,
-            "lngE6": -97519455,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078103533",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "\"Come as you are\" Mural",
-                "description": "A mural located at Elemental Coffee near downtown Oklahoma City.",
-                "latE6": 35475924,
-                "lngE6": -97519416,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Bocce Ball Mural",
-                "latE6": 35477513,
-                "lngE6": -97519455,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1742077903912",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077222316",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "\"Come as you are\" Mural",
-                "description": "A mural located at Elemental Coffee near downtown Oklahoma City.",
-                "latE6": 35475924,
-                "lngE6": -97519416,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
@@ -4040,7 +4107,7 @@
                 "title": "Soroptimist International Millenium",
                 "latE6": -25293819,
                 "lngE6": -57581868,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -4061,7 +4128,7 @@
                 "title": "Soroptimist International Millenium",
                 "latE6": -25293819,
                 "lngE6": -57581868,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -4422,7 +4489,7 @@
                 "description": "Arte urbano",
                 "latE6": -25294136,
                 "lngE6": -57582368,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -4444,7 +4511,7 @@
                 "description": "Arte urbano",
                 "latE6": -25294136,
                 "lngE6": -57582368,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -4647,6 +4714,56 @@
       "name": "GOLF",
       "fragment": [
         {
+          "id": "shard-golf_22",
+          "history": [
+            {
+              "moveTimeMs": "1742092502686",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
+                "latE6": -5197840,
+                "lngE6": -80629307,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742078105692",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Busto Del Tte. Miguel Cortés",
+                "description": "Monumento al teniente Miguel Cortez.",
+                "latE6": -5195410,
+                "lngE6": -80632049,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
+                "latE6": -5197840,
+                "lngE6": -80629307,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742078066304",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077201392",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Busto Del Tte. Miguel Cortés",
+                "description": "Monumento al teniente Miguel Cortez.",
+                "latE6": -5195410,
+                "lngE6": -80632049,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
           "id": "shard-golf_18",
           "history": [
             {
@@ -4692,6 +4809,56 @@
                 "description": "Un buen lugar para tomar un descanso y venir con la familia y amigos a pasear, ubicado en la urbanización La Alborada",
                 "latE6": -5184695,
                 "lngE6": -80653492,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "shard-golf_19",
+          "history": [
+            {
+              "moveTimeMs": "1742092501378",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Gruta Virgen Maria",
+                "description": "Un Altar de la Virgen María Ubicada en Miraflores",
+                "latE6": -5186947,
+                "lngE6": -80623588,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742078102920",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Open Plaza",
+                "latE6": -5182603,
+                "lngE6": -80622367,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Gruta Virgen Maria",
+                "description": "Un Altar de la Virgen María Ubicada en Miraflores",
+                "latE6": -5186947,
+                "lngE6": -80623588,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742077689666",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077220335",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Open Plaza",
+                "latE6": -5182603,
+                "lngE6": -80622367,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
@@ -4751,51 +4918,6 @@
           ]
         },
         {
-          "id": "shard-golf_21",
-          "currentPortalInfo": {
-            "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
-            "latE6": -5197840,
-            "lngE6": -80629307,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078104743",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Pileta Del Parque Miguel Cortés",
-                "description": "Pileta que refresca a sus visitantes que se encuentran cerca de ella.",
-                "latE6": -5195533,
-                "lngE6": -80631537,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
-                "latE6": -5197840,
-                "lngE6": -80629307,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742078006153",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077214349",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Pileta Del Parque Miguel Cortés",
-                "description": "Pileta que refresca a sus visitantes que se encuentran cerca de ella.",
-                "latE6": -5195533,
-                "lngE6": -80631537,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ]
-        },
-        {
           "id": "shard-golf_17",
           "history": [
             {
@@ -4818,7 +4940,7 @@
                 "description": "Astas",
                 "latE6": -5193026,
                 "lngE6": -80639148,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -4841,7 +4963,7 @@
                 "description": "Astas",
                 "latE6": -5193026,
                 "lngE6": -80639148,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               }
             }
           ]
@@ -4857,7 +4979,7 @@
                 "description": "Instituto IICER - Piura",
                 "latE6": -5191501,
                 "lngE6": -80629702,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -4877,7 +4999,7 @@
                 "description": "Instituto IICER - Piura",
                 "latE6": -5191501,
                 "lngE6": -80629702,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742074479011",
@@ -4920,7 +5042,7 @@
                 "description": "Primera Alameda de la Av. Bolognesi construida en el año 2018 como parte de los trabajos de reconstrucción de Piura después del Fenómeno del Niño costero del 2017",
                 "latE6": -5200489,
                 "lngE6": -80626613,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -4942,52 +5064,7 @@
                 "description": "Primera Alameda de la Av. Bolognesi construida en el año 2018 como parte de los trabajos de reconstrucción de Piura después del Fenómeno del Niño costero del 2017",
                 "latE6": -5200489,
                 "lngE6": -80626613,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
-          "id": "shard-golf_25",
-          "currentPortalInfo": {
-            "title": "Iglesia Misionera “SHEKINAH”",
-            "description": "Iglesia misionera ubicada en Catacaos",
-            "latE6": -5263449,
-            "lngE6": -80673692,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078108762",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Escultura \"Mujer Piurana\"",
-                "latE6": -5221286,
-                "lngE6": -80654587,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "Iglesia Misionera “SHEKINAH”",
-                "description": "Iglesia misionera ubicada en Catacaos",
-                "latE6": -5263449,
-                "lngE6": -80673692,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1742077888698",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077223502",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Escultura \"Mujer Piurana\"",
-                "latE6": -5221286,
-                "lngE6": -80654587,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -5065,7 +5142,7 @@
                 "description": "Academia de danza",
                 "latE6": -5192791,
                 "lngE6": -80639594,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -5088,53 +5165,8 @@
                 "description": "Academia de danza",
                 "latE6": -5192791,
                 "lngE6": -80639594,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               }
-            }
-          ]
-        },
-        {
-          "id": "shard-golf_20",
-          "currentPortalInfo": {
-            "title": "Alamenda Bolognesi N07",
-            "description": "Septima Alameda decorativa creada en el 2018 después del Niño costero del 2017",
-            "latE6": -5198987,
-            "lngE6": -80631570,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078103842",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Cruz Del Sur - Piura.",
-                "latE6": -5200259,
-                "lngE6": -80626413,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Alamenda Bolognesi N07",
-                "description": "Septima Alameda decorativa creada en el 2018 después del Niño costero del 2017",
-                "latE6": -5198987,
-                "lngE6": -80631570,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742077869189",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077203364",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Cruz Del Sur - Piura.",
-                "latE6": -5200259,
-                "lngE6": -80626413,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -5213,7 +5245,7 @@
                 "description": "Mural Ave Regional",
                 "latE6": -5195234,
                 "lngE6": -80631906,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -5236,7 +5268,57 @@
                 "description": "Mural Ave Regional",
                 "latE6": -5195234,
                 "lngE6": -80631906,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "shard-golf_21",
+          "history": [
+            {
+              "moveTimeMs": "1742092502250",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
+                "latE6": -5197840,
+                "lngE6": -80629307,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742078104743",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Pileta Del Parque Miguel Cortés",
+                "description": "Pileta que refresca a sus visitantes que se encuentran cerca de ella.",
+                "latE6": -5195533,
+                "lngE6": -80631537,
+                "team": "NEUTRAL"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
+                "latE6": -5197840,
+                "lngE6": -80629307,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742078006153",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077214349",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Pileta Del Parque Miguel Cortés",
+                "description": "Pileta que refresca a sus visitantes que se encuentran cerca de ella.",
+                "latE6": -5195533,
+                "lngE6": -80631537,
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -5295,115 +5377,20 @@
           ]
         },
         {
-          "id": "shard-golf_02",
-          "history": [
-            {
-              "moveTimeMs": "1742073542077",
-              "reason": "despawn",
-              "originPortalInfo": {
-                "title": "Terminal Terrestre Oltursa",
-                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
-                "latE6": -5199033,
-                "lngE6": -80631872,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE"
-            },
-            {
-              "moveTimeMs": "1742073302808",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Escuela Superior de Arte Pública Ignacio Merino",
-                "latE6": -5194859,
-                "lngE6": -80632190,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Terminal Terrestre Oltursa",
-                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
-                "latE6": -5199033,
-                "lngE6": -80631872,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742072678342",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1742072411399",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Escuela Superior de Arte Pública Ignacio Merino",
-                "latE6": -5194859,
-                "lngE6": -80632190,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
-          "id": "shard-golf_11",
-          "history": [
-            {
-              "moveTimeMs": "1742075943636",
-              "reason": "despawn",
-              "originPortalInfo": {
-                "title": "Escuela Superior de Arte Pública Ignacio Merino",
-                "latE6": -5194859,
-                "lngE6": -80632190,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED"
-            },
-            {
-              "moveTimeMs": "1742075704075",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "SUNAT PIURA",
-                "description": "Sunat Piura.",
-                "latE6": -5194053,
-                "lngE6": -80634957,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Escuela Superior de Arte Pública Ignacio Merino",
-                "latE6": -5194859,
-                "lngE6": -80632190,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1742075293064",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1742074814331",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "SUNAT PIURA",
-                "description": "Sunat Piura.",
-                "latE6": -5194053,
-                "lngE6": -80634957,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
           "id": "shard-golf_24",
-          "currentPortalInfo": {
-            "title": "Transportes ITTSA - PIURA",
-            "description": "Ittsabus - terminal terrestre Piura",
-            "latE6": -5182120,
-            "lngE6": -80644854,
-            "team": "ENLIGHTENED"
-          },
           "history": [
+            {
+              "moveTimeMs": "1742092503575",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Transportes ITTSA - PIURA",
+                "description": "Ittsabus - terminal terrestre Piura",
+                "latE6": -5182120,
+                "lngE6": -80644854,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
             {
               "moveTimeMs": "1742078107799",
               "reason": "link",
@@ -5442,47 +5429,102 @@
           ]
         },
         {
-          "id": "shard-golf_22",
-          "currentPortalInfo": {
-            "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
-            "latE6": -5197840,
-            "lngE6": -80629307,
-            "team": "RESISTANCE"
-          },
+          "id": "shard-golf_02",
           "history": [
             {
-              "moveTimeMs": "1742078105692",
+              "moveTimeMs": "1742073542077",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Terminal Terrestre Oltursa",
+                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
+                "latE6": -5199033,
+                "lngE6": -80631872,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742073302808",
               "reason": "link",
               "originPortalInfo": {
-                "title": "Busto Del Tte. Miguel Cortés",
-                "description": "Monumento al teniente Miguel Cortez.",
-                "latE6": -5195410,
-                "lngE6": -80632049,
+                "title": "Escuela Superior de Arte Pública Ignacio Merino",
+                "latE6": -5194859,
+                "lngE6": -80632190,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Terminal Terrestre Oltursa",
+                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
+                "latE6": -5199033,
+                "lngE6": -80631872,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742072678342",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1742072411399",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Escuela Superior de Arte Pública Ignacio Merino",
+                "latE6": -5194859,
+                "lngE6": -80632190,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "shard-golf_11",
+          "history": [
+            {
+              "moveTimeMs": "1742075943636",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Escuela Superior de Arte Pública Ignacio Merino",
+                "latE6": -5194859,
+                "lngE6": -80632190,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1742075704075",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "SUNAT PIURA",
+                "description": "Sunat Piura.",
+                "latE6": -5194053,
+                "lngE6": -80634957,
                 "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "Universidad Inca Garcilazo De La Vega Sede Piura",
-                "latE6": -5197840,
-                "lngE6": -80629307,
-                "team": "RESISTANCE"
+                "title": "Escuela Superior de Arte Pública Ignacio Merino",
+                "latE6": -5194859,
+                "lngE6": -80632190,
+                "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742078066304",
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1742075293064",
               "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
             },
             {
-              "moveTimeMs": "1742077201392",
+              "moveTimeMs": "1742074814331",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Busto Del Tte. Miguel Cortés",
-                "description": "Monumento al teniente Miguel Cortez.",
-                "latE6": -5195410,
-                "lngE6": -80632049,
+                "title": "SUNAT PIURA",
+                "description": "Sunat Piura.",
+                "latE6": -5194053,
+                "lngE6": -80634957,
                 "team": "RESISTANCE"
               },
-              "destinationCapturerTeam": "RESISTANCE"
+              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -5496,7 +5538,7 @@
                 "title": "Caballo De Bronce",
                 "latE6": -5192407,
                 "lngE6": -80629936,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -5507,14 +5549,14 @@
                 "title": "Universidad Señor de Sipan - Sede Piura",
                 "latE6": -5195215,
                 "lngE6": -80630849,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
                 "title": "Caballo De Bronce",
                 "latE6": -5192407,
                 "lngE6": -80629936,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742076903100",
@@ -5528,7 +5570,7 @@
                 "title": "Universidad Señor de Sipan - Sede Piura",
                 "latE6": -5195215,
                 "lngE6": -80630849,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -5638,51 +5680,6 @@
           ]
         },
         {
-          "id": "shard-golf_19",
-          "currentPortalInfo": {
-            "title": "Gruta Virgen Maria",
-            "description": "Un Altar de la Virgen María Ubicada en Miraflores",
-            "latE6": -5186947,
-            "lngE6": -80623588,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742078102920",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Open Plaza",
-                "latE6": -5182603,
-                "lngE6": -80622367,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "Gruta Virgen Maria",
-                "description": "Un Altar de la Virgen María Ubicada en Miraflores",
-                "latE6": -5186947,
-                "lngE6": -80623588,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077689666",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742077220335",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Open Plaza",
-                "latE6": -5182603,
-                "lngE6": -80622367,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ]
-        },
-        {
           "id": "shard-golf_05",
           "history": [
             {
@@ -5693,7 +5690,7 @@
                 "description": "Mural Ave Regional",
                 "latE6": -5195234,
                 "lngE6": -80631906,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -5713,7 +5710,7 @@
                 "description": "Mural Ave Regional",
                 "latE6": -5195234,
                 "lngE6": -80631906,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE",
               "linkCreationTimeMs": "1742074426100",
@@ -5728,6 +5725,106 @@
                 "description": "Septima Alameda decorativa creada en el 2018 después del Niño costero del 2017",
                 "latE6": -5198987,
                 "lngE6": -80631570,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "shard-golf_25",
+          "history": [
+            {
+              "moveTimeMs": "1742092504019",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Iglesia Misionera “SHEKINAH”",
+                "description": "Iglesia misionera ubicada en Catacaos",
+                "latE6": -5263449,
+                "lngE6": -80673692,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1742078108762",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Escultura \"Mujer Piurana\"",
+                "latE6": -5221286,
+                "lngE6": -80654587,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Iglesia Misionera “SHEKINAH”",
+                "description": "Iglesia misionera ubicada en Catacaos",
+                "latE6": -5263449,
+                "lngE6": -80673692,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1742077888698",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077223502",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Escultura \"Mujer Piurana\"",
+                "latE6": -5221286,
+                "lngE6": -80654587,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "shard-golf_20",
+          "history": [
+            {
+              "moveTimeMs": "1742092501829",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Alamenda Bolognesi N07",
+                "description": "Septima Alameda decorativa creada en el 2018 después del Niño costero del 2017",
+                "latE6": -5198987,
+                "lngE6": -80631570,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742078103842",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Cruz Del Sur - Piura.",
+                "latE6": -5200259,
+                "lngE6": -80626413,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Alamenda Bolognesi N07",
+                "description": "Septima Alameda decorativa creada en el 2018 después del Niño costero del 2017",
+                "latE6": -5198987,
+                "lngE6": -80631570,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742077869189",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742077203364",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Cruz Del Sur - Piura.",
+                "latE6": -5200259,
+                "lngE6": -80626413,
                 "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
@@ -5757,7 +5854,7 @@
                 "description": "Plazoleta Miguel cortez.",
                 "latE6": -5195537,
                 "lngE6": -80632428,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -5780,73 +5877,26 @@
                 "description": "Plazoleta Miguel cortez.",
                 "latE6": -5195537,
                 "lngE6": -80632428,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               }
             }
           ]
         },
         {
-          "id": "shard-golf_15",
+          "id": "shard-golf_23",
           "history": [
             {
-              "moveTimeMs": "1742077142382",
+              "moveTimeMs": "1742092503139",
               "reason": "despawn",
               "originPortalInfo": {
-                "title": "Plazoleta en el Parque Miguel Cortéz",
-                "description": "Plazoleta Miguel cortez.",
-                "latE6": -5195537,
-                "lngE6": -80632428,
-                "team": "RESISTANCE"
+                "title": "Mini parque bancarios",
+                "description": "Pequeño espacio de esparcimiento al público.",
+                "latE6": -5187628,
+                "lngE6": -80643873,
+                "team": "ENLIGHTENED"
               },
-              "originCapturerTeam": "RESISTANCE"
+              "originCapturerTeam": "ENLIGHTENED"
             },
-            {
-              "moveTimeMs": "1742076905396",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Terminal Terrestre Oltursa",
-                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
-                "latE6": -5199033,
-                "lngE6": -80631872,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Plazoleta en el Parque Miguel Cortéz",
-                "description": "Plazoleta Miguel cortez.",
-                "latE6": -5195537,
-                "lngE6": -80632428,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742076719128",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1742076002461",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Terminal Terrestre Oltursa",
-                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
-                "latE6": -5199033,
-                "lngE6": -80631872,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ]
-        },
-        {
-          "id": "shard-golf_23",
-          "currentPortalInfo": {
-            "title": "Mini parque bancarios",
-            "description": "Pequeño espacio de esparcimiento al público.",
-            "latE6": -5187628,
-            "lngE6": -80643873,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
             {
               "moveTimeMs": "1742078106787",
               "reason": "link",
@@ -5883,6 +5933,58 @@
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
+        },
+        {
+          "id": "shard-golf_15",
+          "history": [
+            {
+              "moveTimeMs": "1742077142382",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Plazoleta en el Parque Miguel Cortéz",
+                "description": "Plazoleta Miguel cortez.",
+                "latE6": -5195537,
+                "lngE6": -80632428,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742076905396",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Terminal Terrestre Oltursa",
+                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
+                "latE6": -5199033,
+                "lngE6": -80631872,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Plazoleta en el Parque Miguel Cortéz",
+                "description": "Plazoleta Miguel cortez.",
+                "latE6": -5195537,
+                "lngE6": -80632428,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742076719128",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1742076002461",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Terminal Terrestre Oltursa",
+                "description": "Terminal terrestre de Piura, de la empresa de Transportes Oltursa",
+                "latE6": -5199033,
+                "lngE6": -80631872,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
         }
       ],
       "city": "Piura, Peru",
@@ -5910,7 +6012,7 @@
                 "title": "Downtown Norfolk US Post Office",
                 "latE6": 36846689,
                 "lngE6": -76289890,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -5925,7 +6027,7 @@
                 "title": "Downtown Norfolk US Post Office",
                 "latE6": 36846689,
                 "lngE6": -76289890,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -6096,7 +6198,7 @@
                 "description": "Art installation celebrating lesser known hit ruthless female pirate Morgan the Ringer, known for robbing goods and food from cargo ships to distribute freely to Portsmouth citizens along the banks of Elizabeth River.",
                 "latE6": 36844146,
                 "lngE6": -76290989,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -6108,7 +6210,7 @@
                 "description": "Sculpture art at the new library",
                 "latE6": 36846855,
                 "lngE6": -76290692,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -6116,7 +6218,7 @@
                 "description": "Art installation celebrating lesser known hit ruthless female pirate Morgan the Ringer, known for robbing goods and food from cargo ships to distribute freely to Portsmouth citizens along the banks of Elizabeth River.",
                 "latE6": 36844146,
                 "lngE6": -76290989,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742071331926",
@@ -6131,7 +6233,7 @@
                 "description": "Sculpture art at the new library",
                 "latE6": 36846855,
                 "lngE6": -76290692,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -6200,7 +6302,7 @@
                 "description": "The portion of East Main Street between commercial place in Church Street",
                 "latE6": 36845818,
                 "lngE6": -76286867,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -6212,7 +6314,7 @@
                 "description": "Motion Sensitive Musical Interactive Statue.",
                 "latE6": 36847460,
                 "lngE6": -76289873,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -6220,7 +6322,7 @@
                 "description": "The portion of East Main Street between commercial place in Church Street",
                 "latE6": 36845818,
                 "lngE6": -76286867,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE",
               "linkCreationTimeMs": "1742069063302",
@@ -6235,7 +6337,7 @@
                 "description": "Motion Sensitive Musical Interactive Statue.",
                 "latE6": 36847460,
                 "lngE6": -76289873,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -6603,7 +6705,7 @@
                 "title": "Norfolk Slover Library",
                 "latE6": 36846753,
                 "lngE6": -76290350,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -6618,7 +6720,7 @@
                 "title": "Norfolk Slover Library",
                 "latE6": 36846753,
                 "lngE6": -76290350,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -6647,7 +6749,7 @@
                 "description": "Repurposed material sculpture designed to capture the dynamic and eclectic nature of the Chelsea District in West Ghent.",
                 "latE6": 36865636,
                 "lngE6": -76307708,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -6670,7 +6772,7 @@
                 "description": "Repurposed material sculpture designed to capture the dynamic and eclectic nature of the Chelsea District in West Ghent.",
                 "latE6": 36865636,
                 "lngE6": -76307708,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -6751,7 +6853,7 @@
                 "description": "A community playground for anyone to enjoy.",
                 "latE6": 36858551,
                 "lngE6": -76291936,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -6774,7 +6876,7 @@
                 "description": "A community playground for anyone to enjoy.",
                 "latE6": 36858551,
                 "lngE6": -76291936,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -6987,7 +7089,7 @@
                 "title": "The Moses Myers House",
                 "latE6": 36849894,
                 "lngE6": -76287518,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -6998,14 +7100,14 @@
                 "title": "Fly to the Sky Mermaid",
                 "latE6": 36847005,
                 "lngE6": -76290363,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
                 "title": "The Moses Myers House",
                 "latE6": 36849894,
                 "lngE6": -76287518,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742070471593",
@@ -7019,7 +7121,7 @@
                 "title": "Fly to the Sky Mermaid",
                 "latE6": 36847005,
                 "lngE6": -76290363,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -7048,7 +7150,7 @@
                 "description": "Map of Downtown Norfolk",
                 "latE6": 36846807,
                 "lngE6": -76290104,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -7071,7 +7173,7 @@
                 "description": "Map of Downtown Norfolk",
                 "latE6": 36846807,
                 "lngE6": -76290104,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -7087,7 +7189,7 @@
                 "title": "MacArthur Square Lightrail Station",
                 "latE6": 36847157,
                 "lngE6": -76289793,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -7102,7 +7204,7 @@
                 "title": "MacArthur Square Lightrail Station",
                 "latE6": 36847157,
                 "lngE6": -76289793,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -7120,49 +7222,6 @@
       "id": "shard-kilo",
       "name": "KILO",
       "fragment": [
-        {
-          "id": "shard-kilo_23",
-          "currentPortalInfo": {
-            "title": "Esferas Chapalita",
-            "latE6": 20663062,
-            "lngE6": -103409669,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742081705683",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Liberty Wall",
-                "latE6": 20661896,
-                "lngE6": -103406240,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Esferas Chapalita",
-                "latE6": 20663062,
-                "lngE6": -103409669,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742081475923",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742080804322",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Liberty Wall",
-                "latE6": 20661896,
-                "lngE6": -103406240,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
         {
           "id": "shard-kilo_05",
           "history": [
@@ -7264,79 +7323,6 @@
           ]
         },
         {
-          "id": "shard-kilo_19",
-          "currentPortalInfo": {
-            "title": "Mosca Grafitera",
-            "description": "Mosca que pinta paredes",
-            "latE6": 20659589,
-            "lngE6": -103360390,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742081701946",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Mural Ismael Vargas",
-                "latE6": 20669096,
-                "lngE6": -103368426,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Mosca Grafitera",
-                "description": "Mosca que pinta paredes",
-                "latE6": 20659589,
-                "lngE6": -103360390,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742081152138",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742080803462",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Mural Ismael Vargas",
-                "latE6": 20669096,
-                "lngE6": -103368426,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ]
-        },
-        {
-          "id": "shard-kilo_24",
-          "currentPortalInfo": {
-            "title": "S pide - Mini",
-            "description": "Mini Cooper Patria",
-            "latE6": 20705565,
-            "lngE6": -103413146,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742081705877",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1742080806309",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "S pide - Mini",
-                "description": "Mini Cooper Patria",
-                "latE6": 20705565,
-                "lngE6": -103413146,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
           "id": "shard-kilo_14",
           "history": [
             {
@@ -7379,6 +7365,107 @@
                 "latE6": 20668109,
                 "lngE6": -103368821,
                 "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "shard-kilo_25",
+          "history": [
+            {
+              "moveTimeMs": "1742096103216",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Plaza Inglaterra",
+                "description": "Centro comercial",
+                "latE6": 20682248,
+                "lngE6": -103421240,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742081706839",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Galerías G",
+                "description": "Gran G de Plaza Galerías",
+                "latE6": 20680263,
+                "lngE6": -103428891,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Plaza Inglaterra",
+                "description": "Centro comercial",
+                "latE6": 20682248,
+                "lngE6": -103421240,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742081665929",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742080808389",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Galerías G",
+                "description": "Gran G de Plaza Galerías",
+                "latE6": 20680263,
+                "lngE6": -103428891,
+                "team": "ENLIGHTENED"
+              }
+            }
+          ]
+        },
+        {
+          "id": "shard-kilo_19",
+          "history": [
+            {
+              "moveTimeMs": "1742096100596",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Mosca Grafitera",
+                "description": "Mosca que pinta paredes",
+                "latE6": 20659589,
+                "lngE6": -103360390,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742081701946",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Mural Ismael Vargas",
+                "latE6": 20669096,
+                "lngE6": -103368426,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Mosca Grafitera",
+                "description": "Mosca que pinta paredes",
+                "latE6": 20659589,
+                "lngE6": -103360390,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742081152138",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742080803462",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Mural Ismael Vargas",
+                "latE6": 20669096,
+                "lngE6": -103368426,
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -7433,30 +7520,50 @@
           ]
         },
         {
-          "id": "shard-kilo_21",
-          "currentPortalInfo": {
-            "title": "Barrio Molusco",
-            "description": "Mural",
-            "latE6": 20667576,
-            "lngE6": -103369119,
-            "team": "NEUTRAL"
-          },
+          "id": "shard-kilo_23",
           "history": [
             {
-              "moveTimeMs": "1742081703360",
-              "reason": "no move"
+              "moveTimeMs": "1742096102293",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Esferas Chapalita",
+                "latE6": 20663062,
+                "lngE6": -103409669,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
             },
             {
-              "moveTimeMs": "1742080807372",
+              "moveTimeMs": "1742081705683",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Liberty Wall",
+                "latE6": 20661896,
+                "lngE6": -103406240,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Esferas Chapalita",
+                "latE6": 20663062,
+                "lngE6": -103409669,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742081475923",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742080804322",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Barrio Molusco",
-                "description": "Mural",
-                "latE6": 20667576,
-                "lngE6": -103369119,
-                "team": "NEUTRAL"
+                "title": "Liberty Wall",
+                "latE6": 20661896,
+                "lngE6": -103406240,
+                "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "RESISTANCE"
+              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -7765,6 +7872,38 @@
           ]
         },
         {
+          "id": "shard-kilo_21",
+          "history": [
+            {
+              "moveTimeMs": "1742096101464",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Barrio Molusco",
+                "description": "Mural",
+                "latE6": 20667576,
+                "lngE6": -103369119,
+                "team": "NEUTRAL"
+              }
+            },
+            {
+              "moveTimeMs": "1742081703360",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1742080807372",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Barrio Molusco",
+                "description": "Mural",
+                "latE6": 20667576,
+                "lngE6": -103369119,
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
           "id": "shard-kilo_11",
           "history": [
             {
@@ -7811,52 +7950,6 @@
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
-            }
-          ]
-        },
-        {
-          "id": "shard-kilo_25",
-          "currentPortalInfo": {
-            "title": "Plaza Inglaterra",
-            "description": "Centro comercial",
-            "latE6": 20682248,
-            "lngE6": -103421240,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742081706839",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Galerías G",
-                "description": "Gran G de Plaza Galerías",
-                "latE6": 20680263,
-                "lngE6": -103428891,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "Plaza Inglaterra",
-                "description": "Centro comercial",
-                "latE6": 20682248,
-                "lngE6": -103421240,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742081665929",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742080808389",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Galerías G",
-                "description": "Gran G de Plaza Galerías",
-                "latE6": 20680263,
-                "lngE6": -103428891,
-                "team": "ENLIGHTENED"
-              }
             }
           ]
         },
@@ -7909,6 +8002,53 @@
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "shard-kilo_20",
+          "history": [
+            {
+              "moveTimeMs": "1742096101018",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Casa Del Trebol",
+                "latE6": 20671830,
+                "lngE6": -103365078,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742081703211",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Fountain Avenida La Paz Y Chapu",
+                "latE6": 20672477,
+                "lngE6": -103368586,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Casa Del Trebol",
+                "latE6": 20671830,
+                "lngE6": -103365078,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742081613687",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1742080810381",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Fountain Avenida La Paz Y Chapu",
+                "latE6": 20672477,
+                "lngE6": -103368586,
+                "team": "RESISTANCE"
+              }
             }
           ]
         },
@@ -8117,45 +8257,35 @@
           ]
         },
         {
-          "id": "shard-kilo_22",
-          "currentPortalInfo": {
-            "title": "Santa Cruz",
-            "latE6": 20684590,
-            "lngE6": -103376932,
-            "team": "RESISTANCE"
-          },
+          "id": "shard-kilo_24",
           "history": [
             {
-              "moveTimeMs": "1742081704488",
-              "reason": "link",
+              "moveTimeMs": "1742096102755",
+              "reason": "despawn",
               "originPortalInfo": {
-                "title": "Poema Urbano",
-                "latE6": 20684371,
-                "lngE6": -103380843,
-                "team": "RESISTANCE"
+                "title": "S pide - Mini",
+                "description": "Mini Cooper Patria",
+                "latE6": 20705565,
+                "lngE6": -103413146,
+                "team": "ENLIGHTENED"
               },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Santa Cruz",
-                "latE6": 20684590,
-                "lngE6": -103376932,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742081564718",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+              "originCapturerTeam": "ENLIGHTENED"
             },
             {
-              "moveTimeMs": "1742080805333",
+              "moveTimeMs": "1742081705877",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1742080806309",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Poema Urbano",
-                "latE6": 20684371,
-                "lngE6": -103380843,
-                "team": "RESISTANCE"
+                "title": "S pide - Mini",
+                "description": "Mini Cooper Patria",
+                "latE6": 20705565,
+                "lngE6": -103413146,
+                "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "RESISTANCE"
+              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -8212,6 +8342,54 @@
           ]
         },
         {
+          "id": "shard-kilo_22",
+          "history": [
+            {
+              "moveTimeMs": "1742096101864",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Santa Cruz",
+                "latE6": 20684590,
+                "lngE6": -103376932,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1742081704488",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Poema Urbano",
+                "latE6": 20684371,
+                "lngE6": -103380843,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Santa Cruz",
+                "latE6": 20684590,
+                "lngE6": -103376932,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1742081564718",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742080805333",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Poema Urbano",
+                "latE6": 20684371,
+                "lngE6": -103380843,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
           "id": "shard-kilo_06",
           "history": [
             {
@@ -8241,48 +8419,6 @@
               "destinationCapturerTeam": "RESISTANCE"
             }
           ]
-        },
-        {
-          "id": "shard-kilo_20",
-          "currentPortalInfo": {
-            "title": "Casa Del Trebol",
-            "latE6": 20671830,
-            "lngE6": -103365078,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742081703211",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Fountain Avenida La Paz Y Chapu",
-                "latE6": 20672477,
-                "lngE6": -103368586,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Casa Del Trebol",
-                "latE6": 20671830,
-                "lngE6": -103365078,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1742081613687",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1742080810381",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Fountain Avenida La Paz Y Chapu",
-                "latE6": 20672477,
-                "lngE6": -103368586,
-                "team": "RESISTANCE"
-              }
-            }
-          ]
         }
       ],
       "city": "Guadalajara, Jalisco, Mexico",
@@ -8300,6 +8436,58 @@
       "id": "shard-lima",
       "name": "LIMA",
       "fragment": [
+        {
+          "id": "shard-lima_20",
+          "history": [
+            {
+              "moveTimeMs": "1742099700928",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742085305688",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "City Hall Plaque",
+                "description": "Learn something.",
+                "latE6": 48428774,
+                "lngE6": -123364819,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742085074498",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742084402519",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "City Hall Plaque",
+                "description": "Learn something.",
+                "latE6": 48428774,
+                "lngE6": -123364819,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
         {
           "id": "shard-lima_11",
           "history": [
@@ -8659,6 +8847,108 @@
           ]
         },
         {
+          "id": "shard-lima_24",
+          "history": [
+            {
+              "moveTimeMs": "1742099702641",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Welcome to Cole Island",
+                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
+                "latE6": 48453697,
+                "lngE6": -123450986,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742085309447",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Metal Heron",
+                "description": "Metal blue heron sculpture.",
+                "latE6": 48453927,
+                "lngE6": -123393149,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Welcome to Cole Island",
+                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
+                "latE6": 48453697,
+                "lngE6": -123450986,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742077219840",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742084401372",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Metal Heron",
+                "description": "Metal blue heron sculpture.",
+                "latE6": 48453927,
+                "lngE6": -123393149,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "shard-lima_21",
+          "history": [
+            {
+              "moveTimeMs": "1742099701376",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742085306617",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Ruth's Memorial Bench",
+                "latE6": 48414897,
+                "lngE6": -123366240,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1742078274917",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1742084400679",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Ruth's Memorial Bench",
+                "latE6": 48414897,
+                "lngE6": -123366240,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
           "id": "shard-lima_13",
           "history": [
             {
@@ -8709,23 +8999,28 @@
           ]
         },
         {
-          "id": "shard-lima_24",
-          "currentPortalInfo": {
-            "title": "Welcome to Cole Island",
-            "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
-            "latE6": 48453697,
-            "lngE6": -123450986,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-lima_23",
           "history": [
             {
-              "moveTimeMs": "1742085309447",
+              "moveTimeMs": "1742099702208",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Welcome to Cole Island",
+                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
+                "latE6": 48453697,
+                "lngE6": -123450986,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742085308551",
               "reason": "link",
               "originPortalInfo": {
-                "title": "Metal Heron",
-                "description": "Metal blue heron sculpture.",
-                "latE6": 48453927,
-                "lngE6": -123393149,
+                "title": "Uptown Mosaic",
+                "description": "This mosaic acts as the base of a fountain in the boulevard. It contains more than 4,000 pieces of glass tile. At night, the bottom of the fountain lights up. Joe Wilson designed the artwork with Chris MacDonald of Eagle Feather Gallery.",
+                "latE6": 48455206,
+                "lngE6": -123375457,
                 "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
@@ -8737,18 +9032,18 @@
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077219840",
+              "linkCreationTimeMs": "1742081356551",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742084401372",
+              "moveTimeMs": "1742084404389",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Metal Heron",
-                "description": "Metal blue heron sculpture.",
-                "latE6": 48453927,
-                "lngE6": -123393149,
+                "title": "Uptown Mosaic",
+                "description": "This mosaic acts as the base of a fountain in the boulevard. It contains more than 4,000 pieces of glass tile. At night, the bottom of the fountain lights up. Joe Wilson designed the artwork with Chris MacDonald of Eagle Feather Gallery.",
+                "latE6": 48455206,
+                "lngE6": -123375457,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
@@ -8860,44 +9155,51 @@
           ]
         },
         {
-          "id": "shard-lima_21",
-          "currentPortalInfo": {
-            "title": "King Bench",
-            "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-            "latE6": 48116282,
-            "lngE6": -123356710,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-lima_25",
           "history": [
             {
-              "moveTimeMs": "1742085306617",
-              "reason": "link",
+              "moveTimeMs": "1742099703079",
+              "reason": "despawn",
               "originPortalInfo": {
-                "title": "Ruth's Memorial Bench",
-                "latE6": 48414897,
-                "lngE6": -123366240,
+                "title": "Welcome to Cole Island",
+                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
+                "latE6": 48453697,
+                "lngE6": -123450986,
                 "team": "ENLIGHTENED"
               },
-              "originCapturerTeam": "ENLIGHTENED",
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742085310344",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Industrial park, Ellery Street Entrance",
+                "description": "Ellery Street entrance to the Esquimalt Industrial park",
+                "latE6": 48437195,
+                "lngE6": -123402354,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "King Bench",
-                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-                "latE6": 48116282,
-                "lngE6": -123356710,
+                "title": "Welcome to Cole Island",
+                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
+                "latE6": 48453697,
+                "lngE6": -123450986,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742078274917",
+              "linkCreationTimeMs": "1742085140009",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742084400679",
+              "moveTimeMs": "1742084405562",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Ruth's Memorial Bench",
-                "latE6": 48414897,
-                "lngE6": -123366240,
+                "title": "Industrial park, Ellery Street Entrance",
+                "description": "Ellery Street entrance to the Esquimalt Industrial park",
+                "latE6": 48437195,
+                "lngE6": -123402354,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
@@ -8979,53 +9281,6 @@
                 "title": "Beacon Hill Park",
                 "latE6": 48418410,
                 "lngE6": -123365487,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
-          "id": "shard-lima_22",
-          "currentPortalInfo": {
-            "title": "King Bench",
-            "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-            "latE6": 48116282,
-            "lngE6": -123356710,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742085307593",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Garricks Head Pub Sign",
-                "description": "Part of the original fort and is rumored to be haunted by the original owner",
-                "latE6": 48425619,
-                "lngE6": -123368183,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "King Bench",
-                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-                "latE6": 48116282,
-                "lngE6": -123356710,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742077464168",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742084406475",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Garricks Head Pub Sign",
-                "description": "Part of the original fort and is rumored to be haunted by the original owner",
-                "latE6": 48425619,
-                "lngE6": -123368183,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
@@ -9129,100 +9384,6 @@
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
-            }
-          ]
-        },
-        {
-          "id": "shard-lima_25",
-          "currentPortalInfo": {
-            "title": "Welcome to Cole Island",
-            "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
-            "latE6": 48453697,
-            "lngE6": -123450986,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742085310344",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Industrial park, Ellery Street Entrance",
-                "description": "Ellery Street entrance to the Esquimalt Industrial park",
-                "latE6": 48437195,
-                "lngE6": -123402354,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Welcome to Cole Island",
-                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
-                "latE6": 48453697,
-                "lngE6": -123450986,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742085140009",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742084405562",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Industrial park, Ellery Street Entrance",
-                "description": "Ellery Street entrance to the Esquimalt Industrial park",
-                "latE6": 48437195,
-                "lngE6": -123402354,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED"
-            }
-          ]
-        },
-        {
-          "id": "shard-lima_20",
-          "currentPortalInfo": {
-            "title": "King Bench",
-            "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-            "latE6": 48116282,
-            "lngE6": -123356710,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1742085305688",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "City Hall Plaque",
-                "description": "Learn something.",
-                "latE6": 48428774,
-                "lngE6": -123364819,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "King Bench",
-                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-                "latE6": 48116282,
-                "lngE6": -123356710,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742085074498",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1742084402519",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "City Hall Plaque",
-                "description": "Learn something.",
-                "latE6": 48428774,
-                "lngE6": -123364819,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         },
@@ -9432,14 +9593,19 @@
         },
         {
           "id": "shard-lima_19",
-          "currentPortalInfo": {
-            "title": "King Bench",
-            "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
-            "latE6": 48116282,
-            "lngE6": -123356710,
-            "team": "ENLIGHTENED"
-          },
           "history": [
+            {
+              "moveTimeMs": "1742099700529",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
             {
               "moveTimeMs": "1742085304743",
               "reason": "link",
@@ -9478,49 +9644,54 @@
           ]
         },
         {
-          "id": "shard-lima_23",
-          "currentPortalInfo": {
-            "title": "Welcome to Cole Island",
-            "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
-            "latE6": 48453697,
-            "lngE6": -123450986,
-            "team": "ENLIGHTENED"
-          },
+          "id": "shard-lima_22",
           "history": [
             {
-              "moveTimeMs": "1742085308551",
-              "reason": "link",
+              "moveTimeMs": "1742099701806",
+              "reason": "despawn",
               "originPortalInfo": {
-                "title": "Uptown Mosaic",
-                "description": "This mosaic acts as the base of a fountain in the boulevard. It contains more than 4,000 pieces of glass tile. At night, the bottom of the fountain lights up. Joe Wilson designed the artwork with Chris MacDonald of Eagle Feather Gallery.",
-                "latE6": 48455206,
-                "lngE6": -123375457,
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
                 "team": "ENLIGHTENED"
               },
-              "originCapturerTeam": "ENLIGHTENED",
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1742085307593",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Garricks Head Pub Sign",
+                "description": "Part of the original fort and is rumored to be haunted by the original owner",
+                "latE6": 48425619,
+                "lngE6": -123368183,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "Welcome to Cole Island",
-                "description": "Historic Cole Island is located in Esquimalt Harbour on the west coast of British Columbia. Because of its close proximity to shore the island is easily accessed by boat. The Royal Navy considered Cole Island strategically important as an ammunition depot as early as 1859. Eventually, 16 solid structures occupied the site. Five of the original structures remain.",
-                "latE6": 48453697,
-                "lngE6": -123450986,
+                "title": "King Bench",
+                "description": "Rest your weary soul while pondering your existence. Listen to the surf crashing, fog horns, loons and other ocean birds.  Bald Eagles were hovering and chattering when this photo was taken!",
+                "latE6": 48116282,
+                "lngE6": -123356710,
                 "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1742081356551",
+              "linkCreationTimeMs": "1742077464168",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1742084404389",
+              "moveTimeMs": "1742084406475",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Uptown Mosaic",
-                "description": "This mosaic acts as the base of a fountain in the boulevard. It contains more than 4,000 pieces of glass tile. At night, the bottom of the fountain lights up. Joe Wilson designed the artwork with Chris MacDonald of Eagle Feather Gallery.",
-                "latE6": 48455206,
-                "lngE6": -123375457,
+                "title": "Garricks Head Pub Sign",
+                "description": "Part of the original fort and is rumored to be haunted by the original owner",
+                "latE6": 48425619,
+                "lngE6": -123368183,
                 "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "ENLIGHTENED"
+              "destinationCapturerTeam": "NOT_SPECIFIED"
             }
           ]
         }
@@ -10320,7 +10491,7 @@
                 "description": "Terminal del puerto de Coquimbo el cual conecta las provincias de la región y tambien con servicios a otras regiones del país.",
                 "latE6": -29956327,
                 "lngE6": -71337414,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -10342,7 +10513,7 @@
                 "description": "Terminal del puerto de Coquimbo el cual conecta las provincias de la región y tambien con servicios a otras regiones del país.",
                 "latE6": -29956327,
                 "lngE6": -71337414,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -11273,7 +11444,7 @@
                 "description": "South entrance to Al Lopez Park, located on the east side of the park near the southern turnaround of the fitness trail.",
                 "latE6": 27983177,
                 "lngE6": -82501476,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -11295,7 +11466,7 @@
                 "description": "South entrance to Al Lopez Park, located on the east side of the park near the southern turnaround of the fitness trail.",
                 "latE6": 27983177,
                 "lngE6": -82501476,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -11428,7 +11599,7 @@
                 "description": "South entrance to Al Lopez Park, located on the east side of the park near the southern turnaround of the fitness trail.",
                 "latE6": 27983177,
                 "lngE6": -82501476,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -11448,7 +11619,7 @@
                 "description": "South entrance to Al Lopez Park, located on the east side of the park near the southern turnaround of the fitness trail.",
                 "latE6": 27983177,
                 "lngE6": -82501476,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742070860673",
@@ -13284,7 +13455,7 @@
                 "description": "John Orono was a catholic Indian chief",
                 "latE6": 44880504,
                 "lngE6": -68674677,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -13307,7 +13478,7 @@
                 "description": "John Orono was a catholic Indian chief",
                 "latE6": 44880504,
                 "lngE6": -68674677,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -13324,7 +13495,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -13336,7 +13507,7 @@
                 "description": "Site of a large dining hall and a convenience store, convenient to the New Balance Recreation Center and multiple residence halls. The dining hall is set on the second floor, with views out through the treetops.",
                 "latE6": 44904601,
                 "lngE6": -68663328,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -13344,7 +13515,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742072594505",
@@ -13359,7 +13530,7 @@
                 "description": "Site of a large dining hall and a convenience store, convenient to the New Balance Recreation Center and multiple residence halls. The dining hall is set on the second floor, with views out through the treetops.",
                 "latE6": 44904601,
                 "lngE6": -68663328,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -13409,7 +13580,7 @@
                 "description": "Named for a local legend who served as governor and U.S. senator for Maine, Abraham Lincoln's vice president, and president of the U Maine board of trustees.",
                 "latE6": 44902029,
                 "lngE6": -68671816,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -13425,7 +13596,7 @@
                 "description": "Named for a local legend who served as governor and U.S. senator for Maine, Abraham Lincoln's vice president, and president of the U Maine board of trustees.",
                 "latE6": 44902029,
                 "lngE6": -68671816,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -13506,7 +13677,7 @@
                 "description": "Newer building at UMaine built to house a machine tool lab for the College of Engineering.",
                 "latE6": 44904193,
                 "lngE6": -68666759,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -13529,7 +13700,7 @@
                 "description": "Newer building at UMaine built to house a machine tool lab for the College of Engineering.",
                 "latE6": 44904193,
                 "lngE6": -68666759,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -13546,7 +13717,7 @@
                 "description": "Large color map kiosk in the Dunn Hall lot, near the Alfond athletics complex. A lovely flower box is included.",
                 "latE6": 44903677,
                 "lngE6": -68672125,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -13562,7 +13733,7 @@
                 "description": "Large color map kiosk in the Dunn Hall lot, near the Alfond athletics complex. A lovely flower box is included.",
                 "latE6": 44903677,
                 "lngE6": -68672125,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -13579,7 +13750,7 @@
                 "description": "Granite benches crafted from the original window sills of the historic Kathadin Building that stood on this site for over 180 years.",
                 "latE6": 44884078,
                 "lngE6": -68672159,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -13595,7 +13766,7 @@
                 "description": "Granite benches crafted from the original window sills of the historic Kathadin Building that stood on this site for over 180 years.",
                 "latE6": 44884078,
                 "lngE6": -68672159,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -13624,7 +13795,7 @@
                 "description": "This studio is housed in the former fire station, making creative use of a historic campus space. Students are engaged in active learning here, with access to all manner of materials and tools.",
                 "latE6": 44900274,
                 "lngE6": -68665470,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -13647,7 +13818,7 @@
                 "description": "This studio is housed in the former fire station, making creative use of a historic campus space. Students are engaged in active learning here, with access to all manner of materials and tools.",
                 "latE6": 44900274,
                 "lngE6": -68665470,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -13664,7 +13835,7 @@
                 "description": "Residence hall whose name is derived from a Penobscot [Native American] tribal word for “at the large body of water.”",
                 "latE6": 44895341,
                 "lngE6": -68669671,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -13680,7 +13851,7 @@
                 "description": "Residence hall whose name is derived from a Penobscot [Native American] tribal word for “at the large body of water.”",
                 "latE6": 44895341,
                 "lngE6": -68669671,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -13709,7 +13880,7 @@
                 "description": "Campus welcome sign with a clear message that U Maine is a tobacco-free campus.",
                 "latE6": 44898537,
                 "lngE6": -68673211,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -13732,7 +13903,7 @@
                 "description": "Campus welcome sign with a clear message that U Maine is a tobacco-free campus.",
                 "latE6": 44898537,
                 "lngE6": -68673211,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -13749,7 +13920,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -13761,7 +13932,7 @@
                 "description": "Weight room and workout center for UMaine on the Eastern side of the Memorial Gym complex, near the ROTC offices.",
                 "latE6": 44903866,
                 "lngE6": -68669175,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -13769,7 +13940,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742072955355",
@@ -13784,7 +13955,7 @@
                 "description": "Weight room and workout center for UMaine on the Eastern side of the Memorial Gym complex, near the ROTC offices.",
                 "latE6": 44903866,
                 "lngE6": -68669175,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -13800,7 +13971,7 @@
                 "title": "Harold Alfond Statue",
                 "latE6": 44904187,
                 "lngE6": -68672338,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -13811,14 +13982,14 @@
                 "title": "1933 Alumni Memorial Gym",
                 "latE6": 44903486,
                 "lngE6": -68670620,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
                 "title": "Harold Alfond Statue",
                 "latE6": 44904187,
                 "lngE6": -68672338,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742073876623",
@@ -13832,7 +14003,7 @@
                 "title": "1933 Alumni Memorial Gym",
                 "latE6": 44903486,
                 "lngE6": -68670620,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -13848,7 +14019,7 @@
                 "title": "Harold Alfond Statue",
                 "latE6": 44904187,
                 "lngE6": -68672338,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -13863,7 +14034,7 @@
                 "title": "Harold Alfond Statue",
                 "latE6": 44904187,
                 "lngE6": -68672338,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -13880,7 +14051,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -13892,7 +14063,7 @@
                 "description": "Named for Clarence Bennet, who helped establish one of the nation's first engineering physics degrees at UMaine. Home to the Department of Physics and Astronomy.",
                 "latE6": 44903032,
                 "lngE6": -68669054,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -13900,7 +14071,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742070470270",
@@ -13915,7 +14086,7 @@
                 "description": "Named for Clarence Bennet, who helped establish one of the nation's first engineering physics degrees at UMaine. Home to the Department of Physics and Astronomy.",
                 "latE6": 44903032,
                 "lngE6": -68669054,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               }
             }
           ]
@@ -13931,7 +14102,7 @@
                 "description": "John Orono was a catholic Indian chief",
                 "latE6": 44880504,
                 "lngE6": -68674677,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -13943,7 +14114,7 @@
                 "description": "Located in Crossland Hall, the Center offers educational and cultural opportunities focused on Franco-American heritage. The Center includes gathering places and a fully-stocked kitchen.",
                 "latE6": 44903317,
                 "lngE6": -68672663,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -13951,7 +14122,7 @@
                 "description": "John Orono was a catholic Indian chief",
                 "latE6": 44880504,
                 "lngE6": -68674677,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742071487148",
@@ -13966,7 +14137,7 @@
                 "description": "Located in Crossland Hall, the Center offers educational and cultural opportunities focused on Franco-American heritage. The Center includes gathering places and a fully-stocked kitchen.",
                 "latE6": 44903317,
                 "lngE6": -68672663,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -13995,7 +14166,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -14018,7 +14189,7 @@
                 "description": "Two free-standing BBQ grills on the Stewart Commons green space, offering a cook-out place for students residing at the three nearby residence halls.",
                 "latE6": 44903541,
                 "lngE6": -68665604,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -14046,7 +14217,7 @@
                 "title": "Littlefield Garden",
                 "latE6": 44903214,
                 "lngE6": -68661104,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -14068,7 +14239,7 @@
                 "title": "Littlefield Garden",
                 "latE6": 44903214,
                 "lngE6": -68661104,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               }
             }
           ]
@@ -14117,7 +14288,7 @@
                 "description": "John Orono was a catholic Indian chief",
                 "latE6": 44880504,
                 "lngE6": -68674677,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -14137,7 +14308,7 @@
                 "description": "John Orono was a catholic Indian chief",
                 "latE6": 44880504,
                 "lngE6": -68674677,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1742072898366",
@@ -14199,7 +14370,7 @@
                 "title": "Littlefield Garden",
                 "latE6": 44903214,
                 "lngE6": -68661104,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -14218,7 +14389,7 @@
                 "title": "Littlefield Garden",
                 "latE6": 44903214,
                 "lngE6": -68661104,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1742074101333",
@@ -14250,7 +14421,7 @@
                 "description": "This studio is housed in the former fire station, making creative use of a historic campus space. Students are engaged in active learning here, with access to all manner of materials and tools.",
                 "latE6": 44900274,
                 "lngE6": -68665470,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -14261,7 +14432,7 @@
                 "title": "Somerset Sculpture",
                 "latE6": 44903510,
                 "lngE6": -68661712,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -14269,7 +14440,7 @@
                 "description": "This studio is housed in the former fire station, making creative use of a historic campus space. Students are engaged in active learning here, with access to all manner of materials and tools.",
                 "latE6": 44900274,
                 "lngE6": -68665470,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE",
               "linkCreationTimeMs": "1742070624065",
@@ -14283,7 +14454,7 @@
                 "title": "Somerset Sculpture",
                 "latE6": 44903510,
                 "lngE6": -68661712,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               }
             }
           ]
