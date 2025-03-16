@@ -171,14 +171,14 @@
 
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Alpha 2025 APAC" ? "selected" : ""
+            var selected = name == "+Alpha 2025 AMER" ? "selected" : ""
             $("#series").append(`<option value="${safe_name}" selected=${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
             plot_json(safe_name, json)
         }
-        $("#_alpha_2025_apac").show()
-        map.fitBounds(layer_lookup._alpha_2025_apac_ALPHA.getBounds())
+        $("#_alpha_2025_amer").show()
+        map.fitBounds(layer_lookup._alpha_2025_amer_ALPHA.getBounds())
         $("#series").change(function () {
             $(".series").hide()
             $(`#${this.value}`).show()
