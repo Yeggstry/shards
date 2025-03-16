@@ -1076,7 +1076,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Panama City, Panama",
+      "timezone": "America/Panama"
     },
     {
       "id": "shard-papa",
@@ -2279,7 +2281,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Buenos Aires, Argentina",
+      "timezone": "America/Argentina/Buenos_Aires"
     },
     {
       "id": "shard-sierra",
@@ -3424,7 +3428,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Oklahoma City, OK, United States",
+      "timezone": "America/Chicago"
     },
     {
       "id": "shard-whiskey",
@@ -4628,7 +4634,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Asunción, Paraguay",
+      "timezone": "America/Asuncion"
     },
     {
       "id": "shard-tango",
@@ -5876,7 +5884,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Piura, Peru",
+      "timezone": "America/Lima"
     },
     {
       "id": "shard-xray",
@@ -7098,7 +7108,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Norfolk, VA, United States",
+      "timezone": "America/New_York"
     },
     {
       "id": "shard-oscar",
@@ -8272,7 +8284,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Guadalajara, Jalisco, Mexico",
+      "timezone": "America/Mexico_City"
     },
     {
       "id": "shard-romeo",
@@ -9510,7 +9524,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Victoria, BC, Canada",
+      "timezone": "America/Vancouver"
     },
     {
       "id": "abaddon2",
@@ -10728,7 +10744,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Coquimbo, Chile",
+      "timezone": "America/Santiago"
     },
     {
       "id": "shard-uniform",
@@ -11924,7 +11942,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Tampa, FL, United States",
+      "timezone": "America/New_York"
     },
     {
       "id": "shard-bravo",
@@ -13183,7 +13203,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Goiânia, Brazil",
+      "timezone": "America/Sao_Paulo"
     },
     {
       "id": "shard-india",
@@ -14317,7 +14339,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Orono, ME, United States",
+      "timezone": "America/New_York"
     }
   ]
 }
