@@ -15,7 +15,7 @@ import geopandas as gpd
 tf = TimezoneFinder()
 
 dfs = []
-for url in ["https://ingress.com/news/2024-sharedmem", "https://ingress.com/news/2024-erasedmem", "https://ingress.com/news/2025-plusalpha"]:
+for url in ["https://ingress.com/news/2024-sharedmem", "https://ingress.com/news/2024-erasedmem", "https://ingress.com/news/2025-plusalpha", "https://ingress.com/news/2025-plustheta"]:
   r = requests.get(url)
   df = pd.DataFrame(re.findall(r"(?P<lat>-?\d+.\d+), (?P<lng>-?\d+.\d+)]\).bindPopup\('Shard Skirmish<br /> ?(?P<city>.+?)<br />(?P<date>.+?)'", r.text), columns=["lat", "lng", "city", "date"])
   df["series"] = url.split("/")[-1]
