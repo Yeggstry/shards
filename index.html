@@ -83,6 +83,16 @@
             iconAnchor: [15, 15],
         });
 
+        var shard_singulars = [
+            "Hervey Bay, Australia",
+            "Hobart, Australia",
+            "Niigata, Japan",
+            "Shizuoka, Japan",
+            "Shanghai (Baoshan District), China",
+            "Kota Kinabalu, Malaysia",
+            "Tuen Mun, Hong Kong",
+            "Bedok, Singapore"
+        ];
 
         window.layer_lookup = {}
         function plot_json(name, json) {
@@ -176,7 +186,8 @@
             console.log(name, data)
             data.sort((a, b) => a.id.localeCompare(b.id))
             var seen_links = {}
-            for (var f of data) {
+            for (var i in data) {
+                var f = data[i]
                 var layer = L.featureGroup().addTo(seriesLayer)
                 layer.data = f;
                 var resLinks = 0
@@ -241,7 +252,7 @@
                 var unique_id = name + "_" + f.id
                 layer_lookup[unique_id] = layer
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
-                html += `<button id="${unique_id}">${f.id}</button> ${scores}<br>`
+                html += `<button id="${unique_id}">${shard_singulars[i]}</button> ${scores}<br>`
             }
             html += "</div>"
             $("#controls").append(html)
