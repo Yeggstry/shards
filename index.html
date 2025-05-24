@@ -105,7 +105,8 @@
 
         window.layer_lookup = {}
         function plot_json(name, json) {
-            var seriesLayer = L.featureGroup()//.addTo(map)
+            var seriesLayer = L.featureGroup()
+            if (name.includes("theta_2025")) seriesLayer.addTo(map)
             layer_lookup[name] = seriesLayer;
             layerControl.addOverlay(seriesLayer, name);
             var html = `<div id="${name}" class="series" style="display:none">`
