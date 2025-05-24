@@ -87,6 +87,7 @@
         window.layer_lookup = {}
         function plot_json(name, json) {
             var seriesLayer = L.featureGroup()//.addTo(map)
+            layer_lookup[name] = seriesLayer;
             layerControl.addOverlay(seriesLayer, name);
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
@@ -276,6 +277,7 @@
         $("#series").change(function () {
             $(".series").hide()
             $(`#${this.value}`).show()
+            layer_lookup[this.value].addTo(map)
         })
         function buttonHandler() {
             var layer = layer_lookup[this.id]
