@@ -86,7 +86,7 @@
 
         window.layer_lookup = {}
         function plot_json(name, json) {
-            var seriesLayer = L.featureGroup().addTo(map)
+            var seriesLayer = L.featureGroup()//.addTo(map)
             layerControl.addOverlay(seriesLayer, name);
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
@@ -153,10 +153,94 @@
                         L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], { color: colors[spawn.destinationCapturerTeam] }).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${moveTimeMs}<br>No jump`).addTo(layer)
                     }
                 }
-                var unique_id = name + "_" + d.name
+                var unique_id = name + "_" + d.name.replace(" ", "_")
                 layer_lookup[unique_id] = layer
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
                 html += `<button id="${unique_id}">${d.city || d.name}</button> ${scores}<br>`
+            }
+            html += "</div>"
+            $("#controls").append(html)
+        }
+
+        function plot_json_singular(name, json) {
+            var seriesLayer = L.featureGroup()//.addTo(map)
+            layerControl.addOverlay(seriesLayer, name);
+            if (name == "_theta_2025_shard_singular") {
+                seriesLayer.addTo(map)
+            }
+            var html = `<div id="${name}" class="series" style="display:none">`
+            var data = json.artifact
+            data = data.filter(d => d.fragment)[0].fragment
+            if (!data.length) html += "JSON is empty"
+            console.log(name, data)
+            data.sort((a, b) => a.id.localeCompare(b.id))
+            var seen_links = {}
+            for (var f of data) {
+                var layer = L.featureGroup().addTo(seriesLayer)
+                layer.data = f;
+                var resLinks = 0
+                var redLinks = 0
+                var enlLinks = 0
+                var fizzles = 0
+                f.history.reverse()
+                var lls = []
+                var longLink = false;
+                var polylines = []
+                for (var h of f.history) {
+                    if (h.reason == "link" || h.reason == "jump") {
+                        var origin = h.originPortalInfo;
+                        var color = colors[h.linkCreatorTeam]
+                        var origin_ll = L.latLng(origin.latE6 / 1e6, origin.lngE6 / 1e6)
+                        L.circleMarker(origin_ll, { color: color }).bindTooltip(origin.title).addTo(layer)
+                        lls.push(origin_ll)
+                        var dest = h.destinationPortalInfo;
+                        var dest_ll = L.latLng(dest.latE6 / 1e6, dest.lngE6 / 1e6)
+                        L.circleMarker(dest_ll, { color: color }).bindTooltip(dest.title).addTo(layer)
+                        lls.push(dest_ll)
+                        var polyline = L.motion.polyline([origin_ll, dest_ll], { color: colors[h.linkCreatorTeam], dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }).addTo(layer);
+                        var linkCreationTimeMs = new Date(parseInt(h.linkCreationTimeMs)).toLocaleString(navigator.language)
+                        var moveTimeMs = new Date(parseInt(h.moveTimeMs)).toLocaleString(navigator.language)
+                        h.distance = origin_ll.distanceTo(dest_ll)
+                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${linkCreationTimeMs}<br>Jump time: ${moveTimeMs}<br>Distance: ${Math.round(h.distance).toLocaleString()}m`, { sticky: true })
+                        polylines.push(polyline)
+                        // 1 Season Point for each jump over a Link between 1km and 5km in length.
+                        // 3 Season Points for a single jump over a Link longer than 100km. No further points will be given for subsequent jumps by that Shard.
+                        if (longLink) continue;
+                        if (h.distance > 100_000) {
+                            longLink = true;
+                            if (h.linkCreatorTeam == "RESISTANCE") {
+                                resLinks += 3
+                            } else if (h.linkCreatorTeam == "MACHINA") {
+                                redLinks += 3
+                            } else {
+                                enlLinks += 3
+                            }
+                        } else if (h.distance > 1000 && h.distance < 5000) {
+                            if (h.linkCreatorTeam == "RESISTANCE") {
+                                resLinks++
+                            } else if (h.linkCreatorTeam == "MACHINA") {
+                                redLinks++
+                            } else {
+                                enlLinks++
+                            }
+                        } else {
+                            fizzles++
+                        }
+                    }
+                }
+                if (lls.length > 1) {
+                    var animated_shards = [L.motion.polyline(lls, { color: "transparent", interactive: false }, { auto: true, duration: 5000 }, { showMarker: true, removeOnEnd: false, icon: shardIcon, interactive: false }).addTo(layer)]
+                    for (var polyline of polylines) {
+                        polyline.animated_shards = animated_shards
+                        polyline.on("mouseover", function (e) {
+                            this.animated_shards.forEach(s => s.motionStart())
+                        })
+                    }
+                }
+                var unique_id = name + "_" + f.id
+                layer_lookup[unique_id] = layer
+                var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
+                html += `<button id="${unique_id}">${f.id}</button> ${scores}<br>`
             }
             html += "</div>"
             $("#controls").append(html)
@@ -167,19 +251,28 @@
             "Erased Memories 2024 AMER": "shard-jump-times-2024.11.17.09.14.04.json",
             "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
             "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json", 
-            "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json" 
+            "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
+            "+Theta 2025 Shard Singular": "shard-jump-times-2025.05.24.20.10.36.json"
         }
 
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Alpha 2025 AMER" ? "selected" : ""
-            $("#series").append(`<option value="${safe_name}" selected=${selected}>${name}</option>`)
+            var selected = name == "+Theta 2025 Shard Singular" ? "selected" : ""
+            $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
-            plot_json(safe_name, json)
+            if (name == "+Theta 2025 Shard Singular") {
+                plot_json_singular(safe_name, json)
+            } else {
+                plot_json(safe_name, json)
+            }
         }
-        $("#_alpha_2025_amer").show()
-        map.fitBounds(layer_lookup._alpha_2025_amer_ALPHA.getBounds())
+        $("#_theta_2025_shard_singular").show()
+        try {
+            map.fitBounds(layer_lookup._theta_2025_shard_singular_abaddon1_01.getBounds())
+        } catch (e) {
+            console.error("Error fitting bounds for Theta 2025 Shard Singular", e)
+        }
         $("#series").change(function () {
             $(".series").hide()
             $(`#${this.value}`).show()

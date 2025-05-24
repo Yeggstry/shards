@@ -1,0 +1,1085 @@
+{
+  "artifact": [
+    {
+      "id": "oscar",
+      "name": "Oscar"
+    },
+    {
+      "id": "golf",
+      "name": "Golf"
+    },
+    {
+      "id": "victor",
+      "name": "Victor"
+    },
+    {
+      "id": "india",
+      "name": "India"
+    },
+    {
+      "id": "bravo",
+      "name": "Bravo"
+    },
+    {
+      "id": "lima",
+      "name": "Lima"
+    },
+    {
+      "id": "alpha",
+      "name": "Alpha"
+    },
+    {
+      "id": "kilo",
+      "name": "Kilo"
+    },
+    {
+      "id": "sierra",
+      "name": "Sierra"
+    },
+    {
+      "id": "echo",
+      "name": "Echo"
+    },
+    {
+      "id": "tango",
+      "name": "Tango"
+    },
+    {
+      "id": "november",
+      "name": "November"
+    },
+    {
+      "id": "zulu",
+      "name": "Zulu"
+    },
+    {
+      "id": "xray",
+      "name": "Xray"
+    },
+    {
+      "id": "whiskey",
+      "name": "Whiskey"
+    },
+    {
+      "id": "delta",
+      "name": "Delta"
+    },
+    {
+      "id": "charlie",
+      "name": "Charlie"
+    },
+    {
+      "id": "quebec",
+      "name": "Quebec"
+    },
+    {
+      "id": "romeo",
+      "name": "Romeo"
+    },
+    {
+      "id": "mike",
+      "name": "Mike"
+    },
+    {
+      "id": "uniform",
+      "name": "Uniform"
+    },
+    {
+      "id": "papa",
+      "name": "Papa"
+    },
+    {
+      "id": "targetres",
+      "name": "Target RES"
+    },
+    {
+      "id": "abaddon2",
+      "name": "Abaddon 2"
+    },
+    {
+      "id": "yankee",
+      "name": "Yankee"
+    },
+    {
+      "id": "targetenl",
+      "name": "Target ENL"
+    },
+    {
+      "id": "juliet",
+      "name": "Juliet"
+    },
+    {
+      "id": "abaddon1",
+      "name": "Abaddon 1",
+      "fragment": [
+        {
+          "id": "abaddon1_06",
+          "currentPortalInfo": {
+            "title": "Holy Seal 611 Bread of Life",
+            "description": "Place of Worship",
+            "latE6": 5961831,
+            "lngE6": 116096757,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748073603138",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "沙巴卫理总部大厦",
+                "description": "新建的沙巴卫理教会总部，有办公室，咖啡厅，书局，以及38间的宿舍。",
+                "latE6": 5978260,
+                "lngE6": 116083618,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Holy Seal 611 Bread of Life",
+                "description": "Place of Worship",
+                "latE6": 5961831,
+                "lngE6": 116096757,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1747312255409",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070003336",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Pride of Sabah Mural",
+                "description": "A wall mural depicting the iconic symbols of the city. The Rafflesia, Atkinson Clock Tower and Menara Tun Mustaffa.",
+                "latE6": 5974565,
+                "lngE6": 116069912,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "沙巴卫理总部大厦",
+                "description": "新建的沙巴卫理教会总部，有办公室，咖啡厅，书局，以及38间的宿舍。",
+                "latE6": 5978260,
+                "lngE6": 116083618,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748068592703",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748066403231",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "The Roundabout Minaret",
+                "latE6": 5951907,
+                "lngE6": 116055180,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Pride of Sabah Mural",
+                "description": "A wall mural depicting the iconic symbols of the city. The Rafflesia, Atkinson Clock Tower and Menara Tun Mustaffa.",
+                "latE6": 5974565,
+                "lngE6": 116069912,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748065880094",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062803367",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Sabah State Mosque",
+                "latE6": 5959523,
+                "lngE6": 116067414,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "The Roundabout Minaret",
+                "latE6": 5951907,
+                "lngE6": 116055180,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748062713336",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748059206425",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "NLS Spade Graffiti",
+                "latE6": 5988274,
+                "lngE6": 116078676,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Sabah State Mosque",
+                "latE6": 5959523,
+                "lngE6": 116067414,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748059150315",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748055607689",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "NLS Spade Graffiti",
+                "latE6": 5988274,
+                "lngE6": 116078676,
+                "team": "ENLIGHTENED"
+              }
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_08",
+          "currentPortalInfo": {
+            "title": "Kebun Raya Batam",
+            "description": "Botanic garden",
+            "latE6": 1171784,
+            "lngE6": 104081249,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748073602149",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "BAY Club",
+                "description": "royal bay club house. include swimming pool, cafe, and child playground",
+                "latE6": 1130530,
+                "lngE6": 104063423,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Kebun Raya Batam",
+                "description": "Botanic garden",
+                "latE6": 1171784,
+                "lngE6": 104081249,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748073545316",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070006100",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Monde Bay Residences Playground",
+                "description": "Monde Bay Residences Playground - This is not private Residences Playground",
+                "latE6": 1153274,
+                "lngE6": 104050445,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "BAY Club",
+                "description": "royal bay club house. include swimming pool, cafe, and child playground",
+                "latE6": 1130530,
+                "lngE6": 104063423,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748069808570",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748066401083",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Marine Stewards Singapore Signboards",
+                "description": "This is a Friends of the Parks Community initiative supported by NParks",
+                "latE6": 1305267,
+                "lngE6": 103942237,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Monde Bay Residences Playground",
+                "description": "Monde Bay Residences Playground - This is not private Residences Playground",
+                "latE6": 1153274,
+                "lngE6": 104050445,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748066151752",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062807370",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "ECP Area D BBQ Pit 26",
+                "description": "A barbecue pit stationed in Area D",
+                "latE6": 1302601,
+                "lngE6": 103921058,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Marine Stewards Singapore Signboards",
+                "description": "This is a Friends of the Parks Community initiative supported by NParks",
+                "latE6": 1305267,
+                "lngE6": 103942237,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748061832817",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748059208246",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "East Coast Seafood Centre",
+                "latE6": 1305578,
+                "lngE6": 103929822,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "ECP Area D BBQ Pit 26",
+                "description": "A barbecue pit stationed in Area D",
+                "latE6": 1302601,
+                "lngE6": 103921058,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748058895717",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748055603664",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "East Coast Seafood Centre",
+                "latE6": 1305578,
+                "lngE6": 103929822,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_04",
+          "history": [
+            {
+              "moveTimeMs": "1748074200817",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "中島地区掲示板",
+                "description": "地域や行政からのお知らせを掲示している。",
+                "latE6": 34935837,
+                "lngE6": 138398183,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748073605132",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "塩田公園",
+                "description": "下島地区にある小さな公園です。",
+                "latE6": 34943305,
+                "lngE6": 138408758,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "中島地区掲示板",
+                "description": "地域や行政からのお知らせを掲示している。",
+                "latE6": 34935837,
+                "lngE6": 138398183,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073603054",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070005100",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "地蔵の祠",
+                "latE6": 34939045,
+                "lngE6": 138391113,
+                "team": "NEUTRAL"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "塩田公園",
+                "description": "下島地区にある小さな公園です。",
+                "latE6": 34943305,
+                "lngE6": 138408758,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748070002546",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748066406062",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748062806506",
+              "reason": "jump",
+              "originPortalInfo": {
+                "title": "中島浄化センター多目的広場案内板(北側)",
+                "description": "中島浄化センター多目的広場の北側に設置された施設案内板",
+                "latE6": 34932387,
+                "lngE6": 138398162,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "地蔵の祠",
+                "latE6": 34939045,
+                "lngE6": 138391113,
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748059204049",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055605096",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748052003993",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "中島浄化センター多目的広場案内板(北側)",
+                "description": "中島浄化センター多目的広場の北側に設置された施設案内板",
+                "latE6": 34932387,
+                "lngE6": 138398162,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_03",
+          "history": [
+            {
+              "moveTimeMs": "1748074201628",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "二頭のイルカ",
+                "description": "マリンピア日本海",
+                "latE6": 37924027,
+                "lngE6": 139028182,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748073606261",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "早川堀を跳ねる錦鯉",
+                "description": "しもまちの魅力を発信する「はじめて、しもまち。プロジェクト」での企画で描かれたシャッターアート。イラスト製作は西山りっく(絵本作家)。早川堀通りエリアの３箇所にあります。",
+                "latE6": 37930810,
+                "lngE6": 139055047,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "二頭のイルカ",
+                "description": "マリンピア日本海",
+                "latE6": 37924027,
+                "lngE6": 139028182,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073387569",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070003066",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748066404212",
+              "reason": "jump",
+              "originPortalInfo": {
+                "title": "山田花作歌碑",
+                "latE6": 37927599,
+                "lngE6": 139041374,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "早川堀を跳ねる錦鯉",
+                "description": "しもまちの魅力を発信する「はじめて、しもまち。プロジェクト」での企画で描かれたシャッターアート。イラスト製作は西山りっく(絵本作家)。早川堀通りエリアの３箇所にあります。",
+                "latE6": 37930810,
+                "lngE6": 139055047,
+                "team": "ENLIGHTENED"
+              }
+            },
+            {
+              "moveTimeMs": "1748062803046",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748059202047",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055602296",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "西海岸公園自由広場BBQ東屋",
+                "description": "西海岸公園自由広場に限りカセットコンロのみ使用可能で、薪、炭などの使用は禁止です。マナーを守って利用しましょう。",
+                "latE6": 37918587,
+                "lngE6": 139020104,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "山田花作歌碑",
+                "latE6": 37927599,
+                "lngE6": 139041374,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748055565336",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748052002672",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "西海岸公園自由広場BBQ東屋",
+                "description": "西海岸公園自由広場に限りカセットコンロのみ使用可能で、薪、炭などの使用は禁止です。マナーを守って利用しましょう。",
+                "latE6": 37918587,
+                "lngE6": 139020104,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_02",
+          "history": [
+            {
+              "moveTimeMs": "1748070600849",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Spidertech Wall Climber",
+                "description": "big icon on business wall",
+                "latE6": -42870427,
+                "lngE6": 147319282,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748070002388",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Metal People",
+                "description": "Sculpture outlines of people",
+                "latE6": -42886476,
+                "lngE6": 147319818,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Spidertech Wall Climber",
+                "description": "big icon on business wall",
+                "latE6": -42870427,
+                "lngE6": 147319282,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748066843189",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748066408100",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Friends' Park Statue",
+                "latE6": -42876714,
+                "lngE6": 147308407,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Metal People",
+                "description": "Sculpture outlines of people",
+                "latE6": -42886476,
+                "lngE6": 147319818,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748064056085",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062805364",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Aboriginal Dance",
+                "description": "Mural at Eumarrah organic food store",
+                "latE6": -42885086,
+                "lngE6": 147321922,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Friends' Park Statue",
+                "latE6": -42876714,
+                "lngE6": 147308407,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748060886052",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748059207319",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Pack Mentality",
+                "description": "A herd of masks. Softened wool and sharpened teeth. The wolf amongst the sheep.\nPainted by Camilla Yencken, 2017",
+                "latE6": -42871980,
+                "lngE6": 147317854,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Aboriginal Dance",
+                "description": "Mural at Eumarrah organic food store",
+                "latE6": -42885086,
+                "lngE6": 147321922,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748056527587",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748055605257",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Hobart City Mission",
+                "latE6": -42885243,
+                "lngE6": 147321799,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Pack Mentality",
+                "description": "A herd of masks. Softened wool and sharpened teeth. The wolf amongst the sheep.\nPainted by Camilla Yencken, 2017",
+                "latE6": -42871980,
+                "lngE6": 147317854,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748053330350",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748052002232",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Pigeons of Hobart",
+                "latE6": -42880779,
+                "lngE6": 147332470,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Hobart City Mission",
+                "latE6": -42885243,
+                "lngE6": 147321799,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748049516901",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748048400918",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Pigeons of Hobart",
+                "latE6": -42880779,
+                "lngE6": 147332470,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_07",
+          "currentPortalInfo": {
+            "title": "母子嬉戲銅像",
+            "description": "一對母子挽手嬉戲的銅像，令路經的人都能感受到一份無憂無慮的快樂",
+            "latE6": 22368155,
+            "lngE6": 114000873,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748073604264",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Tuen Mun Pier Promenade Lighthouse",
+                "description": "屯門海濱花園燈塔",
+                "latE6": 22370870,
+                "lngE6": 113974013,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "母子嬉戲銅像",
+                "description": "一對母子挽手嬉戲的銅像，令路經的人都能感受到一份無憂無慮的快樂",
+                "latE6": 22368155,
+                "lngE6": 114000873,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073540052",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070008315",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Wu Tsui House playground",
+                "description": "Stop near Wu Tsui House.",
+                "latE6": 22377199,
+                "lngE6": 113965393,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Tuen Mun Pier Promenade Lighthouse",
+                "description": "屯門海濱花園燈塔",
+                "latE6": 22370870,
+                "lngE6": 113974013,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748069884594",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748066402530",
+              "reason": "jump",
+              "originPortalInfo": {
+                "title": "Tuen Mun Ferry Pier Promenade Gate",
+                "latE6": 22372985,
+                "lngE6": 113971144,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Wu Tsui House playground",
+                "description": "Stop near Wu Tsui House.",
+                "latE6": 22377199,
+                "lngE6": 113965393,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748062800232",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748059203058",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055602662",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Tuen Mun Ferry Pier Promenade Gate",
+                "latE6": 22372985,
+                "lngE6": 113971144,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_01",
+          "history": [
+            {
+              "moveTimeMs": "1748070601641",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Local Lost Fishermen Memorial",
+                "latE6": -25288192,
+                "lngE6": 152926379,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748070006727",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748066406128",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Webb Park Gazebo",
+                "description": "A picnic Gazebo that overlooks the swings in Webb Park.",
+                "latE6": -25266920,
+                "lngE6": 152823506,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Local Lost Fishermen Memorial",
+                "latE6": -25288192,
+                "lngE6": 152926379,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748064296459",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062802223",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Sailaway Picnic Shelter",
+                "description": "Lovely rest area to sit and enjoy the cool breeze",
+                "latE6": -25274987,
+                "lngE6": 152804413,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Webb Park Gazebo",
+                "description": "A picnic Gazebo that overlooks the swings in Webb Park.",
+                "latE6": -25266920,
+                "lngE6": 152823506,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748062074318",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748059202257",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Webb park",
+                "latE6": -25267408,
+                "lngE6": 152823091,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Sailaway Picnic Shelter",
+                "description": "Lovely rest area to sit and enjoy the cool breeze",
+                "latE6": -25274987,
+                "lngE6": 152804413,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748058738562",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748055607326",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Gatakers Bay Gazebo A",
+                "description": "Gazebo beside the water at Gatakers Bay. With power and a nearby BBQ.",
+                "latE6": -25246421,
+                "lngE6": 152810333,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Webb park",
+                "latE6": -25267408,
+                "lngE6": 152823091,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748053700583",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748052004740",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Arkarra Tea Gardens",
+                "description": "Local tourist attraction",
+                "latE6": -25276576,
+                "lngE6": 152759054,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Gatakers Bay Gazebo A",
+                "description": "Gazebo beside the water at Gatakers Bay. With power and a nearby BBQ.",
+                "latE6": -25246421,
+                "lngE6": 152810333,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748051980483",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748048401629",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Arkarra Tea Gardens",
+                "description": "Local tourist attraction",
+                "latE6": -25276576,
+                "lngE6": 152759054,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_05",
+          "currentPortalInfo": {
+            "title": "贤达圆底石座喷泉",
+            "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
+            "latE6": 31489595,
+            "lngE6": 121829909,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748073601360",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "滨江森林公园",
+                "latE6": 31381320,
+                "lngE6": 121523406,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "贤达圆底石座喷泉",
+                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
+                "latE6": 31489595,
+                "lngE6": 121829909,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073412524",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070000225",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748066405402",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "读书台",
+                "description": "是这仨字吧",
+                "latE6": 31396765,
+                "lngE6": 121508254,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "滨江森林公园",
+                "latE6": 31381320,
+                "lngE6": 121523406,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748066117229",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062807072",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748059200310",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055600767",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "读书台",
+                "description": "是这仨字吧",
+                "latE6": 31396765,
+                "lngE6": 121508254,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foxtrot",
+      "name": "Foxtrot"
+    },
+    {
+      "id": "hotel",
+      "name": "Hotel"
+    }
+  ]
+}
