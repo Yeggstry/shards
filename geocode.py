@@ -12,6 +12,7 @@ from tqdm.auto import tqdm
 import re
 import pandas as pd
 import geopandas as gpd
+from pprint import pprint
 tf = TimezoneFinder()
 
 dfs = []
@@ -36,15 +37,28 @@ for f in tqdm(files):
     data = json.load(file)
     filtered_data = [d for d in data["artifact"] if d.get("fragment")]
     for d in tqdm(filtered_data):
-      samplePortal = d["fragment"][0]["history"][-1]["destinationPortalInfo"]
-      lat = samplePortal["latE6"] / 1e6
-      lng = samplePortal["lngE6"] / 1e6
-      df["distance"] = df.distance(Point(lng, lat))
-      df = df.sort_values("distance")
-      city = df.iloc[0]["city"]
-      timezone = tf.timezone_at(lng=lng, lat=lat)
-      print(d["name"], city, timezone)
-      d["city"] = city
-      d["timezone"] = timezone
+      if f == "shard-jump-times-2025.05.24.21.01.29.json":
+        for shard in d["fragment"]:
+          samplePortal = shard["history"][-1]["destinationPortalInfo"]
+          lat = samplePortal["latE6"] / 1e6
+          lng = samplePortal["lngE6"] / 1e6
+          df["distance"] = df.distance(Point(lng, lat))
+          df = df.sort_values("distance")
+          city = df.iloc[0]["city"]
+          timezone = tf.timezone_at(lng=lng, lat=lat)
+          print(d["name"], city, timezone)
+          #shard["city"] = city
+          shard["timezone"] = timezone
+      else:
+        samplePortal = d["fragment"][0]["history"][-1]["destinationPortalInfo"]
+        lat = samplePortal["latE6"] / 1e6
+        lng = samplePortal["lngE6"] / 1e6
+        df["distance"] = df.distance(Point(lng, lat))
+        df = df.sort_values("distance")
+        city = df.iloc[0]["city"]
+        timezone = tf.timezone_at(lng=lng, lat=lat)
+        print(d["name"], city, timezone)
+        d["city"] = city
+        d["timezone"] = timezone
   with open(f, "w") as file:
     json.dump(data, file, indent=2, ensure_ascii=False)

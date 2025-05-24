@@ -210,8 +210,8 @@
                         L.circleMarker(dest_ll, { color: color }).bindTooltip(dest.title).addTo(layer)
                         lls.push(dest_ll)
                         var polyline = L.motion.polyline([origin_ll, dest_ll], { color: colors[h.linkCreatorTeam], dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }).addTo(layer);
-                        var linkCreationTimeMs = new Date(parseInt(h.linkCreationTimeMs)).toLocaleString(navigator.language)
-                        var moveTimeMs = new Date(parseInt(h.moveTimeMs)).toLocaleString(navigator.language)
+                        var linkCreationTimeMs = new Date(parseInt(h.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: f.timezone })
+                        var moveTimeMs = new Date(parseInt(h.moveTimeMs)).toLocaleString(navigator.language, { timeZone: f.timezone })
                         h.distance = origin_ll.distanceTo(dest_ll)
                         polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${linkCreationTimeMs}<br>Jump time: ${moveTimeMs}<br>Distance: ${Math.round(h.distance).toLocaleString()}m`, { sticky: true })
                         polylines.push(polyline)
