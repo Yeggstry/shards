@@ -113,6 +113,90 @@
       "name": "Abaddon 1",
       "fragment": [
         {
+          "id": "abaddon1_05",
+          "currentPortalInfo": {
+            "title": "贤达圆底石座喷泉",
+            "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
+            "latE6": 31489595,
+            "lngE6": 121829909,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748077202045",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748073601360",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "滨江森林公园",
+                "latE6": 31381320,
+                "lngE6": 121523406,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "贤达圆底石座喷泉",
+                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
+                "latE6": 31489595,
+                "lngE6": 121829909,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073412524",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070000225",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748066405402",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "读书台",
+                "description": "是这仨字吧",
+                "latE6": 31396765,
+                "lngE6": 121508254,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "滨江森林公园",
+                "latE6": 31381320,
+                "lngE6": 121523406,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748066117229",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062807072",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748059200310",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055600767",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "读书台",
+                "description": "是这仨字吧",
+                "latE6": 31396765,
+                "lngE6": 121508254,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
           "id": "abaddon1_06",
           "currentPortalInfo": {
             "title": "Holy Seal 611 Bread of Life",
@@ -123,6 +207,10 @@
           },
           "history": [
             {
+              "moveTimeMs": "1748077203051",
+              "reason": "no move"
+            },
+            {
               "moveTimeMs": "1748073603138",
               "reason": "link",
               "originPortalInfo": {
@@ -130,7 +218,7 @@
                 "description": "新建的沙巴卫理教会总部，有办公室，咖啡厅，书局，以及38间的宿舍。",
                 "latE6": 5978260,
                 "lngE6": 116083618,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -161,7 +249,7 @@
                 "description": "新建的沙巴卫理教会总部，有办公室，咖啡厅，书局，以及38间的宿舍。",
                 "latE6": 5978260,
                 "lngE6": 116083618,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1748068592703",
@@ -245,143 +333,6 @@
           ]
         },
         {
-          "id": "abaddon1_08",
-          "currentPortalInfo": {
-            "title": "Kebun Raya Batam",
-            "description": "Botanic garden",
-            "latE6": 1171784,
-            "lngE6": 104081249,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1748073602149",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "BAY Club",
-                "description": "royal bay club house. include swimming pool, cafe, and child playground",
-                "latE6": 1130530,
-                "lngE6": 104063423,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Kebun Raya Batam",
-                "description": "Botanic garden",
-                "latE6": 1171784,
-                "lngE6": 104081249,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1748073545316",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748070006100",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Monde Bay Residences Playground",
-                "description": "Monde Bay Residences Playground - This is not private Residences Playground",
-                "latE6": 1153274,
-                "lngE6": 104050445,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "BAY Club",
-                "description": "royal bay club house. include swimming pool, cafe, and child playground",
-                "latE6": 1130530,
-                "lngE6": 104063423,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748069808570",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748066401083",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Marine Stewards Singapore Signboards",
-                "description": "This is a Friends of the Parks Community initiative supported by NParks",
-                "latE6": 1305267,
-                "lngE6": 103942237,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Monde Bay Residences Playground",
-                "description": "Monde Bay Residences Playground - This is not private Residences Playground",
-                "latE6": 1153274,
-                "lngE6": 104050445,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748066151752",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748062807370",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "ECP Area D BBQ Pit 26",
-                "description": "A barbecue pit stationed in Area D",
-                "latE6": 1302601,
-                "lngE6": 103921058,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Marine Stewards Singapore Signboards",
-                "description": "This is a Friends of the Parks Community initiative supported by NParks",
-                "latE6": 1305267,
-                "lngE6": 103942237,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748061832817",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1748059208246",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "East Coast Seafood Centre",
-                "latE6": 1305578,
-                "lngE6": 103929822,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "ECP Area D BBQ Pit 26",
-                "description": "A barbecue pit stationed in Area D",
-                "latE6": 1302601,
-                "lngE6": 103921058,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1748058895717",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748055603664",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "East Coast Seafood Centre",
-                "latE6": 1305578,
-                "lngE6": 103929822,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED"
-            }
-          ]
-        },
-        {
           "id": "abaddon1_04",
           "history": [
             {
@@ -392,7 +343,7 @@
                 "description": "地域や行政からのお知らせを掲示している。",
                 "latE6": 34935837,
                 "lngE6": 138398183,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -412,7 +363,7 @@
                 "description": "地域や行政からのお知らせを掲示している。",
                 "latE6": 34935837,
                 "lngE6": 138398183,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1748073603054",
@@ -509,7 +460,7 @@
                 "description": "しもまちの魅力を発信する「はじめて、しもまち。プロジェクト」での企画で描かれたシャッターアート。イラスト製作は西山りっく(絵本作家)。早川堀通りエリアの３箇所にあります。",
                 "latE6": 37930810,
                 "lngE6": 139055047,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -543,7 +494,7 @@
                 "description": "しもまちの魅力を発信する「はじめて、しもまち。プロジェクト」での企画で描かれたシャッターアート。イラスト製作は西山りっく(絵本作家)。早川堀通りエリアの３箇所にあります。",
                 "latE6": 37930810,
                 "lngE6": 139055047,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               }
             },
             {
@@ -754,13 +705,36 @@
         {
           "id": "abaddon1_07",
           "currentPortalInfo": {
-            "title": "母子嬉戲銅像",
-            "description": "一對母子挽手嬉戲的銅像，令路經的人都能感受到一份無憂無慮的快樂",
-            "latE6": 22368155,
-            "lngE6": 114000873,
+            "title": "大欖角機場多普勒天氣雷達站",
+            "description": "天氣雷達站 標誌性建築",
+            "latE6": 22358750,
+            "lngE6": 114021235,
             "team": "ENLIGHTENED"
           },
           "history": [
+            {
+              "moveTimeMs": "1748077202303",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "母子嬉戲銅像",
+                "description": "一對母子挽手嬉戲的銅像，令路經的人都能感受到一份無憂無慮的快樂",
+                "latE6": 22368155,
+                "lngE6": 114000873,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "大欖角機場多普勒天氣雷達站",
+                "description": "天氣雷達站 標誌性建築",
+                "latE6": 22358750,
+                "lngE6": 114021235,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748076362182",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
             {
               "moveTimeMs": "1748073604264",
               "reason": "link",
@@ -769,7 +743,7 @@
                 "description": "屯門海濱花園燈塔",
                 "latE6": 22370870,
                 "lngE6": 113974013,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -800,9 +774,9 @@
                 "description": "屯門海濱花園燈塔",
                 "latE6": 22370870,
                 "lngE6": 113974013,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1748069884594",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
@@ -844,6 +818,164 @@
                 "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_08",
+          "currentPortalInfo": {
+            "title": "Masjid Al Tarempa",
+            "latE6": 3216440,
+            "lngE6": 106216275,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748077201428",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Kebun Raya Batam",
+                "description": "Botanic garden",
+                "latE6": 1171784,
+                "lngE6": 104081249,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Masjid Al Tarempa",
+                "latE6": 3216440,
+                "lngE6": 106216275,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748076824543",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748073602149",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "BAY Club",
+                "description": "royal bay club house. include swimming pool, cafe, and child playground",
+                "latE6": 1130530,
+                "lngE6": 104063423,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Kebun Raya Batam",
+                "description": "Botanic garden",
+                "latE6": 1171784,
+                "lngE6": 104081249,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748073545316",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070006100",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Monde Bay Residences Playground",
+                "description": "Monde Bay Residences Playground - This is not private Residences Playground",
+                "latE6": 1153274,
+                "lngE6": 104050445,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "BAY Club",
+                "description": "royal bay club house. include swimming pool, cafe, and child playground",
+                "latE6": 1130530,
+                "lngE6": 104063423,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748069808570",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748066401083",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Marine Stewards Singapore Signboards",
+                "description": "This is a Friends of the Parks Community initiative supported by NParks",
+                "latE6": 1305267,
+                "lngE6": 103942237,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Monde Bay Residences Playground",
+                "description": "Monde Bay Residences Playground - This is not private Residences Playground",
+                "latE6": 1153274,
+                "lngE6": 104050445,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748066151752",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748062807370",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "ECP Area D BBQ Pit 26",
+                "description": "A barbecue pit stationed in Area D",
+                "latE6": 1302601,
+                "lngE6": 103921058,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Marine Stewards Singapore Signboards",
+                "description": "This is a Friends of the Parks Community initiative supported by NParks",
+                "latE6": 1305267,
+                "lngE6": 103942237,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748061832817",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748059208246",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "East Coast Seafood Centre",
+                "latE6": 1305578,
+                "lngE6": 103929822,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "ECP Area D BBQ Pit 26",
+                "description": "A barbecue pit stationed in Area D",
+                "latE6": 1302601,
+                "lngE6": 103921058,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748058895717",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748055603664",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "East Coast Seafood Centre",
+                "latE6": 1305578,
+                "lngE6": 103929822,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
             }
           ]
         },
@@ -988,86 +1120,6 @@
                 "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ]
-        },
-        {
-          "id": "abaddon1_05",
-          "currentPortalInfo": {
-            "title": "贤达圆底石座喷泉",
-            "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
-            "latE6": 31489595,
-            "lngE6": 121829909,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1748073601360",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "滨江森林公园",
-                "latE6": 31381320,
-                "lngE6": 121523406,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "贤达圆底石座喷泉",
-                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
-                "latE6": 31489595,
-                "lngE6": 121829909,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748073412524",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748070000225",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748066405402",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "读书台",
-                "description": "是这仨字吧",
-                "latE6": 31396765,
-                "lngE6": 121508254,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "滨江森林公园",
-                "latE6": 31381320,
-                "lngE6": 121523406,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748066117229",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748062807072",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748059200310",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748055600767",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "读书台",
-                "description": "是这仨字吧",
-                "latE6": 31396765,
-                "lngE6": 121508254,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
             }
           ]
         }
