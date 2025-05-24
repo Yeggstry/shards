@@ -92,7 +92,15 @@
             "Shanghai (Baoshan District), China",
             "Kota Kinabalu, Malaysia",
             "Tuen Mun, Hong Kong",
-            "Bedok, Singapore"
+            "Bedok, Singapore",
+            "Santiago, Chile",
+            "Lima, Peru",
+            "Toronto, Canada",
+            "San Jose, Costa Rica",
+            "Monterrey, Mexico",
+            "Salt Lake City, UT, USA",
+            "Las Vegas, NV, USA",
+            "San Diego, CA, USA"
         ];
 
         window.layer_lookup = {}
@@ -105,9 +113,10 @@
             data = data.filter(d => d.fragment)
             if (!data.length) html += "JSON is empty"
             data.sort((a, b) => a.name.localeCompare(b.name))
-            console.log(data)
+            console.log(name, data)
             var seen_links = {}
             for (var d of data) {
+                if (d.id == "abaddon1") continue;
                 var layer = L.featureGroup().addTo(seriesLayer)
                 layer.data = d;
                 var resLinks = 0
@@ -182,7 +191,7 @@
             }
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
-            data = data.filter(d => d.fragment)[0].fragment
+            data = data.filter(d => d.id == "abaddon1")[0].fragment
             if (!data.length) html += "JSON is empty"
             console.log(name, data)
             data.sort((a, b) => a.id.localeCompare(b.id))
@@ -265,12 +274,13 @@
             "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
             "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json", 
             "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
-            "+Theta 2025 Shard Singular": "shard-jump-times-2025.05.24.21.01.29.json"
+            "+Theta 2025 Shard Singular": "shard-jump-times-2025.05.25.09.54.28.json",
+            "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.09.54.28.json",
         }
 
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Theta 2025 Shard Singular" ? "selected" : ""
+            var selected = name == "+Theta 2025 EMEA" ? "selected" : ""
             $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
@@ -280,11 +290,11 @@
                 plot_json(safe_name, json)
             }
         }
-        $("#_theta_2025_shard_singular").show()
+        $("#_theta_2025_emea").show()
         try {
-            map.fitBounds(layer_lookup._theta_2025_shard_singular_abaddon1_01.getBounds())
+            map.fitBounds(layer_lookup._theta_2025_emea_Alpha.getBounds())
         } catch (e) {
-            console.error("Error fitting bounds for Theta 2025 Shard Singular", e)
+            console.error("Error fitting bounds", e)
         }
         $("#series").change(function () {
             $(".series").hide()

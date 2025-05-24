@@ -37,7 +37,7 @@ for f in tqdm(files):
     data = json.load(file)
     filtered_data = [d for d in data["artifact"] if d.get("fragment")]
     for d in tqdm(filtered_data):
-      if f == "shard-jump-times-2025.05.24.21.01.29.json":
+      if d["id"] == "abaddon1":
         for shard in d["fragment"]:
           samplePortal = shard["history"][-1]["destinationPortalInfo"]
           lat = samplePortal["latE6"] / 1e6
