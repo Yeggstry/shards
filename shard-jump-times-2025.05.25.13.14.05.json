@@ -737,7 +737,7 @@
                 "description": "Magnifique fronton Sculpté avec les initiales M et C",
                 "latE6": 47903922,
                 "lngE6": 1915602,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -760,7 +760,7 @@
                 "description": "Magnifique fronton Sculpté avec les initiales M et C",
                 "latE6": 47903922,
                 "lngE6": 1915602,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -776,7 +776,7 @@
                 "title": "Orléans - Centre de Conférence",
                 "latE6": 47904020,
                 "lngE6": 1917937,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               }
             },
             {
@@ -790,7 +790,7 @@
                 "title": "Orléans - Centre de Conférence",
                 "latE6": 47904020,
                 "lngE6": 1917937,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -851,7 +851,7 @@
                 "description": "Sculpture de vigne sur pierre",
                 "latE6": 47894851,
                 "lngE6": 1904742,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -873,7 +873,7 @@
                 "description": "Sculpture de vigne sur pierre",
                 "latE6": 47894851,
                 "lngE6": 1904742,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -902,7 +902,7 @@
                 "description": "Ornement de contour de fenêtre très travaillée d une maison historique",
                 "latE6": 47905503,
                 "lngE6": 1908389,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -925,7 +925,7 @@
                 "description": "Ornement de contour de fenêtre très travaillée d une maison historique",
                 "latE6": 47905503,
                 "lngE6": 1908389,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -994,7 +994,7 @@
                 "description": "Ensemble de cinq sculptures en tôle d'acier installées en 1976. Œuvre de Roger Toulouse (1918-1994).",
                 "latE6": 47904002,
                 "lngE6": 1915117,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -1010,7 +1010,7 @@
                 "description": "Ensemble de cinq sculptures en tôle d'acier installées en 1976. Œuvre de Roger Toulouse (1918-1994).",
                 "latE6": 47904002,
                 "lngE6": 1915117,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -1122,7 +1122,7 @@
                 "description": "Gravure pour rappeler le nom de l’architecte du batiment",
                 "latE6": 47904162,
                 "lngE6": 1916176,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -1145,7 +1145,7 @@
                 "description": "Gravure pour rappeler le nom de l’architecte du batiment",
                 "latE6": 47904162,
                 "lngE6": 1916176,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -2151,7 +2151,7 @@
                 "description": "a wee pub but definitely a local pub, with a good selection of standard beers, live music, banter, good staff and a friendly atmosphere. On some nights you can hear when walking past sounds of murder and pain - not to worry its karaoke night.",
                 "latE6": 55857772,
                 "lngE6": -4248446,
-                "team": "ENLIGHTENED"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -2174,7 +2174,7 @@
                 "description": "a wee pub but definitely a local pub, with a good selection of standard beers, live music, banter, good staff and a friendly atmosphere. On some nights you can hear when walking past sounds of murder and pain - not to worry its karaoke night.",
                 "latE6": 55857772,
                 "lngE6": -4248446,
-                "team": "ENLIGHTENED"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -2666,7 +2666,7 @@
                 "description": "Aakkoset 2014 -maalausprojekti on osa UNICEF-kaupunkivuoden tavoitetta tehdä Lahdesta lapsiystävällinen kaupunki. Projekti sai alkunsa ideasta, että päiväkotien ympäristöjen sähkökopit saisivat väriä pintaan päiväkotilaisten riemuksi.\n\nLahtelaiset graafikot Riikka Hoskola ja Mikko Hämäläinen ideoivat ja toteuttivat projektin syksyn 2014 aikana. Kaikki 29 kirjainta maalattiin eripuolille Lahtea.",
                 "latE6": 60979872,
                 "lngE6": 25666881,
-                "team": "ENLIGHTENED"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -2689,7 +2689,7 @@
                 "description": "Aakkoset 2014 -maalausprojekti on osa UNICEF-kaupunkivuoden tavoitetta tehdä Lahdesta lapsiystävällinen kaupunki. Projekti sai alkunsa ideasta, että päiväkotien ympäristöjen sähkökopit saisivat väriä pintaan päiväkotilaisten riemuksi.\n\nLahtelaiset graafikot Riikka Hoskola ja Mikko Hämäläinen ideoivat ja toteuttivat projektin syksyn 2014 aikana. Kaikki 29 kirjainta maalattiin eripuolille Lahtea.",
                 "latE6": 60979872,
                 "lngE6": 25666881,
-                "team": "ENLIGHTENED"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -3191,7 +3191,7 @@
                 "description": "Kauko Kortelaisen tekemä vuonna 1997 paljastettu sairaalanmäellä kansanopistonpuistossa sijaitseva patsas. \nRahoitettu kansalaiskeräyksellä ja kaupungin avustuksella. \nKunnianosoitus sotilaspoikatoiminnassa mukana olleille.",
                 "latE6": 60979759,
                 "lngE6": 25662003,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -3214,7 +3214,7 @@
                 "description": "Kauko Kortelaisen tekemä vuonna 1997 paljastettu sairaalanmäellä kansanopistonpuistossa sijaitseva patsas. \nRahoitettu kansalaiskeräyksellä ja kaupungin avustuksella. \nKunnianosoitus sotilaspoikatoiminnassa mukana olleille.",
                 "latE6": 60979759,
                 "lngE6": 25662003,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
@@ -5160,7 +5160,7 @@
                 "description": "Direktørboligen er bygget i 1874 da Drammen ble bygget opp igjen etter bybrannen i 1866. Boligen har vært hjem for to generasjoner administrerende direktør i Aass. En av byens best bevarte Drammenshus. I dag er det selskapslokaler.",
                 "latE6": 59741863,
                 "lngE6": 10212151,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -5183,7 +5183,7 @@
                 "description": "Direktørboligen er bygget i 1874 da Drammen ble bygget opp igjen etter bybrannen i 1866. Boligen har vært hjem for to generasjoner administrerende direktør i Aass. En av byens best bevarte Drammenshus. I dag er det selskapslokaler.",
                 "latE6": 59741863,
                 "lngE6": 10212151,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -5199,7 +5199,7 @@
                 "title": "Hengebuksvin",
                 "latE6": 59740246,
                 "lngE6": 10213977,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -5218,7 +5218,7 @@
                 "title": "Hengebuksvin",
                 "latE6": 59740246,
                 "lngE6": 10213977,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1748100901339",
@@ -5249,7 +5249,7 @@
                 "title": "Hengebuksvin",
                 "latE6": 59740246,
                 "lngE6": 10213977,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -5261,14 +5261,14 @@
                 "description": "Opp 1868 for overlerer Morten Album, senere eier fabrikant Guldbrand Onsager Drammen Trygdekasse. Arkitekt Niels Evkhoff.",
                 "latE6": 59742330,
                 "lngE6": 10210754,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
                 "title": "Hengebuksvin",
                 "latE6": 59740246,
                 "lngE6": 10213977,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1748100721100",
@@ -5283,7 +5283,7 @@
                 "description": "Opp 1868 for overlerer Morten Album, senere eier fabrikant Guldbrand Onsager Drammen Trygdekasse. Arkitekt Niels Evkhoff.",
                 "latE6": 59742330,
                 "lngE6": 10210754,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -5449,7 +5449,7 @@
                 "description": "Build in 1902 as public bathhouse 1918-2008. Architect Jens Kristian Thune, engineer Søren Falk",
                 "latE6": 59742425,
                 "lngE6": 10209861,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -5472,7 +5472,7 @@
                 "description": "Build in 1902 as public bathhouse 1918-2008. Architect Jens Kristian Thune, engineer Søren Falk",
                 "latE6": 59742425,
                 "lngE6": 10209861,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
@@ -5489,7 +5489,7 @@
                 "description": "En statue av en liten bjørn som gråter etter sin mor.",
                 "latE6": 59742601,
                 "lngE6": 10209616,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -5505,7 +5505,7 @@
                 "description": "En statue av en liten bjørn som gråter etter sin mor.",
                 "latE6": 59742601,
                 "lngE6": 10209616,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -6078,7 +6078,7 @@
                 "title": "Wave on Wall",
                 "latE6": 59857480,
                 "lngE6": 17645592,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -6099,7 +6099,7 @@
                 "title": "Wave on Wall",
                 "latE6": 59857480,
                 "lngE6": 17645592,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -7040,7 +7040,7 @@
                 "title": "Wave on Wall",
                 "latE6": 59857480,
                 "lngE6": 17645592,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -7058,7 +7058,7 @@
                 "title": "Wave on Wall",
                 "latE6": 59857480,
                 "lngE6": 17645592,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1748099666854",
@@ -7197,7 +7197,7 @@
                 "description": "Na ovom mestu je bila kuća, u kojoj je 1830 godine nastala prva apoteka",
                 "latE6": 44817696,
                 "lngE6": 20452573,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -7209,7 +7209,7 @@
                 "description": "Princ glume i čudo od čoveka",
                 "latE6": 44821090,
                 "lngE6": 20462563,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -7217,7 +7217,7 @@
                 "description": "Na ovom mestu je bila kuća, u kojoj je 1830 godine nastala prva apoteka",
                 "latE6": 44817696,
                 "lngE6": 20452573,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED",
               "linkCreationTimeMs": "1748097283774",
@@ -7232,7 +7232,7 @@
                 "description": "Princ glume i čudo od čoveka",
                 "latE6": 44821090,
                 "lngE6": 20462563,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -7261,7 +7261,7 @@
                 "description": "Osnovan 1910. Beograd Srbija",
                 "latE6": 44813134,
                 "lngE6": 20460877,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE",
               "destinationPortalInfo": {
@@ -7284,7 +7284,7 @@
                 "description": "Osnovan 1910. Beograd Srbija",
                 "latE6": 44813134,
                 "lngE6": 20460877,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -7565,7 +7565,7 @@
                 "description": "To freedom fighters who were hanged by Nazis on Terazije square  on August 17th 1941:\nJovan Janković, worker\nRatko Jević, farmer\nVelimir Jovanović, farmer\nSvetislav Milin, worker\nMilorad Pokrajac, student.",
                 "latE6": 44812348,
                 "lngE6": 20461648,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -7588,7 +7588,7 @@
                 "description": "To freedom fighters who were hanged by Nazis on Terazije square  on August 17th 1941:\nJovan Janković, worker\nRatko Jević, farmer\nVelimir Jovanović, farmer\nSvetislav Milin, worker\nMilorad Pokrajac, student.",
                 "latE6": 44812348,
                 "lngE6": 20461648,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -7750,7 +7750,7 @@
                 "description": "Mosaic Mural",
                 "latE6": 44814935,
                 "lngE6": 20460568,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -7773,7 +7773,7 @@
                 "description": "Mosaic Mural",
                 "latE6": 44814935,
                 "lngE6": 20460568,
-                "team": "NEUTRAL"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -7892,7 +7892,7 @@
                 "description": "Идeја о Позоришту \"Тeатријум\" покрeнута јe на иницијативу драмских умeтника Тихомира Станића и Владана Гајовића, уз подршку Унивeрзитeта у Бeограду, који јe уступио двориштe Капeтан-Мишиног здања, и градскe општинe Стари Град.",
                 "latE6": 44818408,
                 "lngE6": 20456992,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "RESISTANCE"
             },
@@ -7903,7 +7903,7 @@
                 "title": "Čumić Sculpture",
                 "latE6": 44814419,
                 "lngE6": 20460224,
-                "team": "ENLIGHTENED"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -7911,7 +7911,7 @@
                 "description": "Идeја о Позоришту \"Тeатријум\" покрeнута јe на иницијативу драмских умeтника Тихомира Станића и Владана Гајовића, уз подршку Унивeрзитeта у Бeограду, који јe уступио двориштe Капeтан-Мишиног здања, и градскe општинe Стари Град.",
                 "latE6": 44818408,
                 "lngE6": 20456992,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "RESISTANCE",
               "linkCreationTimeMs": "1748096513963",
@@ -7925,7 +7925,7 @@
                 "title": "Čumić Sculpture",
                 "latE6": 44814419,
                 "lngE6": 20460224,
-                "team": "ENLIGHTENED"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -8051,7 +8051,7 @@
                 "description": "decoration on the building",
                 "latE6": 44819355,
                 "lngE6": 20466577,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -8073,7 +8073,7 @@
                 "description": "decoration on the building",
                 "latE6": 44819355,
                 "lngE6": 20466577,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -8089,7 +8089,7 @@
                 "title": "Terazijska česma",
                 "latE6": 44813242,
                 "lngE6": 20460545,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED"
             },
@@ -8104,7 +8104,7 @@
                 "title": "Terazijska česma",
                 "latE6": 44813242,
                 "lngE6": 20460545,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -8497,7 +8497,7 @@
                 "description": "Fundado em 1935, junto ao núcleo central da cidade, o Restaurante Inácio é desde esse tempo um dos principais marcos gastronómicos da cidade de Braga, sendo o Bacalhau à Ignacio o prato mais popular. Foi classificado em 2019 como uma Loja Com Historia.",
                 "latE6": 41549859,
                 "lngE6": -8429742,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "originCapturerTeam": "ENLIGHTENED"
             },
@@ -8513,7 +8513,7 @@
                 "description": "Fundado em 1935, junto ao núcleo central da cidade, o Restaurante Inácio é desde esse tempo um dos principais marcos gastronómicos da cidade de Braga, sendo o Bacalhau à Ignacio o prato mais popular. Foi classificado em 2019 como uma Loja Com Historia.",
                 "latE6": 41549859,
                 "lngE6": -8429742,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               }
             }
           ]
@@ -9511,100 +9511,6 @@
       "name": "Abaddon 1",
       "fragment": [
         {
-          "id": "abaddon1_16",
-          "currentPortalInfo": {
-            "title": "Gazebo at Centennial Park",
-            "description": "Gazebo near the bay",
-            "latE6": 32699571,
-            "lngE6": -117171940,
-            "team": "ENLIGHTENED"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1748120404372",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Star Park",
-                "description": "Designed in 1886 as part of the original Coronado City Plan, this park once boasted a star shaped flower garden with a fountain in the center. The five streets, which still exist, radiated from the points of the star. Upkeep of the landscaping proved difficult, and eventually both flowers and foundation were removed. The two military cannons were a gift from General Joseph Pendleton, USMC. The memorial rock, taken from the Ocean Bouldevard seawall commemorates Coronado's veterans and the park today serves as the site for the annual Memorial Day program.",
-                "latE6": 32684081,
-                "lngE6": -117180944,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "Gazebo at Centennial Park",
-                "description": "Gazebo near the bay",
-                "latE6": 32699571,
-                "lngE6": -117171940,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1748120135477",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1748116807483",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Leaves and Flower Utility Box",
-                "description": "Utility box with picture of leaves and a flower",
-                "latE6": 32699176,
-                "lngE6": -117177368,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Star Park",
-                "description": "Designed in 1886 as part of the original Coronado City Plan, this park once boasted a star shaped flower garden with a fountain in the center. The five streets, which still exist, radiated from the points of the star. Upkeep of the landscaping proved difficult, and eventually both flowers and foundation were removed. The two military cannons were a gift from General Joseph Pendleton, USMC. The memorial rock, taken from the Ocean Bouldevard seawall commemorates Coronado's veterans and the park today serves as the site for the annual Memorial Day program.",
-                "latE6": 32684081,
-                "lngE6": -117180944,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1748115605928",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1748113204461",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Merchant Seamen",
-                "description": "Dedicated to the merchant seamen who lost their lives at sea.\nDedicated May 1982.",
-                "latE6": 32708118,
-                "lngE6": -117170089,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "ENLIGHTENED",
-              "destinationPortalInfo": {
-                "title": "Leaves and Flower Utility Box",
-                "description": "Utility box with picture of leaves and a flower",
-                "latE6": 32699176,
-                "lngE6": -117177368,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748112924255",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748109607592",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Merchant Seamen",
-                "description": "Dedicated to the merchant seamen who lost their lives at sea.\nDedicated May 1982.",
-                "latE6": 32708118,
-                "lngE6": -117170089,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ],
-          "timezone": "America/Los_Angeles"
-        },
-        {
           "id": "abaddon1_07",
           "history": [
             {
@@ -9650,7 +9556,7 @@
                 "description": "屯門海濱花園燈塔",
                 "latE6": 22370870,
                 "lngE6": 113974013,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "ENLIGHTENED",
               "destinationPortalInfo": {
@@ -9673,7 +9579,7 @@
                 "description": "Stop near Wu Tsui House.",
                 "latE6": 22377199,
                 "lngE6": 113965393,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -9681,7 +9587,7 @@
                 "description": "屯門海濱花園燈塔",
                 "latE6": 22370870,
                 "lngE6": 113974013,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1748069884594",
@@ -9695,7 +9601,7 @@
                 "title": "Tuen Mun Ferry Pier Promenade Gate",
                 "latE6": 22372985,
                 "lngE6": 113971144,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
@@ -9703,7 +9609,7 @@
                 "description": "Stop near Wu Tsui House.",
                 "latE6": 22377199,
                 "lngE6": 113965393,
-                "team": "RESISTANCE"
+                "team": "NEUTRAL"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             },
@@ -9722,7 +9628,7 @@
                 "title": "Tuen Mun Ferry Pier Promenade Gate",
                 "latE6": 22372985,
                 "lngE6": 113971144,
-                "team": "RESISTANCE"
+                "team": "ENLIGHTENED"
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
@@ -9730,121 +9636,43 @@
           "timezone": "Asia/Hong_Kong"
         },
         {
-          "id": "abaddon1_04",
+          "id": "abaddon1_10",
           "history": [
             {
-              "moveTimeMs": "1748074200817",
+              "moveTimeMs": "1748124600635",
               "reason": "despawn",
               "originPortalInfo": {
-                "title": "中島地区掲示板",
-                "description": "地域や行政からのお知らせを掲示している。",
-                "latE6": 34935837,
-                "lngE6": 138398183,
+                "title": "Hombre Y Mujer Campesina",
+                "description": "Hombre y mujer campesina",
+                "latE6": -5282644,
+                "lngE6": -80689129,
                 "team": "RESISTANCE"
               },
-              "originCapturerTeam": "NOT_SPECIFIED"
+              "originCapturerTeam": "RESISTANCE"
             },
             {
-              "moveTimeMs": "1748073605132",
+              "moveTimeMs": "1748124006376",
               "reason": "link",
               "originPortalInfo": {
-                "title": "塩田公園",
-                "description": "下島地区にある小さな公園です。",
-                "latE6": 34943305,
-                "lngE6": 138408758,
+                "title": "Mural 6 - Paita Pide Paz - Paita",
+                "description": "Pintado en abril del 2018, luego del sensible fallecimiento de un joven por manos de la delincuencia, los vecinos de la avenida Nápoles a inmediaciones del parque Quiñones hacen un llamado a La Paz de la zona y a que nunca más alguien sea afectado por la delincuencia.",
+                "latE6": -5097187,
+                "lngE6": -81099976,
                 "team": "RESISTANCE"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "中島地区掲示板",
-                "description": "地域や行政からのお知らせを掲示している。",
-                "latE6": 34935837,
-                "lngE6": 138398183,
+                "title": "Hombre Y Mujer Campesina",
+                "description": "Hombre y mujer campesina",
+                "latE6": -5282644,
+                "lngE6": -80689129,
                 "team": "RESISTANCE"
               },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748073603054",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748070005100",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "地蔵の祠",
-                "latE6": 34939045,
-                "lngE6": 138391113,
-                "team": "NEUTRAL"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "塩田公園",
-                "description": "下島地区にある小さな公園です。",
-                "latE6": 34943305,
-                "lngE6": 138408758,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748070002546",
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1747843885500",
               "linkCreatorTeam": "RESISTANCE",
               "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
             },
-            {
-              "moveTimeMs": "1748066406062",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748062806506",
-              "reason": "jump",
-              "originPortalInfo": {
-                "title": "中島浄化センター多目的広場案内板(北側)",
-                "description": "中島浄化センター多目的広場の北側に設置された施設案内板",
-                "latE6": 34932387,
-                "lngE6": 138398162,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "地蔵の祠",
-                "latE6": 34939045,
-                "lngE6": 138391113,
-                "team": "NEUTRAL"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            },
-            {
-              "moveTimeMs": "1748059204049",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748055605096",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748052003993",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "中島浄化センター多目的広場案内板(北側)",
-                "description": "中島浄化センター多目的広場の北側に設置された施設案内板",
-                "latE6": 34932387,
-                "lngE6": 138398162,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ],
-          "timezone": "Asia/Tokyo"
-        },
-        {
-          "id": "abaddon1_10",
-          "currentPortalInfo": {
-            "title": "Mural 6 - Paita Pide Paz - Paita",
-            "description": "Pintado en abril del 2018, luego del sensible fallecimiento de un joven por manos de la delincuencia, los vecinos de la avenida Nápoles a inmediaciones del parque Quiñones hacen un llamado a La Paz de la zona y a que nunca más alguien sea afectado por la delincuencia.",
-            "latE6": -5097187,
-            "lngE6": -81099976,
-            "team": "RESISTANCE"
-          },
-          "history": [
             {
               "moveTimeMs": "1748120407282",
               "reason": "link",
@@ -9972,6 +9800,112 @@
           "timezone": "America/Lima"
         },
         {
+          "id": "abaddon1_04",
+          "history": [
+            {
+              "moveTimeMs": "1748074200817",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "中島地区掲示板",
+                "description": "地域や行政からのお知らせを掲示している。",
+                "latE6": 34935837,
+                "lngE6": 138398183,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748073605132",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "塩田公園",
+                "description": "下島地区にある小さな公園です。",
+                "latE6": 34943305,
+                "lngE6": 138408758,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "中島地区掲示板",
+                "description": "地域や行政からのお知らせを掲示している。",
+                "latE6": 34935837,
+                "lngE6": 138398183,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073603054",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070005100",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "地蔵の祠",
+                "latE6": 34939045,
+                "lngE6": 138391113,
+                "team": "NEUTRAL"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "塩田公園",
+                "description": "下島地区にある小さな公園です。",
+                "latE6": 34943305,
+                "lngE6": 138408758,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748070002546",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748066406062",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748062806506",
+              "reason": "jump",
+              "originPortalInfo": {
+                "title": "中島浄化センター多目的広場案内板(北側)",
+                "description": "中島浄化センター多目的広場の北側に設置された施設案内板",
+                "latE6": 34932387,
+                "lngE6": 138398162,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "地蔵の祠",
+                "latE6": 34939045,
+                "lngE6": 138391113,
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748059204049",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055605096",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748052003993",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "中島浄化センター多目的広場案内板(北側)",
+                "description": "中島浄化センター多目的広場の北側に設置された施設案内板",
+                "latE6": 34932387,
+                "lngE6": 138398162,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ],
+          "timezone": "Asia/Tokyo"
+        },
+        {
           "id": "abaddon1_03",
           "history": [
             {
@@ -10075,6 +10009,174 @@
             }
           ],
           "timezone": "Asia/Tokyo"
+        },
+        {
+          "id": "abaddon1_16",
+          "history": [
+            {
+              "moveTimeMs": "1748131801739",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Kalaupapa Lighthouse",
+                "description": "The Kalaupapa Lighthouse (Molokai Light, also known as U.S. Coast Guard Molokai Light) is a lighthouse in Kalawao County, Hawaii, on the island of Molokai. It was built in 1909 and was listed on the National Register of Historic Places in 1982.",
+                "latE6": 21209539,
+                "lngE6": -156969691,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748131202294",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "First Ashore",
+                "description": "Dedicated Nov 16 2016. Commemorates Navy Seals and UDT since 1946.",
+                "latE6": 32675679,
+                "lngE6": -117169108,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Kalaupapa Lighthouse",
+                "description": "The Kalaupapa Lighthouse (Molokai Light, also known as U.S. Coast Guard Molokai Light) is a lighthouse in Kalawao County, Hawaii, on the island of Molokai. It was built in 1909 and was listed on the National Register of Historic Places in 1982.",
+                "latE6": 21209539,
+                "lngE6": -156969691,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748130912070",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748127601551",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Plaque at LC Bandell Park",
+                "description": "Robert Frost poem plaque",
+                "latE6": 32689096,
+                "lngE6": -117188148,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "First Ashore",
+                "description": "Dedicated Nov 16 2016. Commemorates Navy Seals and UDT since 1946.",
+                "latE6": 32675679,
+                "lngE6": -117169108,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748127312773",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748124003338",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Gazebo at Centennial Park",
+                "description": "Gazebo near the bay",
+                "latE6": 32699571,
+                "lngE6": -117171940,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Plaque at LC Bandell Park",
+                "description": "Robert Frost poem plaque",
+                "latE6": 32689096,
+                "lngE6": -117188148,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748123711819",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748120404372",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Star Park",
+                "description": "Designed in 1886 as part of the original Coronado City Plan, this park once boasted a star shaped flower garden with a fountain in the center. The five streets, which still exist, radiated from the points of the star. Upkeep of the landscaping proved difficult, and eventually both flowers and foundation were removed. The two military cannons were a gift from General Joseph Pendleton, USMC. The memorial rock, taken from the Ocean Bouldevard seawall commemorates Coronado's veterans and the park today serves as the site for the annual Memorial Day program.",
+                "latE6": 32684081,
+                "lngE6": -117180944,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Gazebo at Centennial Park",
+                "description": "Gazebo near the bay",
+                "latE6": 32699571,
+                "lngE6": -117171940,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748120135477",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748116807483",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Leaves and Flower Utility Box",
+                "description": "Utility box with picture of leaves and a flower",
+                "latE6": 32699176,
+                "lngE6": -117177368,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Star Park",
+                "description": "Designed in 1886 as part of the original Coronado City Plan, this park once boasted a star shaped flower garden with a fountain in the center. The five streets, which still exist, radiated from the points of the star. Upkeep of the landscaping proved difficult, and eventually both flowers and foundation were removed. The two military cannons were a gift from General Joseph Pendleton, USMC. The memorial rock, taken from the Ocean Bouldevard seawall commemorates Coronado's veterans and the park today serves as the site for the annual Memorial Day program.",
+                "latE6": 32684081,
+                "lngE6": -117180944,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748115605928",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748113204461",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Merchant Seamen",
+                "description": "Dedicated to the merchant seamen who lost their lives at sea.\nDedicated May 1982.",
+                "latE6": 32708118,
+                "lngE6": -117170089,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Leaves and Flower Utility Box",
+                "description": "Utility box with picture of leaves and a flower",
+                "latE6": 32699176,
+                "lngE6": -117177368,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748112924255",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748109607592",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Merchant Seamen",
+                "description": "Dedicated to the merchant seamen who lost their lives at sea.\nDedicated May 1982.",
+                "latE6": 32708118,
+                "lngE6": -117170089,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ],
+          "timezone": "America/Los_Angeles"
         },
         {
           "id": "abaddon1_09",
@@ -10509,6 +10611,132 @@
           "timezone": "America/Toronto"
         },
         {
+          "id": "abaddon1_15",
+          "history": [
+            {
+              "moveTimeMs": "1748131800824",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Lovell Canyon Sign",
+                "latE6": 36019056,
+                "lngE6": -115561601,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1748131201525",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "World Famous Mountain Springs Saloon",
+                "latE6": 36020616,
+                "lngE6": -115509852,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Lovell Canyon Sign",
+                "latE6": 36019056,
+                "lngE6": -115561601,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1743719745553",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748127602194",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Silent Heroes trail marker",
+                "description": "Informational signage situated in the Escarpment Trail in the Mount Charleston Rec Area. Comes with an anchored telescope overlooking the whole park.",
+                "latE6": 36266748,
+                "lngE6": -115589069,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "World Famous Mountain Springs Saloon",
+                "latE6": 36020616,
+                "lngE6": -115509852,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748120202082",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748124005219",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Flower Child Mural",
+                "description": "Namesake mural inside Flower Child restaurant.",
+                "latE6": 36160565,
+                "lngE6": -115292139,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Silent Heroes trail marker",
+                "description": "Informational signage situated in the Escarpment Trail in the Mount Charleston Rec Area. Comes with an anchored telescope overlooking the whole park.",
+                "latE6": 36266748,
+                "lngE6": -115589069,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748123941528",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748120404053",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748116806109",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748113202346",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Ceiling Art",
+                "description": "Roman style chapel art in an overpriced local restaurant",
+                "latE6": 36163786,
+                "lngE6": -115289995,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Flower Child Mural",
+                "description": "Namesake mural inside Flower Child restaurant.",
+                "latE6": 36160565,
+                "lngE6": -115292139,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748112840829",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748109605628",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Ceiling Art",
+                "description": "Roman style chapel art in an overpriced local restaurant",
+                "latE6": 36163786,
+                "lngE6": -115289995,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ],
+          "timezone": "America/Los_Angeles"
+        },
+        {
           "id": "abaddon1_06",
           "history": [
             {
@@ -10649,6 +10877,174 @@
             }
           ],
           "timezone": "Asia/Kuching"
+        },
+        {
+          "id": "abaddon1_13",
+          "history": [
+            {
+              "moveTimeMs": "1748128202727",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Centro Administrativo Municipal",
+                "description": "Centro Administrativo Municipal de San Pedro Garza García",
+                "latE6": 25671346,
+                "lngE6": -100407326,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748127605294",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Cancha Futbol Nuevo Leon Unido",
+                "description": "Campo de futbol",
+                "latE6": 25721874,
+                "lngE6": -100314874,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Centro Administrativo Municipal",
+                "description": "Centro Administrativo Municipal de San Pedro Garza García",
+                "latE6": 25671346,
+                "lngE6": -100407326,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1744329887240",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748124001464",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Las Donitas Gigantes",
+                "description": "Monumentos de las Donas clasicas que son Glazeadas y Azucaradas",
+                "latE6": 25707106,
+                "lngE6": -100279599,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Cancha Futbol Nuevo Leon Unido",
+                "description": "Campo de futbol",
+                "latE6": 25721874,
+                "lngE6": -100314874,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1741116623399",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748120401425",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Cancha de soccer FOD",
+                "description": "Cancha de fútbol soccer de la facultad de organización deportiva",
+                "latE6": 25727961,
+                "lngE6": -100315574,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Las Donitas Gigantes",
+                "description": "Monumentos de las Donas clasicas que son Glazeadas y Azucaradas",
+                "latE6": 25707106,
+                "lngE6": -100279599,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1747771310932",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748116804458",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Abstract Red",
+                "description": "pintura abstracta",
+                "latE6": 25726548,
+                "lngE6": -100313713,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Cancha de soccer FOD",
+                "description": "Cancha de fútbol soccer de la facultad de organización deportiva",
+                "latE6": 25727961,
+                "lngE6": -100315574,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1747771326639",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748113206408",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Cancha Futbol Nuevo Leon Unido",
+                "description": "Campo de futbol",
+                "latE6": 25721874,
+                "lngE6": -100314874,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Abstract Red",
+                "description": "pintura abstracta",
+                "latE6": 25726548,
+                "lngE6": -100313713,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1747770730208",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748109602119",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Placa colonia estrella",
+                "description": "Placa creada por el municipio de Monterrey que facilita la ubicación de las personas",
+                "latE6": 25708295,
+                "lngE6": -100327602,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Cancha Futbol Nuevo Leon Unido",
+                "description": "Campo de futbol",
+                "latE6": 25721874,
+                "lngE6": -100314874,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748109482404",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748106000805",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Placa colonia estrella",
+                "description": "Placa creada por el municipio de Monterrey que facilita la ubicación de las personas",
+                "latE6": 25708295,
+                "lngE6": -100327602,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ],
+          "timezone": "America/Monterrey"
         },
         {
           "id": "abaddon1_08",
@@ -10816,13 +11212,43 @@
         },
         {
           "id": "abaddon1_12",
-          "currentPortalInfo": {
-            "title": "Estadio Nacional de Costa Rica",
-            "latE6": 9938322,
-            "lngE6": -84107702,
-            "team": "ENLIGHTENED"
-          },
           "history": [
+            {
+              "moveTimeMs": "1748128201673",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Monument Electric",
+                "latE6": 9938297,
+                "lngE6": -84102515,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748127604290",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Estadio Nacional de Costa Rica",
+                "latE6": 9938322,
+                "lngE6": -84107702,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Monument Electric",
+                "latE6": 9938297,
+                "lngE6": -84102515,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748124127862",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748124003757",
+              "reason": "no move"
+            },
             {
               "moveTimeMs": "1748120402756",
               "reason": "no move"
@@ -10841,7 +11267,7 @@
                 "title": "Estadio Nacional de Costa Rica",
                 "latE6": 9938322,
                 "lngE6": -84107702,
-                "team": "ENLIGHTENED"
+                "team": "RESISTANCE"
               },
               "destinationCapturerTeam": "ENLIGHTENED",
               "linkCreationTimeMs": "1748115072660",
@@ -10870,71 +11296,156 @@
           "timezone": "America/Costa_Rica"
         },
         {
-          "id": "abaddon1_15",
-          "currentPortalInfo": {
-            "title": "Flower Child Mural",
-            "description": "Namesake mural inside Flower Child restaurant.",
-            "latE6": 36160565,
-            "lngE6": -115292139,
-            "team": "ENLIGHTENED"
-          },
+          "id": "abaddon1_05",
           "history": [
             {
-              "moveTimeMs": "1748120404053",
+              "moveTimeMs": "1748077801691",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "贤达圆底石座喷泉",
+                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
+                "latE6": 31489595,
+                "lngE6": 121829909,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1748077202045",
               "reason": "no move"
             },
             {
-              "moveTimeMs": "1748116806109",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748113202346",
+              "moveTimeMs": "1748073601360",
               "reason": "link",
               "originPortalInfo": {
-                "title": "Ceiling Art",
-                "description": "Roman style chapel art in an overpriced local restaurant",
-                "latE6": 36163786,
-                "lngE6": -115289995,
+                "title": "滨江森林公园",
+                "latE6": 31381320,
+                "lngE6": 121523406,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "贤达圆底石座喷泉",
+                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
+                "latE6": 31489595,
+                "lngE6": 121829909,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748073412524",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748070000225",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748066405402",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "读书台",
+                "description": "是这仨字吧",
+                "latE6": 31396765,
+                "lngE6": 121508254,
                 "team": "ENLIGHTENED"
               },
               "originCapturerTeam": "NOT_SPECIFIED",
               "destinationPortalInfo": {
-                "title": "Flower Child Mural",
-                "description": "Namesake mural inside Flower Child restaurant.",
-                "latE6": 36160565,
-                "lngE6": -115292139,
-                "team": "ENLIGHTENED"
+                "title": "滨江森林公园",
+                "latE6": 31381320,
+                "lngE6": 121523406,
+                "team": "RESISTANCE"
               },
-              "destinationCapturerTeam": "ENLIGHTENED",
-              "linkCreationTimeMs": "1748112840829",
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748066117229",
               "linkCreatorTeam": "ENLIGHTENED",
               "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
             },
             {
-              "moveTimeMs": "1748109605628",
+              "moveTimeMs": "1748062807072",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748059200310",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748055600767",
               "reason": "spawn",
               "destinationPortalInfo": {
-                "title": "Ceiling Art",
-                "description": "Roman style chapel art in an overpriced local restaurant",
-                "latE6": 36163786,
-                "lngE6": -115289995,
+                "title": "读书台",
+                "description": "是这仨字吧",
+                "latE6": 31396765,
+                "lngE6": 121508254,
                 "team": "ENLIGHTENED"
               },
-              "destinationCapturerTeam": "ENLIGHTENED"
+              "destinationCapturerTeam": "RESISTANCE"
             }
           ],
-          "timezone": "America/Los_Angeles"
+          "timezone": "Asia/Shanghai"
         },
         {
           "id": "abaddon1_14",
-          "currentPortalInfo": {
-            "title": "DUDE USGS Benchmark",
-            "description": "USGS Benchmark above City Creek Canyon. Search closely and you will find all three benchmarks!",
-            "latE6": 40831584,
-            "lngE6": -111837550,
-            "team": "ENLIGHTENED"
-          },
           "history": [
+            {
+              "moveTimeMs": "1748128200648",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Salt Lake County Marker",
+                "description": "Marker",
+                "latE6": 40812888,
+                "lngE6": -111891416,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1748127603356",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "USGS LQ0588 Benchmark",
+                "description": "Placed in 1940 LQ0588 also known as Leppy Benchmark is located just outside of Wendover, NV near the top of Leppy Peak at 6,719 feet.",
+                "latE6": 40782253,
+                "lngE6": -114071876,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Salt Lake County Marker",
+                "description": "Marker",
+                "latE6": 40812888,
+                "lngE6": -111891416,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748120525546",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748124002379",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "DUDE USGS Benchmark",
+                "description": "USGS Benchmark above City Creek Canyon. Search closely and you will find all three benchmarks!",
+                "latE6": 40831584,
+                "lngE6": -111837550,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "USGS LQ0588 Benchmark",
+                "description": "Placed in 1940 LQ0588 also known as Leppy Benchmark is located just outside of Wendover, NV near the top of Leppy Peak at 6,719 feet.",
+                "latE6": 40782253,
+                "lngE6": -114071876,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748118865853",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
             {
               "moveTimeMs": "1748120402381",
               "reason": "link",
@@ -11039,213 +11550,6 @@
             }
           ],
           "timezone": "America/Denver"
-        },
-        {
-          "id": "abaddon1_05",
-          "history": [
-            {
-              "moveTimeMs": "1748077801691",
-              "reason": "despawn",
-              "originPortalInfo": {
-                "title": "贤达圆底石座喷泉",
-                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
-                "latE6": 31489595,
-                "lngE6": 121829909,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "ENLIGHTENED"
-            },
-            {
-              "moveTimeMs": "1748077202045",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748073601360",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "滨江森林公园",
-                "latE6": 31381320,
-                "lngE6": 121523406,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "贤达圆底石座喷泉",
-                "description": "贤达的喷泉，标志性建筑物之一，在周围的灯光照射下美伦美焕。",
-                "latE6": 31489595,
-                "lngE6": 121829909,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748073412524",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748070000225",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748066405402",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "读书台",
-                "description": "是这仨字吧",
-                "latE6": 31396765,
-                "lngE6": 121508254,
-                "team": "ENLIGHTENED"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "滨江森林公园",
-                "latE6": 31381320,
-                "lngE6": 121523406,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED",
-              "linkCreationTimeMs": "1748066117229",
-              "linkCreatorTeam": "ENLIGHTENED",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748062807072",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748059200310",
-              "reason": "no move"
-            },
-            {
-              "moveTimeMs": "1748055600767",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "读书台",
-                "description": "是这仨字吧",
-                "latE6": 31396765,
-                "lngE6": 121508254,
-                "team": "ENLIGHTENED"
-              },
-              "destinationCapturerTeam": "RESISTANCE"
-            }
-          ],
-          "timezone": "Asia/Shanghai"
-        },
-        {
-          "id": "abaddon1_13",
-          "currentPortalInfo": {
-            "title": "Las Donitas Gigantes",
-            "description": "Monumentos de las Donas clasicas que son Glazeadas y Azucaradas",
-            "latE6": 25707106,
-            "lngE6": -100279599,
-            "team": "RESISTANCE"
-          },
-          "history": [
-            {
-              "moveTimeMs": "1748120401425",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Cancha de soccer FOD",
-                "description": "Cancha de fútbol soccer de la facultad de organización deportiva",
-                "latE6": 25727961,
-                "lngE6": -100315574,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Las Donitas Gigantes",
-                "description": "Monumentos de las Donas clasicas que son Glazeadas y Azucaradas",
-                "latE6": 25707106,
-                "lngE6": -100279599,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1747771310932",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
-            },
-            {
-              "moveTimeMs": "1748116804458",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Abstract Red",
-                "description": "pintura abstracta",
-                "latE6": 25726548,
-                "lngE6": -100313713,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Cancha de soccer FOD",
-                "description": "Cancha de fútbol soccer de la facultad de organización deportiva",
-                "latE6": 25727961,
-                "lngE6": -100315574,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1747771326639",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1748113206408",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Cancha Futbol Nuevo Leon Unido",
-                "description": "Campo de futbol",
-                "latE6": 25721874,
-                "lngE6": -100314874,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "RESISTANCE",
-              "destinationPortalInfo": {
-                "title": "Abstract Red",
-                "description": "pintura abstracta",
-                "latE6": 25726548,
-                "lngE6": -100313713,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1747770730208",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1748109602119",
-              "reason": "link",
-              "originPortalInfo": {
-                "title": "Placa colonia estrella",
-                "description": "Placa creada por el municipio de Monterrey que facilita la ubicación de las personas",
-                "latE6": 25708295,
-                "lngE6": -100327602,
-                "team": "RESISTANCE"
-              },
-              "originCapturerTeam": "NOT_SPECIFIED",
-              "destinationPortalInfo": {
-                "title": "Cancha Futbol Nuevo Leon Unido",
-                "description": "Campo de futbol",
-                "latE6": 25721874,
-                "lngE6": -100314874,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "RESISTANCE",
-              "linkCreationTimeMs": "1748109482404",
-              "linkCreatorTeam": "RESISTANCE",
-              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
-            },
-            {
-              "moveTimeMs": "1748106000805",
-              "reason": "spawn",
-              "destinationPortalInfo": {
-                "title": "Placa colonia estrella",
-                "description": "Placa creada por el municipio de Monterrey que facilita la ubicación de las personas",
-                "latE6": 25708295,
-                "lngE6": -100327602,
-                "team": "RESISTANCE"
-              },
-              "destinationCapturerTeam": "NOT_SPECIFIED"
-            }
-          ],
-          "timezone": "America/Monterrey"
         },
         {
           "id": "abaddon1_01",
@@ -11392,9 +11696,7 @@
           ],
           "timezone": "Australia/Brisbane"
         }
-      ],
-      "city": "Las Vegas, NV",
-      "timezone": "America/Los_Angeles"
+      ]
     },
     {
       "id": "foxtrot",

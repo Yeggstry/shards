@@ -149,7 +149,7 @@
                                 resLinks++
                             } else if (link.linkCreatorTeam == "MACHINA") {
                                 redLinks++
-                            } else {
+                            } else if (link.linkCreatorTeam == "ENLIGHTENED") {
                                 enlLinks++
                             }
                         } else {
@@ -235,7 +235,7 @@
                                 resLinks += 3
                             } else if (h.linkCreatorTeam == "MACHINA") {
                                 redLinks += 3
-                            } else {
+                            } else if (h.linkCreatorTeam == "ENLIGHTENED") {
                                 enlLinks += 3
                             }
                         } else if (h.distance > 1000 && h.distance < 5000) {
@@ -243,7 +243,7 @@
                                 resLinks++
                             } else if (h.linkCreatorTeam == "MACHINA") {
                                 redLinks++
-                            } else {
+                            } else if (h.linkCreatorTeam == "ENLIGHTENED") {
                                 enlLinks++
                             }
                         } else {
@@ -275,8 +275,8 @@
             "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
             "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json", 
             "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
-            "+Theta 2025 Shard Singular": "shard-jump-times-2025.05.25.09.54.28.json",
-            "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.09.54.28.json",
+            "+Theta 2025 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
+            "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
         }
 
         for (var name in json_files) {
