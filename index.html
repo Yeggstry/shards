@@ -322,7 +322,7 @@
         }
         if (location.hash) {
             $(location.hash).click()
-            $("#series").val(location.hash.substring(1).rsplit("_", 1)).change()
+            $("#series").val(location.hash.substring(1).replace("abaddon1_", "").rsplit("_", 1)).change()
         }
         $("#custom").change(function () {
             var file = this.files[0]
