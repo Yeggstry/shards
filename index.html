@@ -277,23 +277,24 @@
             "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
             "+Theta 2025 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
             "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
+"+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.05.31.17.01.08.json"
         }
 
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Theta 2025 EMEA" ? "selected" : ""
+            var selected = name == "+Theta 2025-05-31 Shard Singular" ? "selected" : ""
             $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
-            if (name == "+Theta 2025 Shard Singular") {
+            if (name.includes("Singular") {
                 plot_json_singular(safe_name, json)
             } else {
                 plot_json(safe_name, json)
             }
         }
-        $("#_theta_2025_emea").show()
+        $("#_theta_2025_05_31_shard_singular").show()
         try {
-            map.fitBounds(layer_lookup._theta_2025_emea_Alpha.getBounds())
+            map.fitBounds(layer_lookup._theta_2025_05_31_shard_singular_Abbadon01.getBounds())
         } catch (e) {
             console.error("Error fitting bounds", e)
         }
