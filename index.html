@@ -187,9 +187,8 @@
         function plot_json_singular(name, json) {
             var seriesLayer = L.featureGroup()//.addTo(map)
             layerControl.addOverlay(seriesLayer, name);
-            if (name == "_theta_2025_shard_singular") {
-                seriesLayer.addTo(map)
-            }
+            seriesLayer.addTo(map)
+            
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
             data = data.filter(d => d.id == "abaddon1")[0].fragment
