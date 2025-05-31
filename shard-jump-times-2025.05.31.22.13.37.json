@@ -1,0 +1,1560 @@
+{
+  "artifact": [
+    {
+      "id": "targetres",
+      "name": "Target RES"
+    },
+    {
+      "id": "papa",
+      "name": "Papa"
+    },
+    {
+      "id": "yankee",
+      "name": "Yankee"
+    },
+    {
+      "id": "tango",
+      "name": "Tango"
+    },
+    {
+      "id": "abaddon1",
+      "name": "Abaddon 1",
+      "fragment": [
+        {
+          "id": "abaddon1_04",
+          "history": [
+            {
+              "moveTimeMs": "1748682603632",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Masjid Istana Permai",
+                "latE6": -5417206,
+                "lngE6": 119444982,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1748682001310",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "masjid nurul amin",
+                "description": "mosque",
+                "latE6": -5622997,
+                "lngE6": 119576627,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Masjid Istana Permai",
+                "latE6": -5417206,
+                "lngE6": 119444982,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748400299353",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748678404224",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Bangkala Mosque",
+                "description": "adalah tempat pusat kegiatan keagamaan dan sosial untuk masyarakat sekitarnya",
+                "latE6": -5607092,
+                "lngE6": 119587391,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "masjid nurul amin",
+                "description": "mosque",
+                "latE6": -5622997,
+                "lngE6": 119576627,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1744590428398",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748674801260",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Mesjid Ditengah Perkebunan",
+                "latE6": -5434231,
+                "lngE6": 119949728,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Bangkala Mosque",
+                "description": "adalah tempat pusat kegiatan keagamaan dan sosial untuk masyarakat sekitarnya",
+                "latE6": -5607092,
+                "lngE6": 119587391,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748348441243",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748671203063",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Seni Ukiran Kayu",
+                "description": "Ukiran kayu di lobi santika",
+                "latE6": -8582004,
+                "lngE6": 116107693,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Mesjid Ditengah Perkebunan",
+                "latE6": -5434231,
+                "lngE6": 119949728,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748664421996",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748667603178",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Mesjid Pelabuhan Sukarno Mkssr",
+                "description": "menara mesjid pelabuhan",
+                "latE6": -5121938,
+                "lngE6": 119408529,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Seni Ukiran Kayu",
+                "description": "Ukiran kayu di lobi santika",
+                "latE6": -8582004,
+                "lngE6": 116107693,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748664371556",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748664001560",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Terminal Penumpang Anging Mammiri",
+                "latE6": -5122288,
+                "lngE6": 119407636,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Mesjid Pelabuhan Sukarno Mkssr",
+                "description": "menara mesjid pelabuhan",
+                "latE6": -5121938,
+                "lngE6": 119408529,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748662653842",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748660402713",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Terminal Penumpang Anging Mammiri",
+                "latE6": -5122288,
+                "lngE6": 119407636,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_12",
+          "currentPortalInfo": {
+            "title": "Janko Cmelik",
+            "latE6": 48157981,
+            "lngE6": 17176009,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685603455",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Malba",
+                "description": "Makovice na obytnom dome",
+                "latE6": 48144939,
+                "lngE6": 17211458,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Janko Cmelik",
+                "latE6": 48157981,
+                "lngE6": 17176009,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748685547179",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748682003519",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Malba",
+                "description": "Makovice na obytnom dome",
+                "latE6": 48144939,
+                "lngE6": 17211458,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_06",
+          "history": [
+            {
+              "moveTimeMs": "1748682601532",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "绿杨亭",
+                "description": "杨树成林",
+                "latE6": 38925087,
+                "lngE6": 117687916,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748682013422",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "黄苇鸭",
+                "description": "中型涉禽",
+                "latE6": 38929134,
+                "lngE6": 117694580,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "绿杨亭",
+                "description": "杨树成林",
+                "latE6": 38925087,
+                "lngE6": 117687916,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748681105270",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748678402307",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "仙人球雕塑",
+                "description": "大 仙 人 球",
+                "latE6": 38974706,
+                "lngE6": 117685551,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "黄苇鸭",
+                "description": "中型涉禽",
+                "latE6": 38929134,
+                "lngE6": 117694580,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748677840113",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748674801055",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748671203150",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748667606250",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "龟",
+                "description": "鱼塘照",
+                "latE6": 38931285,
+                "lngE6": 117695426,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "仙人球雕塑",
+                "description": "大 仙 人 球",
+                "latE6": 38974706,
+                "lngE6": 117685551,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748667515877",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748664002106",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748660430502",
+              "reason": "jump",
+              "originPortalInfo": {
+                "title": "地球仪",
+                "latE6": 38935145,
+                "lngE6": 117705060,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "龟",
+                "description": "鱼塘照",
+                "latE6": 38931285,
+                "lngE6": 117695426,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1748660400679",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "地球仪",
+                "latE6": 38935145,
+                "lngE6": 117705060,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_16",
+          "currentPortalInfo": {
+            "title": "Desembocadura del Río Gállego",
+            "description": "Panel informativo en la desembocadura del rio Gallego al rio Ebro",
+            "latE6": 41650566,
+            "lngE6": -848689,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685605464",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Paseando Por La Alameda Del Ebro",
+                "description": "Cartel informativo del paseo de la llamada del Ebro",
+                "latE6": 41654911,
+                "lngE6": -866423,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Desembocadura del Río Gállego",
+                "description": "Panel informativo en la desembocadura del rio Gallego al rio Ebro",
+                "latE6": 41650566,
+                "lngE6": -848689,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748682599206",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748682022639",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Paseando Por La Alameda Del Ebro",
+                "description": "Cartel informativo del paseo de la llamada del Ebro",
+                "latE6": 41654911,
+                "lngE6": -866423,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_13",
+          "currentPortalInfo": {
+            "title": "Fiets routebord nr 85 op de dijk",
+            "description": "Fietsroute bord nr 85 op de dijk van Delfzijl.",
+            "latE6": 53336426,
+            "lngE6": 6928437,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685600177",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748682007740",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Fiets routebord nr 85 op de dijk",
+                "description": "Fietsroute bord nr 85 op de dijk van Delfzijl.",
+                "latE6": 53336426,
+                "lngE6": 6928437,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_03",
+          "history": [
+            {
+              "moveTimeMs": "1748679001586",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "나무를 감싼 철제지붕 쉼터",
+                "description": "흡연과 휴식을 할 수 있음",
+                "latE6": 37378258,
+                "lngE6": 126643118,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748678409100",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "참성단소사나무",
+                "latE6": 37615510,
+                "lngE6": 126429859,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "나무를 감싼 철제지붕 쉼터",
+                "description": "흡연과 휴식을 할 수 있음",
+                "latE6": 37378258,
+                "lngE6": 126643118,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748664079816",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748674803217",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "점박이 물범 삼남매",
+                "description": "I wish you have satellite photography update!",
+                "latE6": 37954767,
+                "lngE6": 124735589,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "참성단소사나무",
+                "latE6": 37615510,
+                "lngE6": 126429859,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748662363708",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748671200727",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748667600816",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748664006347",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "참성단소사나무",
+                "latE6": 37615510,
+                "lngE6": 126429859,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "점박이 물범 삼남매",
+                "description": "I wish you have satellite photography update!",
+                "latE6": 37954767,
+                "lngE6": 124735589,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748662363708",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748660404135",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "JCI 기념비",
+                "description": "월미도 문화의 거리에 있는 조형물",
+                "latE6": 37473785,
+                "lngE6": 126596846,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "참성단소사나무",
+                "latE6": 37615510,
+                "lngE6": 126429859,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748658910281",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748656802571",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "JCI 기념비",
+                "description": "월미도 문화의 거리에 있는 조형물",
+                "latE6": 37473785,
+                "lngE6": 126596846,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_09",
+          "currentPortalInfo": {
+            "title": "Together",
+            "description": "Statue \"Together\" by Lutfi Romhein from Syria",
+            "latE6": 25199199,
+            "lngE6": 55273081,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685606412",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Sea Breeze mural",
+                "description": "Mural @La Mer",
+                "latE6": 25226669,
+                "lngE6": 55256325,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Together",
+                "description": "Statue \"Together\" by Lutfi Romhein from Syria",
+                "latE6": 25199199,
+                "lngE6": 55273081,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748682883254",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748682010064",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748678404053",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748674806543",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Sea Breeze mural",
+                "description": "Mural @La Mer",
+                "latE6": 25226669,
+                "lngE6": 55256325,
+                "team": "RESISTANCE"
+              }
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_07",
+          "history": [
+            {
+              "moveTimeMs": "1748682600522",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "将军山观海入口",
+                "latE6": 22234406,
+                "lngE6": 113562094,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748682010201",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "日晷",
+                "latE6": 22241557,
+                "lngE6": 113554754,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "将军山观海入口",
+                "latE6": 22234406,
+                "lngE6": 113562094,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748681950037",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748678400173",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748674806099",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "海湾酒吧街",
+                "latE6": 22228837,
+                "lngE6": 113557364,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "日晷",
+                "latE6": 22241557,
+                "lngE6": 113554754,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748674780053",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748671205052",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748667604259",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "馬場東大馬路石路牌",
+                "description": "馬場東大緊路石路牌",
+                "latE6": 22213466,
+                "lngE6": 113555130,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "海湾酒吧街",
+                "latE6": 22228837,
+                "lngE6": 113557364,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748667263118",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748664003056",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748660405514",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "馬場東大馬路石路牌",
+                "description": "馬場東大緊路石路牌",
+                "latE6": 22213466,
+                "lngE6": 113555130,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_02",
+          "history": [
+            {
+              "moveTimeMs": "1748679000642",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "バナナマン",
+                "latE6": 33946382,
+                "lngE6": 130964145,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED"
+            },
+            {
+              "moveTimeMs": "1748678403265",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "ノーフォーク広場 錨の地図",
+                "latE6": 33957104,
+                "lngE6": 130961633,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "バナナマン",
+                "latE6": 33946382,
+                "lngE6": 130964145,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748677329140",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748674808137",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "山の田２号公園",
+                "latE6": 33987224,
+                "lngE6": 130927735,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "ノーフォーク広場 錨の地図",
+                "latE6": 33957104,
+                "lngE6": 130961633,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748672205075",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748671205201",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "友愛の園",
+                "latE6": 33975710,
+                "lngE6": 130931490,
+                "team": "NEUTRAL"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "山の田２号公園",
+                "latE6": 33987224,
+                "lngE6": 130927735,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748670615980",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748667605199",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "一里山公園案内図",
+                "latE6": 33971619,
+                "lngE6": 130941222,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "友愛の園",
+                "latE6": 33975710,
+                "lngE6": 130931490,
+                "team": "NEUTRAL"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748666503214",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748664007335",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "壇ノ浦コースト",
+                "description": "\n",
+                "latE6": 33964444,
+                "lngE6": 130956259,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "一里山公園案内図",
+                "latE6": 33971619,
+                "lngE6": 130941222,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748663651497",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748660405221",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "金毘羅橋下の公園",
+                "description": "金毘羅高架橋下にある公園。雨の日でもキャッチボールなど遊んでいる。",
+                "latE6": 33968082,
+                "lngE6": 130922424,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "壇ノ浦コースト",
+                "description": "\n",
+                "latE6": 33964444,
+                "lngE6": 130956259,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748660311540",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748656800786",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "金毘羅橋下の公園",
+                "description": "金毘羅高架橋下にある公園。雨の日でもキャッチボールなど遊んでいる。",
+                "latE6": 33968082,
+                "lngE6": 130922424,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_05",
+          "history": [
+            {
+              "moveTimeMs": "1748682602513",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "万寿寺",
+                "description": "寺院庙宇",
+                "latE6": 23707767,
+                "lngE6": 117175262,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE"
+            },
+            {
+              "moveTimeMs": "1748682012126",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "金莲禅寺",
+                "latE6": 23708893,
+                "lngE6": 117173756,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "万寿寺",
+                "description": "寺院庙宇",
+                "latE6": 23707767,
+                "lngE6": 117175262,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748675335482",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748678408075",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "九皇佛公庙",
+                "description": "庙宇庙宇",
+                "latE6": 23709033,
+                "lngE6": 117176596,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "金莲禅寺",
+                "latE6": 23708893,
+                "lngE6": 117173756,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748675331645",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748674804174",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "古街山西夫子庙",
+                "latE6": 23709063,
+                "lngE6": 117175918,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "九皇佛公庙",
+                "description": "庙宇庙宇",
+                "latE6": 23709033,
+                "lngE6": 117176596,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748674496367",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748671207161",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "大膽擔大擔",
+                "latE6": 24387150,
+                "lngE6": 118171105,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "古街山西夫子庙",
+                "latE6": 23709063,
+                "lngE6": 117175918,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748671178358",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748667602158",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "大膽島 中正公園",
+                "description": "位於大膽島上。",
+                "latE6": 24386716,
+                "lngE6": 118170960,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "大膽擔大擔",
+                "latE6": 24387150,
+                "lngE6": 118171105,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1728109142863",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748664002368",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "金門水頭商港旅客服務中心",
+                "latE6": 24415211,
+                "lngE6": 118287035,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "大膽島 中正公園",
+                "description": "位於大膽島上。",
+                "latE6": 24386716,
+                "lngE6": 118170960,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748663967579",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748660401576",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "金門水頭商港旅客服務中心",
+                "latE6": 24415211,
+                "lngE6": 118287035,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_11",
+          "currentPortalInfo": {
+            "title": "Soutok Odry A Ostravice",
+            "latE6": 49869751,
+            "lngE6": 18280165,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685602255",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Soutok socha",
+                "description": "Socha u soutoku Lučiny s Ostravicí.",
+                "latE6": 49832194,
+                "lngE6": 18297721,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Soutok Odry A Ostravice",
+                "latE6": 49869751,
+                "lngE6": 18280165,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748685572820",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748682008587",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Soutok socha",
+                "description": "Socha u soutoku Lučiny s Ostravicí.",
+                "latE6": 49832194,
+                "lngE6": 18297721,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_08",
+          "currentPortalInfo": {
+            "title": "Fountain at Centre for Open Learning",
+            "description": "Centre for open learning is a branch of the Maldives National University.",
+            "latE6": 4172925,
+            "lngE6": 73509198,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685609292",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Delish central Cafe",
+                "description": "Delish central is fine dine cafe",
+                "latE6": 4173787,
+                "lngE6": 73510313,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Fountain at Centre for Open Learning",
+                "description": "Centre for open learning is a branch of the Maldives National University.",
+                "latE6": 4172925,
+                "lngE6": 73509198,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748685592397",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748682005517",
+              "reason": "jump",
+              "originPortalInfo": {
+                "title": "Islamic Mural of Shiru 2013",
+                "latE6": 4172920,
+                "lngE6": 73505152,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "ENLIGHTENED",
+              "destinationPortalInfo": {
+                "title": "Delish central Cafe",
+                "description": "Delish central is fine dine cafe",
+                "latE6": 4173787,
+                "lngE6": 73510313,
+                "team": "RESISTANCE"
+              }
+            },
+            {
+              "moveTimeMs": "1748678405046",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748674804042",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748671201526",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Islamic Mural of Shiru 2013",
+                "latE6": 4172920,
+                "lngE6": 73505152,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_10",
+          "currentPortalInfo": {
+            "title": "Metrostation Hadzhi Dimitar Billa",
+            "description": "Metrostation Hadzhi Dimitar Billa",
+            "latE6": 42702677,
+            "lngE6": 23352950,
+            "team": "ENLIGHTENED"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685604138",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Георги Наджаков",
+                "description": "Паметна плоча.",
+                "latE6": 42691701,
+                "lngE6": 23338896,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Metrostation Hadzhi Dimitar Billa",
+                "description": "Metrostation Hadzhi Dimitar Billa",
+                "latE6": 42702677,
+                "lngE6": 23352950,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748684484322",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748682007177",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Масово изкачване на Черни Връх",
+                "description": "Началото",
+                "latE6": 42694622,
+                "lngE6": 23325489,
+                "team": "ENLIGHTENED"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED",
+              "destinationPortalInfo": {
+                "title": "Георги Наджаков",
+                "description": "Паметна плоча.",
+                "latE6": 42691701,
+                "lngE6": 23338896,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED",
+              "linkCreationTimeMs": "1748681231987",
+              "linkCreatorTeam": "ENLIGHTENED",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748678406578",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Масово изкачване на Черни Връх",
+                "description": "Началото",
+                "latE6": 42694622,
+                "lngE6": 23325489,
+                "team": "ENLIGHTENED"
+              },
+              "destinationCapturerTeam": "RESISTANCE"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_01",
+          "history": [
+            {
+              "moveTimeMs": "1748668200771",
+              "reason": "despawn",
+              "originPortalInfo": {
+                "title": "Kingston Gaol Entrance Norfolk Island",
+                "description": "Entrance to the Kingston Gaol, where the worst of the convict population from both New South Wales and Van Die men's Land were send during the 1830s.",
+                "latE6": -29057526,
+                "lngE6": 167956299,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "NOT_SPECIFIED"
+            },
+            {
+              "moveTimeMs": "1748667607220",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Geodetic Survey Mark - Greymouth Aerodrome",
+                "description": "Geodetic system control mark that serve's as physical reference point, this interesting type is rear located in the Greymouth urban area.",
+                "latE6": -42459697,
+                "lngE6": 171189224,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Kingston Gaol Entrance Norfolk Island",
+                "description": "Entrance to the Kingston Gaol, where the worst of the convict population from both New South Wales and Van Die men's Land were send during the 1830s.",
+                "latE6": -29057526,
+                "lngE6": 167956299,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748665863857",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748664005133",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Seabirds",
+                "description": "Information about seabirds that inhabit this area.",
+                "latE6": -42438747,
+                "lngE6": 171191942,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Geodetic Survey Mark - Greymouth Aerodrome",
+                "description": "Geodetic system control mark that serve's as physical reference point, this interesting type is rear located in the Greymouth urban area.",
+                "latE6": -42459697,
+                "lngE6": 171189224,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748658478708",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748660407148",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Cobden Dog Park",
+                "description": "Exercise area for mans' best friend.",
+                "latE6": -42440513,
+                "lngE6": 171205266,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Seabirds",
+                "description": "Information about seabirds that inhabit this area.",
+                "latE6": -42438747,
+                "lngE6": 171191942,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748652332447",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748656802128",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Montieths Brewing Beer Vat",
+                "description": "Beer vat display in car park. Is not operational.",
+                "latE6": -42453803,
+                "lngE6": 171207226,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Cobden Dog Park",
+                "description": "Exercise area for mans' best friend.",
+                "latE6": -42440513,
+                "lngE6": 171205266,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748653576792",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748653201586",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Aviation at Greymouth",
+                "description": "This information board along the West Coast Cycle trail provides an array of historic information on the aviation in the Greymouth area from the first flights in the early 1900s', aerodrome development and today's current aviation services.",
+                "latE6": -42459892,
+                "lngE6": 171188888,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Montieths Brewing Beer Vat",
+                "description": "Beer vat display in car park. Is not operational.",
+                "latE6": -42453803,
+                "lngE6": 171207226,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748649559431",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748649600798",
+              "reason": "no move"
+            },
+            {
+              "moveTimeMs": "1748646000823",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Aviation at Greymouth",
+                "description": "This information board along the West Coast Cycle trail provides an array of historic information on the aviation in the Greymouth area from the first flights in the early 1900s', aerodrome development and today's current aviation services.",
+                "latE6": -42459892,
+                "lngE6": 171188888,
+                "team": "RESISTANCE"
+              }
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_14",
+          "currentPortalInfo": {
+            "title": "Helleristningen på Skeie.",
+            "description": "En helleristning fra Vikingetiden som viser ett langskip.\nHelleristningen ligger ved innseilingen til Stavanger på ett sted hvor befolkningen trolig hadde god utsikt til skipa som la ut på, eller returnerte fra seilas.",
+            "latE6": 59004478,
+            "lngE6": 5716321,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685608317",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Blidensol",
+                "description": "Oldest building in old Stavanger, built around year 1700",
+                "latE6": 58973682,
+                "lngE6": 5723618,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Helleristningen på Skeie.",
+                "description": "En helleristning fra Vikingetiden som viser ett langskip.\nHelleristningen ligger ved innseilingen til Stavanger på ett sted hvor befolkningen trolig hadde god utsikt til skipa som la ut på, eller returnerte fra seilas.",
+                "latE6": 59004478,
+                "lngE6": 5716321,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "RESISTANCE",
+              "linkCreationTimeMs": "1748685557260",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "DESTINATION_TO_ORIGIN"
+            },
+            {
+              "moveTimeMs": "1748682001631",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Blidensol",
+                "description": "Oldest building in old Stavanger, built around year 1700",
+                "latE6": 58973682,
+                "lngE6": 5723618,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED"
+            }
+          ]
+        },
+        {
+          "id": "abaddon1_15",
+          "currentPortalInfo": {
+            "title": "Informatiebord vijver - Natuurpark Overmeers",
+            "description": "Informatie omtrent de fauna in de vijver van Natuurpark Overmeers.",
+            "latE6": 51033767,
+            "lngE6": 3697062,
+            "team": "RESISTANCE"
+          },
+          "history": [
+            {
+              "moveTimeMs": "1748685607149",
+              "reason": "link",
+              "originPortalInfo": {
+                "title": "Benedictuspoort",
+                "latE6": 51034742,
+                "lngE6": 3739230,
+                "team": "RESISTANCE"
+              },
+              "originCapturerTeam": "RESISTANCE",
+              "destinationPortalInfo": {
+                "title": "Informatiebord vijver - Natuurpark Overmeers",
+                "description": "Informatie omtrent de fauna in de vijver van Natuurpark Overmeers.",
+                "latE6": 51033767,
+                "lngE6": 3697062,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "NOT_SPECIFIED",
+              "linkCreationTimeMs": "1748685594472",
+              "linkCreatorTeam": "RESISTANCE",
+              "linkOriginatedFromOriginPortal": "ORIGIN_TO_DESTINATION"
+            },
+            {
+              "moveTimeMs": "1748682005528",
+              "reason": "spawn",
+              "destinationPortalInfo": {
+                "title": "Benedictuspoort",
+                "latE6": 51034742,
+                "lngE6": 3739230,
+                "team": "RESISTANCE"
+              },
+              "destinationCapturerTeam": "ENLIGHTENED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quebec",
+      "name": "Quebec"
+    },
+    {
+      "id": "charlie",
+      "name": "Charlie"
+    },
+    {
+      "id": "delta",
+      "name": "Delta"
+    },
+    {
+      "id": "romeo",
+      "name": "Romeo"
+    },
+    {
+      "id": "mike",
+      "name": "Mike"
+    },
+    {
+      "id": "november",
+      "name": "November"
+    },
+    {
+      "id": "zulu",
+      "name": "Zulu"
+    },
+    {
+      "id": "xray",
+      "name": "Xray"
+    },
+    {
+      "id": "whiskey",
+      "name": "Whiskey"
+    },
+    {
+      "id": "golf",
+      "name": "Golf"
+    },
+    {
+      "id": "victor",
+      "name": "Victor"
+    },
+    {
+      "id": "oscar",
+      "name": "Oscar"
+    },
+    {
+      "id": "kilo",
+      "name": "Kilo"
+    },
+    {
+      "id": "sierra",
+      "name": "Sierra"
+    },
+    {
+      "id": "echo",
+      "name": "Echo"
+    },
+    {
+      "id": "india",
+      "name": "India"
+    },
+    {
+      "id": "bravo",
+      "name": "Bravo"
+    },
+    {
+      "id": "alpha",
+      "name": "Alpha"
+    },
+    {
+      "id": "lima",
+      "name": "Lima"
+    },
+    {
+      "id": "juliet",
+      "name": "Juliet"
+    },
+    {
+      "id": "hotel",
+      "name": "Hotel"
+    },
+    {
+      "id": "foxtrot",
+      "name": "Foxtrot"
+    },
+    {
+      "id": "abaddon2",
+      "name": "Abaddon 2"
+    },
+    {
+      "id": "uniform",
+      "name": "Uniform"
+    },
+    {
+      "id": "targetenl",
+      "name": "Target ENL"
+    }
+  ]
+}
