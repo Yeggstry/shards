@@ -286,7 +286,7 @@
             $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
-            if (name.includes("Singular") {
+            if (name.includes("Singular")) {
                 plot_json_singular(safe_name, json)
             } else {
                 plot_json(safe_name, json)
