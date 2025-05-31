@@ -263,7 +263,7 @@
                 var unique_id = name + "_" + f.id
                 layer_lookup[unique_id] = layer
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
-                if (safe_name == "_theta_2025_05_31_shard_singular") i += 16
+                if (safe_name == "_theta_2025_05_31_shard_singular") i = parseInt(i) + 16
                 html += `<button id="${unique_id}">${shard_singulars[i] || f.id}</button> ${scores}<br>`
             }
             html += "</div>"
