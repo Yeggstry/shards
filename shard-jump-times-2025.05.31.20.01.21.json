@@ -140,7 +140,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Indian/Maldives"
         },
         {
           "id": "abaddon1_04",
@@ -275,7 +276,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Asia/Makassar"
         },
         {
           "id": "abaddon1_06",
@@ -375,7 +377,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Asia/Shanghai"
         },
         {
           "id": "abaddon1_03",
@@ -495,7 +498,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Asia/Seoul"
         },
         {
           "id": "abaddon1_02",
@@ -647,7 +651,8 @@
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
-          ]
+          ],
+          "timezone": "Asia/Tokyo"
         },
         {
           "id": "abaddon1_09",
@@ -674,7 +679,8 @@
                 "team": "NEUTRAL"
               }
             }
-          ]
+          ],
+          "timezone": "Asia/Dubai"
         },
         {
           "id": "abaddon1_05",
@@ -805,7 +811,8 @@
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
-          ]
+          ],
+          "timezone": "Asia/Taipei"
         },
         {
           "id": "abaddon1_01",
@@ -952,7 +959,8 @@
                 "team": "RESISTANCE"
               }
             }
-          ]
+          ],
+          "timezone": "Pacific/Auckland"
         },
         {
           "id": "abaddon1_10",
@@ -976,7 +984,8 @@
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
-          ]
+          ],
+          "timezone": "Europe/Sofia"
         },
         {
           "id": "abaddon1_07",
@@ -1054,7 +1063,8 @@
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
-          ]
+          ],
+          "timezone": "Asia/Macau"
         }
       ]
     },
