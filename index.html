@@ -6,7 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="https://neon-ninja.github.io/shards/screenshot.png" />
-    <link rel="icon" type="image/png" href="//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/abaddon1_shard.png" sizes="60x60"/>
+    <link rel="icon" type="image/png"
+        href="//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/abaddon1_shard.png"
+        sizes="60x60" />
     <title>Ingress Shards</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -25,7 +27,7 @@
             width: 100%;
             margin: 0;
         }
-        
+
         button {
             font-family: 'Twemoji Country Flags', sans-serif;
         }
@@ -81,7 +83,7 @@
             "RESISTANCE": "#0088FF",
             "ENLIGHTENED": "#03DC03",
             "MACHINA": "#FF0028",
-            "NOT_SPECIFIED": "#FF6600", 
+            "NOT_SPECIFIED": "#FF6600",
             undefined: "#FF6600"
         }
         var layerControl = L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
@@ -108,23 +110,23 @@
             "Monterrey, Mexico",
             "Salt Lake City, UT, USA",
             "Las Vegas, NV, USA",
-            "San Diego, CA, USA", 
-"🇳🇿 Greymouth, New Zealand", 
-"🇯🇵 Shimonoseki, Japan",
-"🇰🇷 Incheon, South Korea", 
-"🇮🇩 Makassar, Indonesia",
-"🇹🇼 Kinmen, Taiwan", 
-"🇨🇳 Tianjin, China", 
-"🇲🇴 Macao", 
-"🇲🇻 Male, Maldives", 
-"🇦🇪 Dubai, United Arab Emirates", 
-"🇧🇬 Sofia, Bulgaria", 
-"🇨🇿 Ostrava, Czechia", 
-"🇸🇰 Bratislava, Slovakia", 
-"🇳🇱 Delfzijl, Netherlands", 
-"🇳🇴 Stavanger, Norway", 
-"🇧🇪 Ghent, Belgium", 
-"🇪🇸 Zaragoza, Spain"
+            "San Diego, CA, USA",
+            "🇳🇿 Greymouth, New Zealand",
+            "🇯🇵 Shimonoseki, Japan",
+            "🇰🇷 Incheon, South Korea",
+            "🇮🇩 Makassar, Indonesia",
+            "🇹🇼 Kinmen, Taiwan",
+            "🇨🇳 Tianjin, China",
+            "🇲🇴 Macao",
+            "🇲🇻 Male, Maldives",
+            "🇦🇪 Dubai, United Arab Emirates",
+            "🇧🇬 Sofia, Bulgaria",
+            "🇨🇿 Ostrava, Czechia",
+            "🇸🇰 Bratislava, Slovakia",
+            "🇳🇱 Delfzijl, Netherlands",
+            "🇳🇴 Stavanger, Norway",
+            "🇧🇪 Ghent, Belgium",
+            "🇪🇸 Zaragoza, Spain"
         ];
 
         window.layer_lookup = {}
@@ -212,7 +214,7 @@
             var seriesLayer = L.featureGroup()//.addTo(map)
             layerControl.addOverlay(seriesLayer, name);
             seriesLayer.addTo(map)
-            
+
             var html = `<div id="${name}" class="series" style="display:none">`
             var data = json.artifact
             data = data.filter(d => d.id == "abaddon1")[0].fragment
@@ -297,12 +299,12 @@
             "Shared Memories 2024 APAC": "shard-jump-times-2024.09.01.18.10.48.json",
             "Erased Memories 2024 AMER": "shard-jump-times-2024.11.17.09.14.04.json",
             "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
-            "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json", 
+            "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json",
             "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
             "+Theta 2025-05-24 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
             "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
             "+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.06.03.15.20.36.json",
-            "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json" 
+            "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json"
         }
 
         for (var name in json_files) {
