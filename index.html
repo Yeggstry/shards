@@ -25,6 +25,10 @@
             width: 100%;
             margin: 0;
         }
+        
+        button {
+            font-family: 'Twemoji Country Flags', sans-serif;
+        }
 
         #controls {
             position: absolute;
@@ -47,6 +51,10 @@
 </head>
 
 <body>
+    <script type="module" defer>
+        import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+        polyfillCountryFlagEmojis();
+    </script>
     <div id="map"></div>
     <div id="controls"><select id="series">
             <option value="custom">Custom</option>
@@ -293,8 +301,8 @@
             "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
             "+Theta 2025-05-24 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
             "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
-"+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.06.01.12.48.16.json",
-            "+Theta 2025 AMER": "shard-jump-times-2025.06.01.12.48.16.json" 
+            "+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.06.03.15.20.36.json",
+            "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json" 
         }
 
         for (var name in json_files) {
