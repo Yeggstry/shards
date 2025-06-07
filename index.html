@@ -126,7 +126,23 @@
             "🇳🇱 Delfzijl, Netherlands",
             "🇳🇴 Stavanger, Norway",
             "🇧🇪 Ghent, Belgium",
-            "🇪🇸 Zaragoza, Spain"
+            "🇪🇸 Zaragoza, Spain",
+            "🇱🇻 Riga, Latvia",
+            "🇿🇦 Cape Town, South Africa",
+            "🇵🇱 Poznań, Poland",
+            "🇮🇹 Fiumicino, Italy",
+            "🇩🇪 Nürnberg, Germany",
+            "🇫🇷 Lyon, France",
+            "🇬🇧 Plymouth, UK",
+            "🇵🇹 Lisboa, Portugal",
+            "🇧🇷 Recife, Brazil",
+            "🇧🇷 Rio de Janeiro, Brazil",
+            "🇨🇴 Cartagena, Colombia",
+            "🇺🇸 Orlando, FL, USA",
+            "🇺🇸 Columbus, OH, USA",
+            "🇺🇸 Milwaukee, WI, USA",
+            "🇺🇸 Fort Worth, TX, USA",
+            "🇨🇦 Vancouver, Canada",
         ];
 
         window.layer_lookup = {}
@@ -289,6 +305,7 @@
                 layer_lookup[unique_id] = layer
                 var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
                 if (safe_name == "_theta_2025_05_31_shard_singular") i = parseInt(i) + 16
+                if (safe_name == "_theta_2025_06_07_shard_singular") i = parseInt(i) + 32
                 html += `<button id="${unique_id}">${shard_singulars[i] || f.id}</button> ${scores}<br>`
             }
             html += "</div>"
@@ -304,12 +321,14 @@
             "+Theta 2025-05-24 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
             "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
             "+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.06.03.15.20.36.json",
-            "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json"
+            "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json",
+            "+Theta 2025-06-07 Shard Singular": "shard-jump-times-2025.06.07.23.04.55.json",
+            "+Theta 2025 APAC": "shard-jump-times-2025.06.07.23.04.55.json"
         }
 
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Theta 2025-05-31 Shard Singular" ? "selected" : ""
+            var selected = name == "+Theta 2025 APAC" ? "selected" : ""
             $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
@@ -319,9 +338,9 @@
                 plot_json(safe_name, json)
             }
         }
-        $("#_theta_2025_05_31_shard_singular").show()
+        $("#_theta_2025_apac").show()
         try {
-            map.fitBounds(layer_lookup._theta_2025_05_31_shard_singular_abaddon1_01.getBounds())
+            map.fitBounds(layer_lookup._theta_2025_apac_Alpha.getBounds())
         } catch (e) {
             console.error("Error fitting bounds", e)
         }
