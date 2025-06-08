@@ -166,7 +166,8 @@
               },
               "destinationCapturerTeam": "MACHINA"
             }
-          ]
+          ],
+          "timezone": "America/Sao_Paulo"
         },
         {
           "id": "abaddon1_16",
@@ -326,7 +327,8 @@
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
-          ]
+          ],
+          "timezone": "America/Vancouver"
         },
         {
           "id": "abaddon1_12",
@@ -432,7 +434,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "America/New_York"
         },
         {
           "id": "abaddon1_08",
@@ -579,7 +582,8 @@
                 "team": "ENLIGHTENED"
               }
             }
-          ]
+          ],
+          "timezone": "Europe/Lisbon"
         },
         {
           "id": "abaddon1_04",
@@ -726,7 +730,8 @@
                 "team": "ENLIGHTENED"
               }
             }
-          ]
+          ],
+          "timezone": "Europe/Rome"
         },
         {
           "id": "abaddon1_07",
@@ -853,7 +858,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Europe/London"
         },
         {
           "id": "abaddon1_05",
@@ -937,7 +943,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Europe/Berlin"
         },
         {
           "id": "abaddon1_14",
@@ -1098,7 +1105,8 @@
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
-          ]
+          ],
+          "timezone": "America/Chicago"
         },
         {
           "id": "abaddon1_02",
@@ -1262,7 +1270,8 @@
                 "team": "RESISTANCE"
               }
             }
-          ]
+          ],
+          "timezone": "Africa/Johannesburg"
         },
         {
           "id": "abaddon1_06",
@@ -1408,7 +1417,8 @@
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
-          ]
+          ],
+          "timezone": "Europe/Paris"
         },
         {
           "id": "abaddon1_15",
@@ -1535,7 +1545,8 @@
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
-          ]
+          ],
+          "timezone": "America/Chicago"
         },
         {
           "id": "abaddon1_03",
@@ -1692,7 +1703,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Europe/Warsaw"
         },
         {
           "id": "abaddon1_01",
@@ -1853,7 +1865,8 @@
               },
               "destinationCapturerTeam": "NOT_SPECIFIED"
             }
-          ]
+          ],
+          "timezone": "Europe/Riga"
         },
         {
           "id": "abaddon1_13",
@@ -1958,7 +1971,8 @@
               },
               "destinationCapturerTeam": "ENLIGHTENED"
             }
-          ]
+          ],
+          "timezone": "America/New_York"
         },
         {
           "id": "abaddon1_09",
@@ -2081,7 +2095,8 @@
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
-          ]
+          ],
+          "timezone": "America/Recife"
         },
         {
           "id": "abaddon1_11",
@@ -2208,7 +2223,8 @@
               },
               "destinationCapturerTeam": "RESISTANCE"
             }
-          ]
+          ],
+          "timezone": "America/Bogota"
         }
       ]
     },
@@ -3477,7 +3493,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Morioka, Japan",
+      "timezone": "Asia/Tokyo"
     },
     {
       "id": "delta",
@@ -4555,7 +4573,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Matsuyama, Japan",
+      "timezone": "Asia/Tokyo"
     },
     {
       "id": "romeo",
@@ -5786,7 +5806,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Hualien, Taiwan",
+      "timezone": "Asia/Taipei"
     },
     {
       "id": "victor",
@@ -7014,7 +7036,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Bengaluru, India",
+      "timezone": "Asia/Kolkata"
     },
     {
       "id": "sierra",
@@ -8264,7 +8288,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Kumamoto, Japan",
+      "timezone": "Asia/Tokyo"
     },
     {
       "id": "india",
@@ -9502,7 +9528,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Malang City, East Java",
+      "timezone": "Asia/Jakarta"
     },
     {
       "id": "bravo",
@@ -10668,7 +10696,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Asahikawa, Japan",
+      "timezone": "Asia/Tokyo"
     },
     {
       "id": "alpha",
@@ -11811,7 +11841,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Adelaide, Australia",
+      "timezone": "Australia/Adelaide"
     },
     {
       "id": "lima",
@@ -13003,7 +13035,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Mumbai, India",
+      "timezone": "Asia/Kolkata"
     },
     {
       "id": "juliet",
@@ -14288,7 +14322,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Hanoi",
+      "timezone": "Asia/Bangkok"
     },
     {
       "id": "hotel",
@@ -15452,7 +15488,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Taichung, Taiwan",
+      "timezone": "Asia/Taipei"
     },
     {
       "id": "foxtrot",
@@ -16685,7 +16723,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Busan, South Korea",
+      "timezone": "Asia/Seoul"
     },
     {
       "id": "abaddon2",
