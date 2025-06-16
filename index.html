@@ -159,7 +159,7 @@
             console.log(name, data)
             var seen_links = {}
             for (var d of data) {
-                if (d.id == "abaddon1" && name != "_theta_2025_perth") continue;
+                if (d.id == "abaddon1" && name != "_theta_2025_06_14") continue;
                 var layer = L.featureGroup().addTo(seriesLayer)
                 layer.data = d;
                 var resLinks = 0
@@ -329,7 +329,7 @@
 
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Theta 2025 Perth" ? "selected" : ""
+            var selected = name == "+Theta 2025-06-14" ? "selected" : ""
             $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
             var resp = await fetch(json_files[name])
             var json = await resp.json()
@@ -339,9 +339,9 @@
                 plot_json(safe_name, json)
             }
         }
-        $("#_theta_2025_perth").show()
+        $("#_theta_2025_06_14").show()
         try {
-            map.fitBounds(layer_lookup._theta_2025_perth_Abaddon_1.getBounds())
+            map.fitBounds(layer_lookup._theta_2025_06_14_Abaddon_1.getBounds())
         } catch (e) {
             console.error("Error fitting bounds", e)
         }
