@@ -327,12 +327,14 @@
             "+Theta 2025-06-14": "shard-jump-times-2025.06.16.17.47.43.json"
         }
 
+        var all_data = await fetch("all_data.json").then(resp => resp.json())
+        console.log(all_data)
+
         for (var name in json_files) {
             var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
             var selected = name == "+Theta 2025-06-14" ? "selected" : ""
             $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
-            var resp = await fetch(json_files[name])
-            var json = await resp.json()
+            var json = all_data[json_files[name]]
             if (name.includes("Singular")) {
                 plot_json_singular(safe_name, json)
             } else {

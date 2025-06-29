@@ -16,7 +16,7 @@ from pprint import pprint
 tf = TimezoneFinder()
 
 dfs = []
-for url in ["https://ingress.com/news/2024-sharedmem", "https://ingress.com/news/2024-erasedmem", "https://ingress.com/news/2025-plusalpha", "https://ingress.com/news/2025-plustheta"]:
+for url in ["https://ingress.com/news/2024-sharedmem", "https://ingress.com/news/2024-erasedmem", "https://ingress.com/news/2025-plusalpha", "https://ingress.com/news/2025-plustheta", "https://ingress.com/news/2025-plusdelta"]:
   r = requests.get(url)
   df = pd.DataFrame(re.findall(r"(?P<lat>-?\d+.\d+), (?P<lng>-?\d+.\d+)]\).bindPopup\('(?P<type>Shard Skirmish|Anomaly)<br /> ?(?P<city>.+?)<br />(?P<date>.+?)'", r.text), columns=["lat", "lng", "type", "city", "date"])
   df["series"] = url.split("/")[-1]
@@ -31,6 +31,7 @@ print(df)
 df.drop(columns="geometry").sort_values("date").to_csv("events.csv", index=False)
 
 files = glob("*.json")
+all_data = {}
 
 for f in tqdm(files):
   with open(f, "r") as file:
@@ -63,3 +64,9 @@ for f in tqdm(files):
         d["timezone"] = timezone
   with open(f, "w") as file:
     json.dump(data, file, indent=2, ensure_ascii=False)
+    all_data[f] = data
+
+
+with open("all_data.json", "w") as file:
+  json.dump(all_data, file, indent=2, ensure_ascii=False)
+print("Done")
