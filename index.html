@@ -1,395 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <base target="_top" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="https://neon-ninja.github.io/shards/screenshot.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/abaddon1_shard.png"
+            sizes="60x60"
+        />
+        <title>Ingress Shards</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+        />
+        <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""
+        ></script>
+        <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://neon-ninja.github.io/leaflet.motion/dist/leaflet.motion.min.js"></script>
+        <style>
+            html,
+            body,
+            #map {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
 
-<head>
-    <base target="_top">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="https://neon-ninja.github.io/shards/screenshot.png" />
-    <link rel="icon" type="image/png"
-        href="//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/abaddon1_shard.png"
-        sizes="60x60" />
-    <title>Ingress Shards</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://neon-ninja.github.io/leaflet.motion/dist/leaflet.motion.min.js"></script>
-    <style>
-        html,
-        body,
-        #map {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
+            button {
+                font-family: "Twemoji Country Flags", sans-serif;
+            }
 
-        button {
-            font-family: 'Twemoji Country Flags', sans-serif;
-        }
+            #controls {
+                position: absolute;
+                right: 10px;
+                bottom: 20px;
+                background-color: white;
+                z-index: 9999;
+                padding: 10px;
+                border-radius: 10px;
+            }
 
-        #controls {
-            position: absolute;
-            right: 10px;
-            bottom: 20px;
-            background-color: white;
-            z-index: 9999;
-            padding: 10px;
-            border-radius: 10px;
-        }
+            #controls span {
+                font-weight: bold;
+            }
 
-        #controls span {
-            font-weight: bold;
-        }
+            .github-fork-ribbon:before {
+                background-color: #333;
+            }
+        </style>
+    </head>
 
-        .github-fork-ribbon:before {
-            background-color: #333;
-        }
-    </style>
-</head>
+    <body>
+        <script type="module" defer>
+            import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+            polyfillCountryFlagEmojis();
+        </script>
+        <div id="map"></div>
+        <div id="controls">
+            <select id="series">
+                <option value="custom">Custom</option></select
+            ><br /><input id="custom" class="series" type="file" accept="application/json" style="display: none" />
+        </div>
+        <a
+            class="github-fork-ribbon"
+            href="https://github.com/neon-ninja/shards"
+            data-ribbon="Fork me on GitHub"
+            title="Fork me on GitHub"
+            >Fork me on GitHub</a
+        >
+        <script type="module">
+            window.map = L.map("map", {
+                worldCopyJump: true
+            });
+            var baseMaps = {
+                OSM: L.tileLayer.provider("OpenStreetMap.Mapnik"),
+                "CartoDB Positron": L.tileLayer.provider("CartoDB.Positron"),
+                "CartoDB Dark Matter": L.tileLayer.provider("CartoDB.DarkMatter").addTo(map),
+                "ESRI WorldImagery": L.tileLayer.provider("Esri.WorldImagery"),
+                "Google Hybrid": L.tileLayer("http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}", {
+                    maxZoom: 20,
+                    subdomains: ["mt0", "mt1", "mt2", "mt3"]
+                })
+            };
+            const factionColors = {
+                NEUTRAL: "#FF6600",
+                RESISTANCE: "#0088FF",
+                ENLIGHTENED: "#03DC03",
+                MACHINA: "#FF0028",
+                NOT_SPECIFIED: "#FF6600",
+                undefined: "#FF6600"
+            };
+            const historyReasons = {
+                SPAWN: "spawn",
+                NO_MOVE: "no move",
+                LINK: "link",
+                JUMP: "jump",
+                DESPAWN: "despawn"
+            };
+            const shardEventType = {
+                SKIRMISH: "skirmish",
+                SINGULAR: "singular",
+                ANOMALY: "anomaly"
+            };
+            var layerControl = L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
 
-<body>
-    <script type="module" defer>
-        import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
-        polyfillCountryFlagEmojis();
-    </script>
-    <div id="map"></div>
-    <div id="controls"><select id="series">
-            <option value="custom">Custom</option>
-        </select><br><input id="custom" class="series" type="file" accept="application/json" style="display:none" />
-    </div>
-    <a class="github-fork-ribbon" href="https://github.com/neon-ninja/shards" data-ribbon="Fork me on GitHub"
-        title="Fork me on GitHub">Fork me on GitHub</a>
-    <script type="module">
-        window.map = L.map('map', {
-            worldCopyJump: true,
-        })
-        var baseMaps = {
-            "OSM": L.tileLayer.provider("OpenStreetMap.Mapnik"),
-            "CartoDB Positron": L.tileLayer.provider('CartoDB.Positron'),
-            "CartoDB Dark Matter": L.tileLayer.provider("CartoDB.DarkMatter").addTo(map),
-            "ESRI WorldImagery": L.tileLayer.provider("Esri.WorldImagery"),
-            "Google Hybrid": L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
-                maxZoom: 20,
-                subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-            })
-        }
-        var colors = {
-            "NEUTRAL": "#FF6600",
-            "RESISTANCE": "#0088FF",
-            "ENLIGHTENED": "#03DC03",
-            "MACHINA": "#FF0028",
-            "NOT_SPECIFIED": "#FF6600",
-            undefined: "#FF6600"
-        }
-        var layerControl = L.control.layers(baseMaps, {}, { position: "topleft" }).addTo(map);
+            var shardIcon = L.icon({
+                iconUrl:
+                    "//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/abaddon1_shard.png",
+                iconSize: [30, 30],
+                iconAnchor: [15, 15]
+            });
 
-        var shardIcon = L.icon({
-            iconUrl: '//commondatastorage.googleapis.com/ingress.com/img/map_icons/marker_images/abaddon1_shard.png',
-            iconSize: [30, 30],
-            iconAnchor: [15, 15],
-        });
+            var shard_singulars = [
+                "🇦🇺 Hervey Bay, Australia",
+                "🇦🇺 Hobart, Australia",
+                "🇯🇵 Niigata, Japan",
+                "🇯🇵 Shizuoka, Japan",
+                "🇨🇳 Shanghai (Baoshan District), China",
+                "🇲🇾 Kota Kinabalu, Malaysia",
+                "🇭🇰 Tuen Mun, Hong Kong",
+                "🇸🇬 Bedok, Singapore",
+                "🇨🇱 Santiago, Chile",
+                "🇵🇪 Lima, Peru",
+                "🇨🇦 Toronto, Canada",
+                "🇨🇷 San Jose, Costa Rica",
+                "🇲🇽 Monterrey, Mexico",
+                "🇺🇸 Salt Lake City, UT, USA",
+                "🇺🇸 Las Vegas, NV, USA",
+                "🇺🇸 San Diego, CA, USA",
+                "🇳🇿 Greymouth, New Zealand",
+                "🇯🇵 Shimonoseki, Japan",
+                "🇰🇷 Incheon, South Korea",
+                "🇮🇩 Makassar, Indonesia",
+                "🇹🇼 Kinmen, Taiwan",
+                "🇨🇳 Tianjin, China",
+                "🇲🇴 Macao",
+                "🇲🇻 Male, Maldives",
+                "🇦🇪 Dubai, United Arab Emirates",
+                "🇧🇬 Sofia, Bulgaria",
+                "🇨🇿 Ostrava, Czechia",
+                "🇸🇰 Bratislava, Slovakia",
+                "🇳🇱 Delfzijl, Netherlands",
+                "🇳🇴 Stavanger, Norway",
+                "🇧🇪 Ghent, Belgium",
+                "🇪🇸 Zaragoza, Spain",
+                "🇱🇻 Riga, Latvia",
+                "🇿🇦 Cape Town, South Africa",
+                "🇵🇱 Poznań, Poland",
+                "🇮🇹 Fiumicino, Italy",
+                "🇩🇪 Nürnberg, Germany",
+                "🇫🇷 Lyon, France",
+                "🇬🇧 Plymouth, UK",
+                "🇵🇹 Lisboa, Portugal",
+                "🇧🇷 Recife, Brazil",
+                "🇧🇷 Rio de Janeiro, Brazil",
+                "🇨🇴 Cartagena, Colombia",
+                "🇺🇸 Orlando, FL, USA",
+                "🇺🇸 Columbus, OH, USA",
+                "🇺🇸 Milwaukee, WI, USA",
+                "🇺🇸 Fort Worth, TX, USA",
+                "🇨🇦 Vancouver, Canada"
+            ];
+            const linkScoringRules = new Map()
+                .set(shardEventType.SINGULAR, {
+                    rules: [
+                        {
+                            description:
+                                "3 points for a single jump over a Link longer than 100km. No further points will be given for subsequent jumps by that Shard.",
+                            jumpPoints: 0,
+                            minDistance: 100000,
+                            maxDistance: Infinity,
+                            linkLengthPoints: 3,
+                            allowFurtherPoints: false
+                        },
+                        {
+                            description: "1 point for each jump over a Link between 1km and 5km in length.",
+                            jumpPoints: 0,
+                            minDistance: 1000,
+                            maxDistance: 5000,
+                            linkLengthPoints: 1,
+                            allowFurtherPoints: true
+                        }
+                    ]
+                })
+                .set(shardEventType.SKIRMISH, {
+                    rules: [
+                        {
+                            description: "1 point for a single jump over a Link longer than 249.5m.",
+                            jumpPoints: 0,
+                            minDistance: 249.5,
+                            maxDistance: Infinity,
+                            linkLengthPoints: 1,
+                            allowFurtherPoints: true
+                        }
+                    ]
+                })
+                .set(shardEventType.ANOMALY, {
+                    rules: [
+                        {
+                            description: "1 point for a single jump over a Link longer than 249.5m.",
+                            jumpPoints: 1,
+                            minDistance: 0,
+                            maxDistance: Infinity,
+                            linkLengthPoints: 0,
+                            allowFurtherPoints: true
+                        }
+                    ]
+                });
 
-        var shard_singulars = [
-            "🇦🇺 Hervey Bay, Australia",
-            "🇦🇺 Hobart, Australia",
-            "🇯🇵 Niigata, Japan",
-            "🇯🇵 Shizuoka, Japan",
-            "🇨🇳 Shanghai (Baoshan District), China",
-            "🇲🇾 Kota Kinabalu, Malaysia",
-            "🇭🇰 Tuen Mun, Hong Kong",
-            "🇸🇬 Bedok, Singapore",
-            "🇨🇱 Santiago, Chile",
-            "🇵🇪 Lima, Peru",
-            "🇨🇦 Toronto, Canada",
-            "🇨🇷 San Jose, Costa Rica",
-            "🇲🇽 Monterrey, Mexico",
-            "🇺🇸 Salt Lake City, UT, USA",
-            "🇺🇸 Las Vegas, NV, USA",
-            "🇺🇸 San Diego, CA, USA",
-            "🇳🇿 Greymouth, New Zealand",
-            "🇯🇵 Shimonoseki, Japan",
-            "🇰🇷 Incheon, South Korea",
-            "🇮🇩 Makassar, Indonesia",
-            "🇹🇼 Kinmen, Taiwan",
-            "🇨🇳 Tianjin, China",
-            "🇲🇴 Macao",
-            "🇲🇻 Male, Maldives",
-            "🇦🇪 Dubai, United Arab Emirates",
-            "🇧🇬 Sofia, Bulgaria",
-            "🇨🇿 Ostrava, Czechia",
-            "🇸🇰 Bratislava, Slovakia",
-            "🇳🇱 Delfzijl, Netherlands",
-            "🇳🇴 Stavanger, Norway",
-            "🇧🇪 Ghent, Belgium",
-            "🇪🇸 Zaragoza, Spain",
-            "🇱🇻 Riga, Latvia",
-            "🇿🇦 Cape Town, South Africa",
-            "🇵🇱 Poznań, Poland",
-            "🇮🇹 Fiumicino, Italy",
-            "🇩🇪 Nürnberg, Germany",
-            "🇫🇷 Lyon, France",
-            "🇬🇧 Plymouth, UK",
-            "🇵🇹 Lisboa, Portugal",
-            "🇧🇷 Recife, Brazil",
-            "🇧🇷 Rio de Janeiro, Brazil",
-            "🇨🇴 Cartagena, Colombia",
-            "🇺🇸 Orlando, FL, USA",
-            "🇺🇸 Columbus, OH, USA",
-            "🇺🇸 Milwaukee, WI, USA",
-            "🇺🇸 Fort Worth, TX, USA",
-            "🇨🇦 Vancouver, Canada",
-        ];
+            window.layer_lookup = {};
+            let currentActiveSeriesLayer = null;
 
-        window.layer_lookup = {}
-        function plot_json(name, json) {
-            var seriesLayer = L.featureGroup()
-            if (name.includes("theta_2025")) seriesLayer.addTo(map)
-            layer_lookup[name] = seriesLayer;
-            layerControl.addOverlay(seriesLayer, name);
-            var html = `<div id="${name}" class="series" style="display:none">`
-            var data = json.artifact
-            data = data.filter(d => d.fragment)
-            if (!data.length) html += "JSON is empty"
-            data.sort((a, b) => a.name.localeCompare(b.name))
-            console.log(name, data)
-            var seen_links = {}
-            for (var d of data) {
-                if (d.id == "abaddon1" && name != "_theta_2025_06_14") continue;
-                var layer = L.featureGroup().addTo(seriesLayer)
-                layer.data = d;
-                var resLinks = 0
-                var redLinks = 0
-                var enlLinks = 0
-                var fizzles = 0
-                for (var f of d.fragment) {
-                    var link = f.history.filter(h => h.reason == "link")[0]
-                    if (link) {
-                        var origin = link.originPortalInfo;
-                        var color = colors[link.linkCreatorTeam]
-                        var origin_ll = L.latLng(origin.latE6 / 1e6, origin.lngE6 / 1e6)
-                        L.circleMarker(origin_ll, { color: color }).bindTooltip(origin.title).addTo(layer)
-                        var dest = link.destinationPortalInfo;
-                        var dest_ll = L.latLng(dest.latE6 / 1e6, dest.lngE6 / 1e6)
-                        L.circleMarker(dest_ll, { color: color }).bindTooltip(dest.title).addTo(layer)
-                        var latlngs = [
-                            origin_ll,
-                            dest_ll
-                        ];
-                        var polyline = L.motion.polyline(latlngs, { color: color, dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }).addTo(layer);
-                        polyline.animated_shards = [L.motion.polyline(latlngs, { color: "transparent", interactive: false }, { auto: true, duration: 1000 }, { showMarker: true, removeOnEnd: false, icon: shardIcon, interactive: false }).addTo(layer)]
-                        polyline.on("mouseover", function (e) {
-                            this.animated_shards.forEach(s => s.motionStart())
-                        })
-                        link.distance = origin_ll.distanceTo(dest_ll)
-                        if (link.distance > 249.5) {
-                            if (link.linkCreatorTeam == "RESISTANCE") {
-                                resLinks++
-                            } else if (link.linkCreatorTeam == "MACHINA") {
-                                redLinks++
-                            } else if (link.linkCreatorTeam == "ENLIGHTENED") {
-                                enlLinks++
-                            }
+            // A function to convert Niantic's shard jump times json into a more usable format for display on a map.
+            function processShardEventData(name, json) {
+                const artifacts = json.artifact.filter((d) => d.fragment);
+                if (!artifacts.length) {
+                    console.warn(`No artifacts found with shards for ${name}. Skipping processing.`);
+                    return new Map();
+                }
+
+                artifacts.sort((a, b) => a.name.localeCompare(b.name));
+                let eventData = new Map();
+                for (const artifact of artifacts) {
+                    if (!artifact.city && !name.includes("singular")) {
+                        console.debug(`Skipping shard singular event ${artifact.id} to separate in drop down box`);
+                        continue;
+                    }
+                    if (artifact.city && name.includes("singular")) {
+                        console.debug(
+                            `Skipping shard skirmish ${artifact.id} (${artifact.city}) to separate in drop down box`
+                        );
+                        continue;
+                    }
+
+                    const sortedFragments = artifact.fragment.sort((a, b) => a.id.localeCompare(b.id));
+                    let site;
+                    for (const [index, fragment] of sortedFragments.entries()) {
+                        console.debug(`Processing fragment (shard) ${fragment.id} for artifact ${artifact.id}`);
+                        let siteDetails;
+                        if (artifact.city) {
+                            var eventType = name.includes("theta_2025_06_14")
+                                ? shardEventType.ANOMALY
+                                : shardEventType.SKIRMISH;
+                            siteDetails = {
+                                ...artifact,
+                                eventType
+                            };
                         } else {
-                            fizzles++
+                            siteDetails = {
+                                ...fragment,
+                                city: getShardSingularCity(name, index),
+                                eventType: shardEventType.SINGULAR
+                            };
                         }
-                        var linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
-                        var moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
-                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${linkCreationTimeMs}<br>Jump time: ${moveTimeMs}<br>Distance: ${Math.round(link.distance).toLocaleString()}m`, { sticky: true })
-                        polyline.bindPopup(polyline._tooltip._content)
-                        if (seen_links[dest_ll + origin_ll]) {
-                            var other_polyline = seen_links[dest_ll + origin_ll]
-                            //console.log("Duplicate link", other_polyline)
-                            polyline.bindTooltip(other_polyline._tooltip._content + "<br>" + polyline._tooltip._content, { sticky: true })
-                            polyline.bindPopup(polyline._tooltip._content)
-                            polyline.animated_shards.push(other_polyline.animated_shards[0])
-                        }
-                        seen_links[origin_ll + dest_ll] = polyline
-                    } else {
-                        fizzles++
-                        var spawn = f.history[f.history.length - 1]
-                        var spawnPortal = spawn.destinationPortalInfo
-                        var moveTimeMs = new Date(parseInt(spawn.moveTimeMs)).toLocaleString(navigator.language, { timeZone: d.timezone })
-                        L.circleMarker([spawnPortal.latE6 / 1e6, spawnPortal.lngE6 / 1e6], { color: colors[spawn.destinationCapturerTeam] }).bindTooltip(`<b>${spawnPortal.title}</b><br>Spawn time: ${moveTimeMs}<br>No jump`).addTo(layer)
-                    }
-                }
-                var unique_id = name + "_" + d.name.replace(" ", "_")
-                layer_lookup[unique_id] = layer
-                var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
-                html += `<button id="${unique_id}">${d.city || d.name}</button> ${scores}<br>`
-            }
-            html += "</div>"
-            $("#controls").append(html)
-        }
+                        site = getOrCreateSite(eventData, siteDetails);
 
-        function plot_json_singular(name, json) {
-            var seriesLayer = L.featureGroup()//.addTo(map)
-            layerControl.addOverlay(seriesLayer, name);
-            seriesLayer.addTo(map)
+                        const shardHistory = fragment.history.sort((a, b) => a.moveTimeMs.localeCompare(b.moveTimeMs));
+                        let mostRecentShardPortalKey;
+                        let shardEntries = [];
+                        let allowFurtherPoints = true;
+                        for (const historyItem of shardHistory) {
+                            const originPortalKey =
+                                historyItem.originPortalInfo &&
+                                `${historyItem.originPortalInfo.latE6}_${historyItem.originPortalInfo.lngE6}`;
+                            const destinationPortalKey =
+                                historyItem.destinationPortalInfo &&
+                                `${historyItem.destinationPortalInfo.latE6}_${historyItem.destinationPortalInfo.lngE6}`;
 
-            var html = `<div id="${name}" class="series" style="display:none">`
-            var data = json.artifact
-            data = data.filter(d => d.id == "abaddon1")[0].fragment
-            if (!data.length) html += "JSON is empty"
-            console.log(name, data)
-            data.sort((a, b) => a.id.localeCompare(b.id))
-            var seen_links = {}
-            for (var i in data) {
-                var f = data[i]
-                var layer = L.featureGroup().addTo(seriesLayer)
-                layer.data = f;
-                var resLinks = 0
-                var redLinks = 0
-                var enlLinks = 0
-                var fizzles = 0
-                f.history.reverse()
-                var lls = []
-                var longLink = false;
-                var polylines = []
-                for (var h of f.history) {
-                    if (h.reason == "link" || h.reason == "jump") {
-                        var origin = h.originPortalInfo;
-                        var color = colors[h.linkCreatorTeam]
-                        var origin_ll = L.latLng(origin.latE6 / 1e6, origin.lngE6 / 1e6)
-                        L.circleMarker(origin_ll, { color: color }).bindTooltip(origin.title).addTo(layer)
-                        lls.push(origin_ll)
-                        var dest = h.destinationPortalInfo;
-                        var dest_ll = L.latLng(dest.latE6 / 1e6, dest.lngE6 / 1e6)
-                        L.circleMarker(dest_ll, { color: color }).bindTooltip(dest.title).addTo(layer)
-                        lls.push(dest_ll)
-                        var polyline = L.motion.polyline([origin_ll, dest_ll], { color: colors[h.linkCreatorTeam], dashArray: ['10,5,5,5,5,5,5,5,100000'] }, { auto: true, duration: 1000 }).addTo(layer);
-                        var linkCreationTimeMs = new Date(parseInt(h.linkCreationTimeMs)).toLocaleString(navigator.language, { timeZone: f.timezone })
-                        var moveTimeMs = new Date(parseInt(h.moveTimeMs)).toLocaleString(navigator.language, { timeZone: f.timezone })
-                        h.distance = origin_ll.distanceTo(dest_ll)
-                        polyline.bindTooltip(`<b>${f.id}</b><br>${origin.title} -> ${dest.title}<br>Link time: ${linkCreationTimeMs}<br>Jump time: ${moveTimeMs}<br>Distance: ${Math.round(h.distance).toLocaleString()}m`, { sticky: true })
-                        polylines.push(polyline)
-                        // 1 Season Point for each jump over a Link between 1km and 5km in length.
-                        // 3 Season Points for a single jump over a Link longer than 100km. No further points will be given for subsequent jumps by that Shard.
-                        if (longLink) continue;
-                        if (h.distance > 100_000) {
-                            longLink = true;
-                            if (h.linkCreatorTeam == "RESISTANCE") {
-                                resLinks += 3
-                            } else if (h.linkCreatorTeam == "MACHINA") {
-                                redLinks += 3
-                            } else if (h.linkCreatorTeam == "ENLIGHTENED") {
-                                enlLinks += 3
+                            let originPortal;
+                            switch (historyItem.reason) {
+                                case historyReasons.SPAWN:
+                                    /*
+                                    Create a new shard entry if a spawn entry is found.
+                                    This covers the instances where Niantic reuse shards within an event
+                                    i.e. 65 shards for a 78 shard anomaly!
+                                    */
+                                    shardEntries.push({
+                                        id: fragment.id,
+                                        links: new Map()
+                                    });
+
+                                    const destinationPortal = getOrCreatePortalForSite(
+                                        site,
+                                        destinationPortalKey,
+                                        historyItem.destinationPortalInfo,
+                                        historyItem.destinationCapturerTeam
+                                    );
+
+                                    addToPortalHistory(destinationPortal, fragment.id, historyItem);
+                                    mostRecentShardPortalKey = destinationPortalKey;
+                                    break;
+                                case historyReasons.NO_MOVE:
+                                    originPortal = getOrCreatePortalForSite(
+                                        site,
+                                        mostRecentShardPortalKey,
+                                        historyItem.originPortalInfo,
+                                        historyItem.originCapturerTeam
+                                    );
+
+                                    addToPortalHistory(originPortal, fragment.id, historyItem);
+                                    break;
+                                case historyReasons.LINK:
+                                case historyReasons.JUMP:
+                                    originPortal = getOrCreatePortalForSite(
+                                        site,
+                                        originPortalKey,
+                                        historyItem.originPortalInfo,
+                                        historyItem.originCapturerTeam
+                                    );
+                                    const destPortal = getOrCreatePortalForSite(
+                                        site,
+                                        destinationPortalKey,
+                                        historyItem.destinationPortalInfo,
+                                        historyItem.destinationCapturerTeam
+                                    );
+                                    const originLatLng = L.latLng(originPortal.lat, originPortal.lng);
+                                    const destLatLng = L.latLng(destPortal.lat, destPortal.lng);
+                                    const distance = originLatLng.distanceTo(destLatLng);
+
+                                    let points = 0;
+                                    if (allowFurtherPoints) {
+                                        const linkRule = getLinkRule(linkScoringRules.get(site.eventType), distance);
+                                        if (linkRule) {
+                                            points = linkRule.jumpPoints + linkRule.linkLengthPoints;
+                                            allowFurtherPoints = linkRule.allowFurtherPoints;
+                                        }
+                                    }
+
+                                    const linkKey = `${originPortalKey}_${destinationPortalKey}`;
+                                    if (!shardEntries[shardEntries.length - 1].links.has(linkKey)) {
+                                        shardEntries[shardEntries.length - 1].links.set(linkKey, {
+                                            originPortal: originPortalKey,
+                                            destinationPortal: destinationPortalKey,
+                                            linkCreatorTeam: historyItem.linkCreatorTeam,
+                                            linkCreationTimeMs: historyItem.linkCreationTimeMs,
+                                            moveTimeMs: historyItem.moveTimeMs,
+                                            distance,
+                                            points
+                                        });
+                                    } else {
+                                        console.warn(`Link already exists for key: ${linkKey}`);
+                                    }
+
+                                    if (points > 0) {
+                                        console.debug(
+                                            `${artifact.id}: Adding link from ${originPortalKey} to ${destinationPortalKey} with points: ${points}, ${allowFurtherPoints}`
+                                        );
+
+                                        switch (historyItem.linkCreatorTeam) {
+                                            case "RESISTANCE":
+                                                site.linkScores.RESISTANCE += points;
+                                                break;
+                                            case "MACHINA":
+                                                site.linkScores.MACHINA += points;
+                                                break;
+                                            case "ENLIGHTENED":
+                                                site.linkScores.ENLIGHTENED += points;
+                                                break;
+                                            default:
+                                                site.linkScores.NEUTRAL += points;
+                                        }
+                                    }
+
+                                    mostRecentShardPortalKey = destinationPortalKey;
+                                    break;
+                                case historyReasons.DESPAWN:
+                                    originPortal = getOrCreatePortalForSite(
+                                        site,
+                                        originPortalKey,
+                                        historyItem.originPortalInfo,
+                                        historyItem.originCapturerTeam
+                                    );
+                                    addToPortalHistory(originPortal, fragment.id, historyItem);
+                                    break;
+                                default:
+                                    console.warn(`Unknown reason for ${shard.id}: ${historyItem.reason}`);
                             }
-                        } else if (h.distance > 1000 && h.distance < 5000) {
-                            if (h.linkCreatorTeam == "RESISTANCE") {
-                                resLinks++
-                            } else if (h.linkCreatorTeam == "MACHINA") {
-                                redLinks++
-                            } else if (h.linkCreatorTeam == "ENLIGHTENED") {
-                                enlLinks++
-                            }
-                        } else {
-                            fizzles++
                         }
+                        site.shards.push(...shardEntries);
+                    }
+                    const linkCount = site.shards.reduce((totalLinks, shard) => totalLinks + shard.links.size, 0);
+                    console.debug(
+                        `Site ${site.name} has ${site.shards.length} shards, ${site.portals.size} portals and ${linkCount} links.`
+                    );
+                }
+                console.debug(calculateJsonSizeReduction(name, json, eventData));
+                return eventData;
+            }
+
+            function getOrCreateSite(eventData, siteDetails) {
+                const siteId = siteDetails.id;
+                if (!eventData.has(siteId)) {
+                    console.debug("Creating new site: ", siteDetails);
+                    eventData.set(siteId, {
+                        name: siteDetails.city || "Unknown",
+                        timezone: siteDetails.timezone || "UTC",
+                        eventType: siteDetails.eventType,
+                        portals: new Map(),
+                        shards: [],
+                        linkScores: {
+                            RESISTANCE: 0,
+                            ENLIGHTENED: 0,
+                            MACHINA: 0,
+                            NEUTRAL: 0
+                        }
+                    });
+                }
+                return eventData.get(siteId);
+            }
+
+            function getShardSingularCity(name, index) {
+                let lookupId = index;
+                if (name == "_theta_2025_05_31_shard_singular") lookupId += 16;
+                if (name == "_theta_2025_06_07_shard_singular") lookupId += 32;
+                return shard_singulars[lookupId];
+            }
+
+            function getOrCreatePortalForSite(site, portalKey, portalInfo, capturerTeam) {
+                if (!site.portals.has(portalKey)) {
+                    site.portals.set(portalKey, {
+                        title: portalInfo.title,
+                        lat: portalInfo.latE6 / 1e6,
+                        lng: portalInfo.lngE6 / 1e6,
+                        team: capturerTeam,
+                        history: new Map()
+                    });
+                }
+                return site.portals.get(portalKey);
+            }
+
+            function addToPortalHistory(portal, shardId, historyItem) {
+                if (!portal.history.has(shardId)) {
+                    portal.history.set(shardId, []);
+                }
+                portal.history.get(shardId).push({
+                    moveTimeMs: historyItem.moveTimeMs,
+                    reason: historyItem.reason
+                });
+            }
+
+            function getLinkRule(rules, distance) {
+                for (const rule of rules.rules) {
+                    if (distance >= rule.minDistance && distance < rule.maxDistance) {
+                        return rule;
                     }
                 }
-                if (lls.length > 1) {
-                    var animated_shards = [L.motion.polyline(lls, { color: "transparent", interactive: false }, { auto: true, duration: 5000 }, { showMarker: true, removeOnEnd: false, icon: shardIcon, interactive: false }).addTo(layer)]
-                    for (var polyline of polylines) {
-                        polyline.animated_shards = animated_shards
-                        polyline.on("mouseover", function (e) {
-                            this.animated_shards.forEach(s => s.motionStart())
-                        })
+                return null;
+            }
+
+            function calculateJsonSizeReduction(name, originalJson, shardEventDataJson) {
+                const originalSize = JSON.stringify(originalJson).length;
+                const plottableSize = JSON.stringify(Array.from(shardEventDataJson.values())).length;
+                return `${name} - original JSON size: ${originalSize} bytes, converted Shard Event Data size: ${plottableSize} bytes, Reduction: ${(
+                    (1 - plottableSize / originalSize) *
+                    100
+                ).toFixed(2)}%`;
+            }
+
+            function renderShardEventData(name, shardEventData) {
+                const seriesLayer = L.featureGroup();
+                layer_lookup[name] = seriesLayer;
+                layerControl.addOverlay(seriesLayer, name);
+
+                let controlsHtml = `<div id="${name}" class="series" style="display:none">`;
+
+                shardEventData.forEach((site, siteId) => {
+                    console.debug(`Rendering site: ${site.name} (${siteId})`);
+                    const layer = L.featureGroup().addTo(seriesLayer);
+                    layer.data = site;
+
+                    const linkedPortalColors = new Map();
+                    site.shards.forEach((shard) => {
+                        console.debug(`Rendering shard: ${shard.id} for site: ${site.name}`);
+                        const renderedLinks = renderShardLinks({
+                            shard,
+                            site,
+                            linkedPortalColors
+                        });
+
+                        if (renderedLinks.length > 0) {
+                            const movingShard = renderMovingShard(renderedLinks);
+                            movingShard.forEach((shard) => shard.addTo(layer));
+                            renderedLinks.forEach((polyline) => polyline.addTo(layer));
+                        }
+                    });
+
+                    site.portals.forEach((portal, key) => {
+                        renderPortal({
+                            key,
+                            portal,
+                            color: linkedPortalColors.get(key) || factionColors[portal.team] || factionColors.NEUTRAL,
+                            timezone: site.timezone,
+                            hasUnmovedShard: !linkedPortalColors.has(key)
+                        }).forEach((marker) => marker.addTo(layer));
+                    });
+
+                    const uniqueSiteId = name + "_" + siteId.replace(" ", "_");
+                    layer_lookup[uniqueSiteId] = layer;
+                    const scoresHtml = `<span style="color:${factionColors.RESISTANCE}">${site.linkScores.RESISTANCE}</span>:<span style="color:${factionColors.ENLIGHTENED}">${site.linkScores.ENLIGHTENED}</span>:<span style="color:${factionColors.MACHINA}">${site.linkScores.MACHINA}</span>:<span style="color:${factionColors.NEUTRAL}">${site.linkScores.NEUTRAL}</span>`;
+                    controlsHtml += `<button id="${uniqueSiteId}">${site.name}</button> ${scoresHtml}<br>`;
+                });
+                controlsHtml += "</div>";
+                $("#controls").append(controlsHtml);
+            }
+
+            function renderShardLinks(shardDetails) {
+                const site = shardDetails.site;
+                const shard = shardDetails.shard;
+                const linkedPortalColors = shardDetails.linkedPortalColors;
+
+                return (
+                    Array.from(shard.links.values()).map((link) => {
+                        const originPortal = site.portals.get(link.originPortal);
+                        const destPortal = site.portals.get(link.destinationPortal);
+                        if (!originPortal || !destPortal) {
+                            console.warn(
+                                `Missing portal data for link: ${link.originPortal} to ${link.destinationPortal}`
+                            );
+                            return;
+                        }
+
+                        const linkColor = factionColors[link.linkCreatorTeam] || factionColors.NEUTRAL;
+                        const polyline = L.polyline(
+                            [L.latLng(originPortal.lat, originPortal.lng), L.latLng(destPortal.lat, destPortal.lng)],
+                            {
+                                color: linkColor,
+                                dashArray: ["10,5,5,5,5,5,5,5,100000"]
+                            }
+                        );
+
+                        const linkCreationTimeMs = new Date(parseInt(link.linkCreationTimeMs)).toLocaleString(
+                            navigator.language,
+                            {
+                                timeZone: site.timezone
+                            }
+                        );
+                        const moveTimeMs = new Date(parseInt(link.moveTimeMs)).toLocaleString(navigator.language, {
+                            timeZone: site.timezone
+                        });
+                        const linkTooltip = `<strong>${shard.id}</strong><br />${originPortal.title} -> ${
+                            destPortal.title
+                        }<br>Link time: ${linkCreationTimeMs}<br />Jump time: ${moveTimeMs}<br />Distance: ${(
+                            Math.round((link.distance + Number.EPSILON) * 100) / 100
+                        ).toLocaleString()}m<br />Points: ${link.points}`;
+                        polyline.bindTooltip(linkTooltip, { sticky: true });
+                        polyline.bindPopup(linkTooltip, { sticky: true });
+
+                        linkedPortalColors.set(link.originPortal, linkColor);
+                        linkedPortalColors.set(link.destinationPortal, linkColor);
+
+                        return polyline;
+                    }) || null
+                );
+            }
+
+            function renderMovingShard(renderedLinks) {
+                const coords = renderedLinks.map((line) => line.getLatLngs()).flat();
+                const animatedShards = [
+                    L.motion.polyline(
+                        coords,
+                        {
+                            color: "transparent",
+                            interactive: false
+                        },
+                        { auto: true, duration: renderedLinks.length * 1000 },
+                        {
+                            showMarker: true,
+                            removeOnEnd: false,
+                            icon: shardIcon,
+                            interactive: false
+                        }
+                    )
+                ];
+                for (const polyline of renderedLinks) {
+                    polyline.animatedShards = animatedShards;
+                    polyline.on("mouseover", function (e) {
+                        this.animatedShards.forEach((s) => s.motionStart());
+                    });
+                }
+                return animatedShards;
+            }
+
+            function renderPortal(portalDetails) {
+                const portal = portalDetails.portal;
+                const latLng = L.latLng(portal.lat, portal.lng);
+                let portalTooltip = `<strong>${portal.title}</strong><br />`;
+                portal.history.forEach((shardHistory, shardId) => {
+                    portalTooltip += `<hr /><strong>${shardId}</strong><br />`;
+                    shardHistory.forEach((historyItem) => {
+                        portalTooltip += `${historyItem.reason} at ${new Date(
+                            parseInt(historyItem.moveTimeMs)
+                        ).toLocaleString(navigator.language, {
+                            timeZone: portalDetails.timezone
+                        })}<br />`;
+                    });
+                });
+
+                const markers = [L.circleMarker(latLng, { color: portalDetails.color }).bindTooltip(portalTooltip)];
+                // render a shard which didn't move from this portal
+                if (portalDetails.hasUnmovedShard) {
+                    markers.push(L.marker(latLng, { icon: shardIcon }).bindTooltip(portalTooltip));
+                }
+                return markers;
+            }
+
+            var json_files = {
+                "Shared Memories 2024 APAC": "shard-jump-times-2024.09.01.18.10.48.json",
+                "Erased Memories 2024 AMER": "shard-jump-times-2024.11.17.09.14.04.json",
+                "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
+                "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json",
+                "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
+                "+Theta 2025-05-24 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
+                "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
+                "+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.06.03.15.20.36.json",
+                "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json",
+                "+Theta 2025-06-07 Shard Singular": "shard-jump-times-2025.06.08.12.07.39.json",
+                "+Theta 2025 APAC": "shard-jump-times-2025.06.08.12.07.39.json",
+                "+Theta 2025-06-14": "shard-jump-times-2025.06.16.17.47.43.json"
+            };
+
+            var all_data = await fetch("all_data.json").then((resp) => resp.json());
+
+            for (var name in json_files) {
+                var safe_name = name.replace(/[^a-z0-9]/gi, "_").toLowerCase();
+                var selected = name == "+Theta 2025-06-14" ? "selected" : "";
+                $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`);
+                var json = all_data[json_files[name]];
+
+                const shardEventData = processShardEventData(safe_name, json);
+                renderShardEventData(safe_name, shardEventData);
+            }
+            $("#_theta_2025_06_14").show();
+            try {
+                map.fitBounds(layer_lookup._theta_2025_06_14_abaddon1.getBounds());
+            } catch (e) {
+                console.error("Error fitting bounds", e);
+            }
+            $("#series").change(function () {
+                $(".series").hide();
+                $(`#${this.value}`).show();
+                if (currentActiveSeriesLayer && map.hasLayer(currentActiveSeriesLayer)) {
+                    map.removeLayer(currentActiveSeriesLayer);
+                }
+                const newSeriesLayer = layer_lookup[this.value];
+                if (newSeriesLayer) {
+                    layer_lookup[this.value].addTo(map);
+                    map.fitBounds(newSeriesLayer.getBounds());
+                    currentActiveSeriesLayer = newSeriesLayer;
+                } else {
+                    console.warn(`No layer found for series: ${this.value}`);
+                }
+            });
+            function buttonHandler() {
+                var layer = layer_lookup[this.id];
+                map.fitBounds(layer.getBounds());
+                location.hash = this.id;
+                console.log(layer);
+                layer.eachLayer(function (l) {
+                    if (l instanceof L.Polyline) {
+                        if (l.animatedShards) l.animatedShards.forEach((s) => s.motionStart());
                     }
-                }
-                var unique_id = name + "_" + f.id
-                layer_lookup[unique_id] = layer
-                var scores = `<span style="color:${colors.RESISTANCE}">${resLinks}</span>:<span style="color:${colors.ENLIGHTENED}">${enlLinks}</span>:<span style="color:${colors.MACHINA}">${redLinks}</span>:<span style="color:${colors.NEUTRAL}">${fizzles}</span>`
-                if (safe_name == "_theta_2025_05_31_shard_singular") i = parseInt(i) + 16
-                if (safe_name == "_theta_2025_06_07_shard_singular") i = parseInt(i) + 32
-                html += `<button id="${unique_id}">${shard_singulars[i] || f.id}</button> ${scores}<br>`
+                });
+                var d = layer.data;
+                //console.log(d.fragment.map(f => f.history.map(h => new Date(parseInt(h.moveTimeMs)))))
             }
-            html += "</div>"
-            $("#controls").append(html)
-        }
-
-        var json_files = {
-            "Shared Memories 2024 APAC": "shard-jump-times-2024.09.01.18.10.48.json",
-            "Erased Memories 2024 AMER": "shard-jump-times-2024.11.17.09.14.04.json",
-            "+Alpha 2025 EMEA": "shard-jump-times-2025.03.01.20.11.38.json",
-            "+Alpha 2025 APAC": "shard-jump-times-2025.03.09.08.41.46.json",
-            "+Alpha 2025 AMER": "shard-jump-times-2025.03.17.09.45.57.json",
-            "+Theta 2025-05-24 Shard Singular": "shard-jump-times-2025.05.25.13.14.05.json",
-            "+Theta 2025 EMEA": "shard-jump-times-2025.05.25.13.14.05.json",
-            "+Theta 2025-05-31 Shard Singular": "shard-jump-times-2025.06.03.15.20.36.json",
-            "+Theta 2025 AMER": "shard-jump-times-2025.06.03.15.20.36.json",
-            "+Theta 2025-06-07 Shard Singular": "shard-jump-times-2025.06.08.12.07.39.json",
-            "+Theta 2025 APAC": "shard-jump-times-2025.06.08.12.07.39.json",
-            "+Theta 2025-06-14": "shard-jump-times-2025.06.16.17.47.43.json"
-        }
-
-        var all_data = await fetch("all_data.json").then(resp => resp.json())
-        console.log(all_data)
-
-        for (var name in json_files) {
-            var safe_name = name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-            var selected = name == "+Theta 2025-06-14" ? "selected" : ""
-            $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`)
-            var json = all_data[json_files[name]]
-            if (name.includes("Singular")) {
-                plot_json_singular(safe_name, json)
-            } else {
-                plot_json(safe_name, json)
+            $("button").click(buttonHandler);
+            String.prototype.rsplit = function (sep, maxsplit) {
+                var split = this.split(sep);
+                return maxsplit ? [split.slice(0, -maxsplit).join(sep)].concat(split.slice(-maxsplit)) : split;
+            };
+            if (location.hash) {
+                var site = location.hash.substring(1).replace("Abaddon_1").replace("abaddon1_", "").rsplit("_", 1);
+                console.log("hash", site);
+                $("#series").val(site).change();
+                $(location.hash).click();
             }
-        }
-        $("#_theta_2025_06_14").show()
-        try {
-            map.fitBounds(layer_lookup._theta_2025_06_14_Abaddon_1.getBounds())
-        } catch (e) {
-            console.error("Error fitting bounds", e)
-        }
-        $("#series").change(function () {
-            $(".series").hide()
-            $(`#${this.value}`).show()
-            layer_lookup[this.value].addTo(map)
-        })
-        function buttonHandler() {
-            var layer = layer_lookup[this.id]
-            map.fitBounds(layer.getBounds())
-            location.hash = this.id
-            console.log(layer)
-            layer.eachLayer(function (l) {
-                if (l instanceof L.Polyline) {
-                    if (l.animated_shards) l.animated_shards.forEach(s => s.motionStart())
-                }
-            })
-            var d = layer.data;
-            //console.log(d.fragment.map(f => f.history.map(h => new Date(parseInt(h.moveTimeMs)))))
-        }
-        $("button").click(buttonHandler)
-        String.prototype.rsplit = function (sep, maxsplit) {
-            var split = this.split(sep);
-            return maxsplit ? [split.slice(0, -maxsplit).join(sep)].concat(split.slice(-maxsplit)) : split;
-        }
-        if (location.hash) {
-            var site = location.hash.substring(1).replace("Abaddon_1").replace("abaddon1_", "").rsplit("_", 1)
-            $(location.hash).click()
-            console.log("hash", site)
-            $("#series").val(site).change()
-        }
-        $("#custom").change(function () {
-            var file = this.files[0]
-            var reader = new FileReader()
-            reader.onload = function (e) {
-                var json = JSON.parse(e.target.result)
-                var name = file.name.replace(/[^a-z0-9]/gi, '_').toLowerCase()
-                plot_json(name, json)
-                $("#series").append(`<option value="${name}">${file.name}</option>`)
-                $("#series").val(name).change()
-                $("button").click(buttonHandler)
-            }
-            reader.readAsText(file)
-        })
-    </script>
-</body>
+            $("#custom").change(function () {
+                var file = this.files[0];
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var json = JSON.parse(e.target.result);
+                    var name = file.name.replace(/[^a-z0-9]/gi, "_").toLowerCase();
 
+                    const shardEventData = processShardEventData(name, json); // Process the raw JSON
+                    renderShardEventData(name, shardEventData);
+
+                    $("#series").append(`<option value="${name}">${file.name}</option>`);
+                    $("#series").val(name).change();
+                    $("button").off("click").on("click", buttonHandler);
+                };
+                reader.readAsText(file);
+            });
+        </script>
+    </body>
 </html>
