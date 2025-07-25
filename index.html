@@ -252,7 +252,7 @@
                         console.debug(`Processing fragment (shard) ${fragment.id} for artifact ${artifact.id}`);
                         let siteDetails;
                         if (artifact.city) {
-                            var eventType = name.includes("theta_2025_06_14")
+                            const eventType = name.includes("theta_2025_06_14")
                                 ? shardEventType.ANOMALY
                                 : shardEventType.SKIRMISH;
                             siteDetails = {
@@ -643,32 +643,33 @@
                 const shardEventData = processShardEventData(safe_name, json);
                 renderShardEventData(safe_name, shardEventData);
             }
-            $("#_theta_2025_06_14").show();
-            try {
-                map.fitBounds(layer_lookup._theta_2025_06_14_abaddon1.getBounds());
-            } catch (e) {
-                console.error("Error fitting bounds", e);
-            }
+
             $("#series").change(function () {
+                handleSeriesDisplay(this.value);
+                map.fitBounds(currentActiveSeriesLayer.getBounds());
+            });
+
+            function handleSeriesDisplay(seriesName) {
+                console.debug(`Displaying series layer for: ${seriesName}`);
                 $(".series").hide();
-                $(`#${this.value}`).show();
+                $(`#${seriesName}`).show();
                 if (currentActiveSeriesLayer && map.hasLayer(currentActiveSeriesLayer)) {
                     map.removeLayer(currentActiveSeriesLayer);
                 }
-                const newSeriesLayer = layer_lookup[this.value];
+                const newSeriesLayer = layer_lookup[seriesName];
                 if (newSeriesLayer) {
-                    layer_lookup[this.value].addTo(map);
-                    map.fitBounds(newSeriesLayer.getBounds());
+                    layer_lookup[seriesName].addTo(map);
                     currentActiveSeriesLayer = newSeriesLayer;
                 } else {
-                    console.warn(`No layer found for series: ${this.value}`);
+                    console.warn(`No layer found for series: ${seriesName}`);
                 }
-            });
+            }
+
             function buttonHandler() {
                 var layer = layer_lookup[this.id];
                 map.fitBounds(layer.getBounds());
                 location.hash = this.id;
-                console.log(layer);
+                console.debug(layer);
                 layer.eachLayer(function (l) {
                     if (l instanceof L.Polyline) {
                         if (l.animatedShards) l.animatedShards.forEach((s) => s.motionStart());
@@ -684,9 +685,13 @@
             };
             if (location.hash) {
                 var site = location.hash.substring(1).replace("Abaddon_1").replace("abaddon1_", "").rsplit("_", 1);
-                console.log("hash", site);
-                $("#series").val(site).change();
+                console.debug("hash", site);
+                $("#series").val(site);
+                handleSeriesDisplay(site[0]);
                 $(location.hash).click();
+            } else {
+                handleSeriesDisplay("_theta_2025_06_14");
+                map.fitBounds(currentActiveSeriesLayer.getBounds());
             }
             $("#custom").change(function () {
                 var file = this.files[0];
