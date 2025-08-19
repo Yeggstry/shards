@@ -5383,7 +5383,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Portland, OR, USA",
+      "timezone": "America/Los_Angeles"
     },
     {
       "id": "zulu",
@@ -10640,7 +10642,9 @@
             }
           ]
         }
-      ]
+      ],
+      "city": "Melaka, Malaysia",
+      "timezone": "Asia/Kuala_Lumpur"
     },
     {
       "id": "yankee",
