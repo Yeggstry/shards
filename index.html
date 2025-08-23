@@ -639,13 +639,14 @@
                 "+Theta 2025 APAC": "shard-jump-times-2025.06.08.12.07.39.json",
                 "+Theta 2025-06-14": "shard-jump-times-2025.06.16.17.47.43.json",
                 "+Delta 2025-08-16": "shard-jump-times-2025.08.18.12.11.03.json",
+                "+Delta 2025-08-23": "shard-jump-times-2025.08.23.22.03.28.json",
             };
 
             var all_data = await fetch("all_data.json").then((resp) => resp.json());
 
             for (var name in json_files) {
                 var safe_name = name.replace(/[^a-z0-9]/gi, "_").toLowerCase();
-                var selected = name == "+Delta 2025-08-16" ? "selected" : "";
+                var selected = name == "+Delta 2025-08-23" ? "selected" : "";
                 $("#series").append(`<option value="${safe_name}" ${selected}>${name}</option>`);
                 var json = all_data[json_files[name]];
 
@@ -699,7 +700,7 @@
                 handleSeriesDisplay(site[0]);
                 $(location.hash).click();
             } else {
-                handleSeriesDisplay("_delta_2025_08_16");
+                handleSeriesDisplay("_delta_2025_08_23");
                 map.fitBounds(currentActiveSeriesLayer.getBounds());
             }
             $("#custom").change(function () {
